@@ -5,10 +5,12 @@
 
 
     {% load static %}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>Energias</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700" rel="stylesheet">
         <link href={% static "css/styles.css" %} rel="stylesheet"/>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -70,13 +72,13 @@ $(function(){
 <div class="logo-background">
     <div class="logo1 row col-lg-3 col-md-3 col-xs-12"> <img src={% static "images/logo.png" %} ></div>
     <div class="logo2 row col-lg-3 col-md-3 col-xs-12"> <img src={% static "images/energia-evo.png" %} ></div>
-    <p class="menu"> Inicio<p class="menu">|</p></p>
+{% comment %}    <p class="menu"> Inicio<p class="menu">|</p></p>
     <p class="menu">Matriz<p class="menu">|</p></p>
     <p class="menu">Energética<p class="menu">|</p></p>
     <p class="menu">Pros y contras<p class="menu">|</p></p>
     <p class="menu">Aliados<p class="menu">|</p></p>
     <p class="menu">Comisión de expertos<p class="menu">|</p></p>
-    <p class="menu">Fracking</p>
+    <p class="menu">Fracking</p>{% endcomment %}
 
 </div>
 
@@ -99,7 +101,7 @@ y limpia.</p>
   </div>
 
   <div class="column2">
-    <div id="chart_div" style="width: 100%; height: 100%;"></div>
+    <div id="chart_div"></div>
   </div>
 
   </div>
@@ -114,9 +116,21 @@ y limpia.</p>
 
 
 
-  <div class="column2">
-<img src={% static "images/grafica1.JPG" %} class="img-grafica">
-      <button class="button1">2020</button>
+  <div class="column-img">
+
+
+      <div class="container">
+          <img class="filterDiv 2020" src={% static "images/grafica1.JPG" %} class="img-grafica">
+          <img class="filterDiv 2019" src={% static "images/img3.png" %} class="img-grafica">
+          <img class="filterDiv 2018" src={% static "images/repre.png" %} class="img-grafica">
+          <img class="filterDiv 2017" src={% static "images/energia-evo.png" %} class="img-grafica">
+          <img class="filterDiv 2016" src={% static "images/solar.png" %} class="img-grafica">
+          <img class="filterDiv 2015" src={% static "images/electrica.png" %} class="img-grafica">
+
+
+</div>
+
+
   </div>
 
   <div class="column3">
@@ -140,82 +154,113 @@ a, venenatis vitae, justo.</p>
 
 
  </div>
+
+
+      <div id="myBtnContainer">
+  <button class="button1 active primaria" onclick="filterSelection('2020')">2020</button>
+  <button class="button1" onclick="filterSelection('2019')">2019</button>
+  <button class="button1" onclick="filterSelection('2018')">2018</button>
+  <button class="button1" onclick="filterSelection('2017')">2017</button>
+          <button class="button1" onclick="filterSelection('2016')">2016</button>
+
+          <button class="button1" onclick="filterSelection('2015')">2015</button>
+</div>
+
+<div class="line2">
+    <hr>
+</div>
+
+
+<div class="contenedor3-1">
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src={% static "images/img1.png" %} style="width:33%">
+  <img class="mySlides" src={% static "images/img2.png" %} style="width:33%">
+  <img class="mySlides" src={% static "images/img3.png" %} style="width:33%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+</div>
+
       <div class="contenedor4">
 
-          <div class="c4p1">
-                  <h2 class="c4titulo">Lorem ipsum
-dolor sit amet,</h2>
-    <p class="c4texto">consectetuer adipiscing elit.</p>
-<p class="c4texto">Aenean commodo ligula eget dolor. </p>
-<p class="c4texto">Aenean massa.</p>
-
-          </div>
-
-          <div class="c4p2">
-              <img src={% static "images/electrica.png" %} class="img-responsive">
-              <p class="c4texto center">Eléctrica</p>
-
-          </div>
-
-          <div class="c4p2">
-              <img src={% static "images/solar.png" %} class="img-responsive">
-              <p class="c4texto center">Solar</p>
-          </div>
-
-          <div class="c4p2">
-              <img src={% static "images/eolica.png" %} class="img-responsive">
-              <p class="c4texto center">Eólica</p>
-          </div>
-
-          <div class="c4p2">
-              <img src={% static "images/hidraulica.png" %} class="img-responsive">
-              <p class="c4texto center">Hidráulica</p>
-          </div>
+          <img class="redes fb" src={% static "images/fb1.png" %} >
+          <img class="redes insta" src={% static "images/insta.png" %} >
+          <img class="redes tw" src={% static "images/tw1.png" %} >
+          <img class="redes yt" src={% static "images/yt.png" %} >
 
 
       </div>
 
-      <div class="contenedor5">
+<script>
+filterSelection("2020")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
 
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
 
-            <div class="newsletter">
-    <h2 class="news">Lorem ipsum</h2>
-    <p class="texto-news">consectetuer adipiscing elit.
-Aenean commodo ligula eget
-dolor. Aenean massa. Cum sociis
-natoque penatibus et magnis dis
-parturient montes, nascetur
-ridiculus mus. Donec quam felis,
-ultricies nec, pellentesque eu,
-pretium quis, sem.</p>
-  </div>
-  <div class="newsletter">
-    <h2 class="news" >Lorem ipsum</h2>
-    <p class="texto-news">consectetuer adipiscing elit.
-Aenean commodo ligula eget
-dolor. Aenean massa. Cum sociis
-natoque penatibus et magnis dis
-parturient montes, nascetur
-ridiculus mus. Donec quam felis,
-ultricies nec, pellentesque eu,
-pretium quis, sem.</p>
-  </div>
-  <div class="newsletter" >
-    <h2 class="news">Lorem ipsum</h2>
-    <p class="texto-news">consectetuer adipiscing elit.
-Aenean commodo ligula eget
-dolor. Aenean massa. Cum sociis
-natoque penatibus et magnis dis
-parturient montes, nascetur
-ridiculus mus. Donec quam felis,
-ultricies nec, pellentesque eu,
-pretium quis, sem.</p>
-  </div>
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("change");
+var btns = btnContainer.getElementsByClassName("list");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
+<script>
 
- </div>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+</script>
 
 </body>
 </html>
