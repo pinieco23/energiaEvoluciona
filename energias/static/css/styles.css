@@ -1,255 +1,3 @@
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-
-
-html, body{
-  height: 100%;
-  background-color: #FFFFFF;
-    font-family: 'Work Sans';
-
-}
-
-
-p{
-    font-family: 'Work Sans';
-}
-
-.menu{
-    float: left;
-    padding-left: 25px;
-    padding-top: 2.3%;
-}
-
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-.logo1{
-    width: 22%;
-    margin-left: -1%;
-    margin-top: 2%;
-}
-
-.logo2{
-    width: 22%;
-    margin-left: -1%;
-    padding-top: 1%;
-}
-
-.logo-background{
-    background-color: #EBECEE;
-    width: 100%;
-    height: 11%;
-    /*margin-left: 8%;*/
-    margin-bottom: 2%;
-    margin-top: -9px;
-}
-
-
-.img-grafica {
-    padding-left: 10%;
-}
-
-.contenedor1{
-  height: 40%;
-    width: 100%;
-  background-color: #FFFFFF;
-}
-
-.contenedor2{
-  height: 80%;
-    width: 100%;
-  background-color: #FFFFFF;
-}
-
-.contenedor3{
-  height: 53%;
-    width: 100%;
-  background-color: #FFFFFF;
-}
-
-.contenedor4{
-  height: 78%;
-    width: 100%;
-    background-image: url('../images/repre.png');
-    background-size: cover;
-   }
-
-
-.redes{
-    margin-top: 52.5%;
-    margin-left: 15px;
-}
-
-.insta{
-    width: 40px;
-    height: 40px;
-
-}
-
-.fb{
-    width: 50px;
-    height: 50px;
-    margin-left: 40%;
-}
-
-.tw{
-    width: 45px;
-    height: 45px;
-}
-
-.yt{
-    width: 50px;
-    height: 35px;
-}
-
-.contenedor5{
-    width: 100%;
-    height: 45%;
-  background-color: #FFFFFF;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 40%;
-  padding: 10px;
-    padding-left: 12%;
-  height: 100%; /* Should be removed. Only for demonstration */
-}
-
-.column2 {
-  float: left;
-  width: 50%;
-    height: 100%;
-  padding: 10px;
-    padding-bottom: 5%;
-}
-
-.column-img{
-  float: left;
-  width: 45%;
-    height: 100%;
-  padding: 10px;
-    padding-bottom: 5%;
-}
-
-.column3 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    padding-right: 12%;
-    padding-top: 6%;
-    padding-left: 4%;
-    padding-bottom: 8%;
-}
-
-#chart_div{
-    width: 100%;
-    height: 100%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-iframe{
-    width: 100%;
-    height: 100%;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-
-    .img-grafica{
-        padding-left: 0px;
-        padding-top: 0px;
-    }
-    .contenedor1{
-        width: 112%;
-        height: 70%;
-    }
-    .contenedor2 {
-        width: 100%;
-        height: 30%;
-        align-content: center;
-    }
-    .contenedor3{
-        width: 100%;
-        height: 80%;
-    }
-
-    .contenedor4{
-        width: 100%;
-        margin-top: 90%;
-    }
-    .c4p1{
-        margin-top: 30%;
-    }
-
-    iframe{
-        width: 120%;
-        height: 100%;
-    }
-    .column3{
-        padding-top: 45%;
-    }
-    .column{
-        float: left;
-        width: 100%;
-        height: 44%;
-        padding-left: 5%;
-    }
-    #chart_div{
-        float: left;
-        width: 104%;
-        height: 100%;
-        margin-top: 50px;
-    }
-    .column2{
-        width: 100%;
-        height: 40%;
-    }
-
-    .column-img{
-        width: 115%;
-        height: 60%;
-    }
-
-}
-
-
-div.left {
-    text-align: left;
-
-}
-
-button.right {
-    text-align: right;
-
-}
-
-h2.title {
-    font-size: 45px;
-    font-weight: bold;
-    font-family: 'Work Sans';
-}
-
-h2.title2 {
-  font-size: 45px;
-    font-weight: bold;
-    color: #00A682;
-    font-family: 'Work Sans';
-}
-
-.c3t1{
-    color: #5A5A5A;
-}
-
 hr{
     border: 0;
     height: 1px;
@@ -257,120 +5,100 @@ hr{
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-.line2{
-    width: 80%;
-    margin-left: 7%;
-}
-
-
-
-
-
-
-.button1 {
-    margin-top: -40px;
-    border: none;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-   cursor: pointer;
-    background-color: #FF2A64;
-    /*margin-left: 72%;*/
-    border-radius: 8em / 10em;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.primaria{
-    margin-left: 20%;
-}
-
-.button1:hover {
-  background-color: #00A682;
-  color: #FFFFFF;
-}
-
-.button:hover {
-  background-color: #60D1EE;
-  color: #000;
-}
-
-.button {
-    margin-top: -40px;
-    margin-left: -1px;
-    border: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-   cursor: pointer;
-    background-color: #0165cd;
-    font-size: 15px;
-}
-
-.newsletter {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 100%; /* Should be removed. Only for demonstration */
-    padding-left: 90px;
-    padding-right: 40px;
-background-color:#1D926A;
-}
-
-.news {
-    margin-top: 50px;
+h1.title {
     font-size: 45px;
     font-weight: bold;
-    color: #006850;
+    font-family: 'Work Sans';
 }
 
-.texto-news {
-    color:#96DFCC;
-    margin-top: 30px;
-    font-size: 17px;
-}
-
-.c4titulo {
-    font-size: 55px;
+h2.title {
+    font-size: 45px;
     font-weight: bold;
-    color:#2A76B4;
+    color: #00A682;
+    font-family: 'Work Sans';
 }
 
-.c4texto {
-    font-size: 21px;
-    color:#748F9A;
-    margin: 0 0 -8px;
+p{
+    font-family: 'Work Sans';
 }
 
-.c4p1 {
+.column {
     float: left;
-    padding-top: 7%;
-    width: 36.5%;
-    padding-left: 82px;
-    margin-right: 5%;
+    padding: 10px;
+    padding-left: 14%;
+}
+/*Padding Top para el icono de Presidencia*/
 
+.padTop2 {
+    padding-top: 9px;
 }
 
-.c4p2 {
-    float: left;
+/*Padding Top para la división entre secciones*/
+
+.padTop {
+    padding-top: 10px;
+}
+
+/*Clase usado para el color de fondo de los logos principales*/
+.backgroundLogo {
+    background-color: #EBECEE;
+}
+
+.contenedor2{
+  height: 80%;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.column3 {
+    padding-right: 12%;
     padding-top: 6%;
-    width: 14.6%;
+    padding-left: 4%;
+    padding-bottom: 8%;
 }
 
-.center {
-  text-align: center;
-    margin-top: -20px;
+/*Clases usadas para los botones de años*/
+
+.botonesAnos {
+
+color: #fff;
+
+background-color: #FF2A64 !important;
+
+width: 9%;
+
+font-weight: bold;
+
+font-size: 12px;
+border-radius: 50px;
+
+
 }
+
+.botonesAlineados {
+    text-align: center;
+}
+
+/*Clases usadas para estilos del slider*/
+
+h3.title {
+    color: #000000;
+}
+
+p.subtitle{
+  color: #f24f0b;
+}
+
+/*Imagen Energía Background*/
+
+.backgroundImg {
+    background-image: url(../static/images/repre.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 78%;
+    width: 100%;
+}
+
 
 
 
@@ -399,7 +127,6 @@ background-color:#1D926A;
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
   cursor: pointer;
 }
 
@@ -411,3 +138,11 @@ background-color:#1D926A;
   background-color: #666;
   color: white;
 }
+
+
+.img-grafica{
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 8%;
+}
+

@@ -22,4 +22,5 @@ from energias import control
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', control.inicio),
+    url('expertos', control.expertos),
 ]

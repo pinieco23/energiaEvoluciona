@@ -1,200 +1,327 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-
-
     {% load static %}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>Energias</title>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link href={% static "css/styles.css" %} rel="stylesheet"/>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
+  <meta name="description" content="Es una iniciativa de los ministerios de Ambiente y Desarrollo Sostenible y Minas y Energía, que busca la transición de las fuentes de energía del país, garantizando un matriz energética más diversificada y limpia">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="./static/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./static/css/styles.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+
+
+  <!--Scripts utilizados por la pagina-->
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'Sales', 'Expenses'],
+      ['2013',  1000,      400],
+      ['2014',  1170,      460],
+      ['2015',  660,       1120],
+      ['2016',  1030,      540]
+      ]);
+    var options = {
+      title: 'Company Performance',
+      hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+      vAxis: {minValue: 0}
+    };
+    var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+  $(window).resize(function()){
+    drawBasic();
+  }
 </script>
 
-    <script>
-
-$(function(){
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
-});
+<script type="text/javascript">
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 </script>
 
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2013',  1000,      400],
-          ['2014',  1170,      460],
-          ['2015',  660,       1120],
-          ['2016',  1030,      540]
-        ]);
-
-        var options = {
-          title: 'Company Performance',
-          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
-        };
-
-        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-
-
-
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
 </head>
+
 <body>
+  <!--Header de la pagina-->
+  <header>
+    <section class="container-fluid backgroundLogo">
+      <div class="col-md-4">
+        <div class="col-md-6 col-xs-6 padTop2">
+          <a href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" title="Logo Presidencia">
+            <img src="./static/images/Presidencia-logo.png" class="img-responsive" alt="Logo Presidencia">
+          </a>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <a href="#" title="Logo de Energía Evoluciona">
+            <img src="./static/images/energia-evo.png" class="img-responsive" alt="Logo de Energía Evoluciona">
+          </a>
+        </div>
+      </div>
+    </section>
+  </header>
 
-<div id="header"></div>
-<!--Remaining section-->
-<div id="footer"></div>
-
-<div class="logo-background">
-    <div class="logo1 row col-lg-3 col-md-3 col-xs-12"> <img src={% static "images/logo.png" %} ></div>
-    <div class="logo2 row col-lg-3 col-md-3 col-xs-12"> <img src={% static "images/energia-evo.png" %} ></div>
-{% comment %}    <p class="menu"> Inicio<p class="menu">|</p></p>
-    <p class="menu">Matriz<p class="menu">|</p></p>
-    <p class="menu">Energética<p class="menu">|</p></p>
-    <p class="menu">Pros y contras<p class="menu">|</p></p>
-    <p class="menu">Aliados<p class="menu">|</p></p>
-    <p class="menu">Comisión de expertos<p class="menu">|</p></p>
-    <p class="menu">Fracking</p>{% endcomment %}
-
-</div>
-
-
-
-  <div class="contenedor1">
-
-  <div class="column left">
-    <h2 class="title">ENERGÍA EVOLUCIONA</h2>
-
+  <section class="padTop">
+    <div class="col-md-6 col-xs-12 column">
+      <h1 class="title"><b>{{ c1.0.0 }}</b></h1>
       <hr>
+      <p>{{ c1.0.1 }}
+      </p>
+      <button class="btn btn-primary">{{ c1.0.2 }}</button>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <div class="column2">
+        <div style="position: relative;">
+           <div dir="ltr" style="position: relative; width: 445px; height: 164px;">
+              <div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                 <svg width="445" height="164" aria-label="A chart." style="overflow: hidden;">
+                    <defs id="_ABSTRACT_RENDERER_ID_0">
+                       <clipPath id="_ABSTRACT_RENDERER_ID_1">
+                          <rect x="62" y="32" width="321" height="101"></rect>
+                       </clipPath>
+                    </defs>
+                    <rect x="0" y="0" width="445" height="164" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+                    <g>
+                       <text text-anchor="start" x="62" y="19.85" font-family="Arial" font-size="11" font-weight="bold" stroke="none" stroke-width="0" fill="#000000">Company Performance</text>
+                       <rect x="62" y="10.5" width="321" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                    </g>
+                    <g>
+                       <rect x="394" y="32" width="40" height="29" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                       <g>
+                          <rect x="394" y="32" width="40" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                          <g>
+                             <text text-anchor="start" x="420" y="41.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">…</text>
+                             <rect x="420" y="32" width="14" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                          </g>
+                          <rect x="394" y="37.5" width="22" height="5.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#3366cc"></rect>
+                          <path d="M394,37.5L416,37.5" stroke="#3366cc" stroke-width="2" fill-opacity="1" fill="none"></path>
+                       </g>
+                       <g>
+                          <rect x="394" y="50" width="40" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                          <g>
+                             <text text-anchor="start" x="420" y="59.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">…</text>
+                             <rect x="420" y="50" width="14" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                          </g>
+                          <rect x="394" y="55.5" width="22" height="5.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#dc3912"></rect>
+                          <path d="M394,55.5L416,55.5" stroke="#dc3912" stroke-width="2" fill-opacity="1" fill="none"></path>
+                       </g>
+                    </g>
+                    <g>
+                       <rect x="62" y="32" width="321" height="101" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                       <g clip-path="url(http://54.147.145.210:8080/#_ABSTRACT_RENDERER_ID_1)">
+                          <g>
+                             <rect x="62" y="132" width="321" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect>
+                             <rect x="62" y="82" width="321" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect>
+                             <rect x="62" y="32" width="321" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect>
+                             <rect x="62" y="107" width="321" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect>
+                             <rect x="62" y="57" width="321" height="1" stroke="none" stroke-width="0" fill="#ebebeb"></rect>
+                          </g>
+                          <g>
+                             <g>
+                                <path d="M62.5,132.5L62.5,132.5L62.5,82.5L169.16666666666669,74L275.83333333333337,99.5L382.5,81L382.5,132.5L382.5,132.5Z" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#3366cc"></path>
+                             </g>
+                             <g>
+                                <path d="M62.5,132.5L62.5,132.5L62.5,112.5L169.16666666666669,109.5L275.83333333333337,76.5L382.5,105.5L382.5,132.5L382.5,132.5Z" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#dc3912"></path>
+                             </g>
+                          </g>
+                          <g>
+                             <rect x="62" y="132" width="321" height="1" stroke="none" stroke-width="0" fill="#333333"></rect>
+                          </g>
+                          <g>
+                             <path d="M62.5,82.5L169.16666666666669,74L275.83333333333337,99.5L382.5,81" stroke="#3366cc" stroke-width="2" fill-opacity="1" fill="none"></path>
+                             <path d="M62.5,112.5L169.16666666666669,109.5L275.83333333333337,76.5L382.5,105.5" stroke="#dc3912" stroke-width="2" fill-opacity="1" fill="none"></path>
+                          </g>
+                       </g>
+                       <g></g>
+                       <g>
+                          <g>
+                             <text text-anchor="middle" x="62.5" y="145.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">2013</text>
+                          </g>
+                          <g>
+                             <text text-anchor="middle" x="169.16666666666669" y="145.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">2014</text>
+                          </g>
+                          <g>
+                             <text text-anchor="middle" x="275.83333333333337" y="145.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">2015</text>
+                          </g>
+                          <g>
+                             <text text-anchor="middle" x="382.5" y="145.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">2016</text>
+                          </g>
+                          <g>
+                             <text text-anchor="end" x="51" y="136.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">0</text>
+                          </g>
+                          <g>
+                             <text text-anchor="end" x="51" y="86.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">1,000</text>
+                          </g>
+                          <g>
+                             <text text-anchor="end" x="51" y="36.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#444444">2,000</text>
+                          </g>
+                       </g>
+                    </g>
+                    <g>
+                       <g>
+                          <text text-anchor="middle" x="222.5" y="159.35" font-family="Arial" font-size="11" font-style="italic" stroke="none" stroke-width="0" fill="#333333">Year</text>
+                          <rect x="62" y="150" width="321" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+                       </g>
+                    </g>
+                    <g></g>
+                 </svg>
+                 <div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+                    <table>
+                       <thead>
+                          <tr>
+                             <th>Year</th>
+                             <th>Sales</th>
+                             <th>Expenses</th>
+                          </tr>
+                       </thead>
+                       <tbody>
+                          <tr>
+                             <td>2013</td>
+                             <td>1,000</td>
+                             <td>400</td>
+                          </tr>
+                          <tr>
+                             <td>2014</td>
+                             <td>1,170</td>
+                             <td>460</td>
+                          </tr>
+                          <tr>
+                             <td>2015</td>
+                             <td>660</td>
+                             <td>1,120</td>
+                          </tr>
+                          <tr>
+                             <td>2016</td>
+                             <td>1,030</td>
+                             <td>540</td>
+                          </tr>
+                       </tbody>
+                    </table>
+                 </div>
+              </div>
+           </div>
+           <div aria-hidden="true" style="display: none; position: absolute; top: 174px; left: 455px; white-space: nowrap; font-family: Arial; font-size: 11px;">E…</div>
+           <div></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
-    <p>Es una iniciativa de los ministerios de
-Ambiente y Desarrollo Sostenible y Minas
-y Energía, que busca la transición de las
-fuentes de energía del país, garantizando
-un matriz energética más diversificada
-y limpia.</p>
-      <button class="button">Ver todos los objetivos</button>
-  </div>
+  <section>
+    <div>
+       <iframe src="https://www.youtube.com/embed/hjHdFogvjPo" class="col-md-12 col-xs-12 padTop" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" height="450px" allowfullscreen>
+       </iframe>
+    </div>
+  </section>
 
-  <div class="column2">
-    <div id="chart_div"></div>
-  </div>
+  <section>
+    <div  class="col-md-12 col-xs-12 padTop">
+      <div class="col-md-6 col-xs-12">
+          <div class="container img-responsive">
 
-  </div>
-
-
-  <div class="contenedor2">
-<iframe src="https://www.youtube.com/embed/hjHdFogvjPo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- </div>
+          {% for data in imagesc3 %}
+          <img class="filterDiv img-grafica {{ data.1 }}" src={% static data.0 %} >
+          {% endfor %}
 
 
-  <div class="contenedor3">
+              <!--<img class="filterDiv 2019 img-responsive" src=./static/images/img3.png>
+              <img class="filterDiv 2018 img-responsive" src=./static/images/repre.png>
+              <img class="filterDiv 2017 img-responsive" src=./static/images/energia-evo.png>
+              <img class="filterDiv 2016 img-responsive" src=./static/images/solar.png>
+              <img class="filterDiv 2015 img-responsive" src=./static/images/electrica.png>-->
+          </div>
+      </div>
+      <div class="col-md-6 col-xs-12 column3">
+        <h2 class="title">{{ c3.0.0 }}</h2>
+        <p>{{ c3.0.1 }}</p>
+      </div>
+      </div>
+    <div  class="col-md-12 col-xs-12 botonesAlineados">
+    <div id="myBtnContainer">
+        {% for data in imagesc3 %}
+      <button class="btn btn-primary botonesAnos" onclick="filterSelection({{ data.1 }})">{{ data.1 }}</button>
+        {% endfor %}
+    </div>
 
-
-
-  <div class="column-img">
-
-
-      <div class="container">
-          <img class="filterDiv 2020" src={% static "images/grafica1.JPG" %} class="img-grafica">
-          <img class="filterDiv 2019" src={% static "images/img3.png" %} class="img-grafica">
-          <img class="filterDiv 2018" src={% static "images/repre.png" %} class="img-grafica">
-          <img class="filterDiv 2017" src={% static "images/energia-evo.png" %} class="img-grafica">
-          <img class="filterDiv 2016" src={% static "images/solar.png" %} class="img-grafica">
-          <img class="filterDiv 2015" src={% static "images/electrica.png" %} class="img-grafica">
-
-
-</div>
-
-
-  </div>
-
-  <div class="column3">
-
-          <h2 class="title2">Lorem ipsum dolor
-sit amet,</h2>
-
-
-    <p class="c3t1">consectetuer adipiscing elit. Aenean commodo
-ligula eget dolor. Aenean massa. Cum sociis
-natoque penatibus et magnis dis parturient
-montes, nascetur ridiculus mus. Donec quam
-felis, ultricies nec, pellentesque eu, pretium quis,
-sem. Nulla consequat massa quis enim. Donec
-pede justo, fringilla vel, aliquet nec, vulputate
-eget, arcu. In enim justo, rhoncus ut, imperdiet
-a, venenatis vitae, justo.</p>
-
-  </div>
-
-
-
- </div>
-
-
-      <div id="myBtnContainer">
-  <button class="button1 active primaria" onclick="filterSelection('2020')">2020</button>
-  <button class="button1" onclick="filterSelection('2019')">2019</button>
-  <button class="button1" onclick="filterSelection('2018')">2018</button>
-  <button class="button1" onclick="filterSelection('2017')">2017</button>
-          <button class="button1" onclick="filterSelection('2016')">2016</button>
-
-          <button class="button1" onclick="filterSelection('2015')">2015</button>
-</div>
-
-<div class="line2">
     <hr>
-</div>
+    </div>
+  </section>
+
+  <section class="col-md-8 col-xs-12">
+    <div id="carousel-example-generic" class="carousel slide col-md-offset-5" data-ride="carousel">
+    <!-- Indicadores de la hoja activa -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="12"></li>
+    </ol>
+    <!-- Imágenes de los sliders -->
+    <div class="carousel-inner" role="listbox">
 
 
-<div class="contenedor3-1">
 
-
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src={% static "images/img1.png" %} style="width:33%">
-  <img class="mySlides" src={% static "images/img2.png" %} style="width:33%">
-  <img class="mySlides" src={% static "images/img3.png" %} style="width:33%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-</div>
-
-      <div class="contenedor4">
-
-          <img class="redes fb" src={% static "images/fb1.png" %} >
-          <img class="redes insta" src={% static "images/insta.png" %} >
-          <img class="redes tw" src={% static "images/tw1.png" %} >
-          <img class="redes yt" src={% static "images/yt.png" %} >
-
-
+            <div class="item active">
+        <img src={% static expertos.0.2 %}  alt="Primero" class="img-responsive">
+        <div class="carousel-caption">
+          <h3 class="title"><b>{{ expertos.0.0 }}</b></h3>
+          <p class="subtitle">{{ expertos.0.1 }}</p>
+        </div>
       </div>
 
+        {% for data in expertos %}
+      <div class="item">
+        <img src={% static data.2 %}  alt="..." class="img-responsive">
+        <div class="carousel-caption">
+          <h3 class="title"><b>{{ data.0 }}</b></h3>
+          <p class="subtitle">{{ data.1 }}</p>
+        </div>
+      </div>
+
+        {% endfor %}
+
+
+    </div>
+    <!-- Controles del slider -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="false"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  </section>
+  <div class="col-md-12 col-xs-12">
+    <hr>
+  </div>
+
+
+  <footer>
+    <img src="./static/images/repre.png" width="100%" height="100%" class="img-responsive">
+  </footer>
+
+<script src="./static/js/jquery-1.11.1.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
 filterSelection("2020")
 function filterSelection(c) {
@@ -240,27 +367,6 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
 
-<script>
-
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-
-</script>
-
 </body>
+
 </html>
