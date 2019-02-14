@@ -16,7 +16,7 @@ def inicio(request):
     cur.execute("SELECT titulo, texto FROM energias_contenedor_3 WHERE disponible = True;")
     c3 = cur.fetchall()
 
-    cur.execute("SELECT nombre, cargo,  imagen, id FROM energias_experto WHERE disponible = True;")
+    cur.execute("SELECT nombre, cargo,  imagen, id FROM energias_experto WHERE disponible = True ;")
     expertos = cur.fetchall()
 
     cur.execute("SELECT  link FROM energias_contenedor_2 WHERE disponible = True;")
@@ -30,7 +30,7 @@ def expertos(request):
     con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
     cur = con.cursor()
 
-    cur.execute("SELECT nombre, cargo, descripcion, imagen, id FROM energias_experto WHERE disponible = True;")
+    cur.execute("SELECT nombre, cargo, descripcion, imagen, id, link FROM energias_experto WHERE disponible = True ORDER BY id;")
     expertos = cur.fetchall()
 
     cur.execute("SELECT titulo, descripcion, imagen FROM energias_comision WHERE disponible = True;")

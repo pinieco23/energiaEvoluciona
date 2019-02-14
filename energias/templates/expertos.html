@@ -56,12 +56,14 @@
               <img class="img-responsive" src={% static data.3 %} >
           </div>
       </div>
-      <div class="col-md-6 col-xs-12 column3">
+      <div class="col-md-6 col-xs-12 columnexdes">
         <h2 class="title">{{ data.0 }}</h2>
         <h3>{{ data.1 }}</h3>
         <hr>
         <p>{{ data.2 }}</p>
-        <a href="https://www.linkedin.com/in/armando-zamora-80a0432b/" target="_blank"><i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i></a>
+                    {% if data.5 %}
+            <a href={{ data.5 }} target="_blank"><i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i></a>
+              {% endif %}
       </div>
       </div>
   </section>
@@ -74,12 +76,15 @@
               <img class="img-responsive" src={% static data.3 %} >
           </div>
       </div>
-      <div class="col-md-6 col-xs-12 column3">
+      <div class="col-md-6 col-xs-12 columnexdes">
         <h2 class="title">{{ data.0 }}</h2>
         <h3>{{ data.1 }}</h3>
         <hr>
         <p>{{ data.2 }}</p>
-        <a href="https://www.linkedin.com/in/armando-zamora-80a0432b/" target="_blank"><i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i></a>
+
+          {% if data.5 %}
+            <a href={{ data.5 }} target="_blank"><i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i></a>
+              {% endif %}
       </div>
       </div>
   </section>

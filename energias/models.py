@@ -62,6 +62,7 @@ class experto(models.Model):
     nombre = models.CharField(max_length=60)
     cargo = models.TextField()
     descripcion = models.TextField()
+    link = models.TextField(blank=True)
     imagen = models.ImageField(upload_to='fotos', blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
