@@ -15,6 +15,7 @@ h1.title {
     font-size: 45px;
     font-weight: bold;
     font-family: 'Work Sans';
+    padding-top: 12%;
 }
 
 h2.title {
@@ -39,7 +40,7 @@ p{
     float: left;
     padding: 10px;
     padding-left: 14%;
-    width: 42%;
+    width: 50%;
 }
 
 .column-exp {
@@ -122,7 +123,9 @@ p.subtitle{
     width: 100%;
 }
 
-
+.bannerheader {
+   background-image: url(../static/images/asdqwe.jpg) !important;
+}
 
 
 
@@ -188,9 +191,21 @@ p.subtitle{
     iframe{
         height: 70%;
     }
+
+    .column{
+        width: 92%;
+    }
+
+    .columnexdes{
+        width: 100% !important;
+    }
 }
 
 .activeb, .botonesAnos:hover {
     background-color: #FF2A64 !important;
   color: #ffffff !important;
+}
+
+.columnexdes{
+    width: 40%;
 }

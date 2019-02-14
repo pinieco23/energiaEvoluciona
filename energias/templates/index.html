@@ -79,8 +79,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
   </header>
-  <section class="col-md-12 padTop">
-    <div class="col-md-6 col-xs-12 column">
+
+
+
+
+<img src={% static "images/asdqwe.jpg" %}  >
+
+
+
+
+{% comment %}
+  <section class="col-md-12 padTop bannerheader">
+    <div class="col-md-6 col-xs-12 ">
       <h1 class="title"><b>{{ c1.0.0 }}</b></h1>
       <hr>
       <p>{{ c1.0.1 }}
@@ -88,6 +98,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="fuentes">
 <button class="btn btn-primary">{{ c1.0.2 }}</button>
 </a>
+    </div>
+</section>
+
+
+<section class="bannerheader">
+
+
+
+
+</section>
+{% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="col-md-12 padTop">
+    <div class="col-md-6 col-xs-12 column">
+      <h1 class="title"><b>{{ c1.0.0 }}</b></h1>
+      <hr>
+      <p>{{ c1.0.1 }}
+      </p>
+
     </div>
            <div class="col-md-6 col-xs-12 column4">
       <div class="column2">
@@ -269,6 +312,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button class="btn btn-primary botonesAnos" onclick="filterSelection({{ data.1 }})">{{ data.1 }}</button>
         {% endfor %}
     </div>
+<br>
+    <a href="fuentes">
+        <button class="btn btn-primary">{{ c1.0.2 }}</button>
+    </a>
+
     <hr class="hrline">
     </div>
   </section>
