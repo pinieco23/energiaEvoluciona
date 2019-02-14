@@ -203,6 +203,10 @@ p.subtitle{
     .columnexdes{
         width: 100% !important;
     }
+
+    .how{
+        margin-left: 1% !important;
+    }
 }
 
 .activeb, .botonesAnos:hover {
@@ -212,4 +216,8 @@ p.subtitle{
 
 .columnexdes{
     width: 40%;
+}
+
+.how{
+    margin-left: 20%;
 }
