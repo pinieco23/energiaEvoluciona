@@ -24,6 +24,13 @@ h2.title {
     font-family: 'Work Sans';
 }
 
+h2.title-exp{
+    font-size: 50px;
+    font-weight: bold;
+    color: #00A682;
+    font-family: 'Work Sans';
+}
+
 p{
     font-family: 'Work Sans';
 }
@@ -31,6 +38,12 @@ p{
 .column {
     float: left;
     padding: 10px;
+    padding-left: 14%;
+}
+
+.column-exp {
+    float: left;
+    padding: 30px;
     padding-left: 14%;
 }
 /*Padding Top para el icono de Presidencia*/

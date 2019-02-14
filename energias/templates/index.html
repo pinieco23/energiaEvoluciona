@@ -2,7 +2,7 @@
 <html>
 <head>
     {% load static %}
-  <meta name="description" content="Es una iniciativa de los ministerios de Ambiente y Desarrollo Sostenible y Minas y Energía, que busca la transición de las fuentes de energía del país, garantizando un matriz energética más diversificada y limpia">
+  <meta name="description" content="Es una iniciativa de los ministerios de Ambiente y Desarrollo Sostenible y Minas y Energ�a, que busca la transici�n de las fuentes de energ�a del pa�s, garantizando un matriz energ�tica m�s diversificada y limpia">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="./static/css/bootstrap.min.css"/>
@@ -34,7 +34,6 @@ google.charts.setOnLoadCallback(drawChart);
     drawBasic();
   }
 </script>
-
 <script type="text/javascript">
 function filterSelection(c) {
   var x, i;
@@ -46,11 +45,7 @@ function filterSelection(c) {
   }
 }
 </script>
-
-
-
 </head>
-
 <body>
   <!--Header de la pagina-->
   <header>
@@ -62,33 +57,28 @@ function filterSelection(c) {
           </a>
         </div>
         <div class="col-md-6 col-xs-6">
-          <a href="#" title="Logo de Energía Evoluciona">
-            <img src="./static/images/energia-evo.png" class="img-responsive" alt="Logo de Energía Evoluciona">
+          <a href="#" title="Logo de Energ�a Evoluciona">
+            <img src="./static/images/energia-evo.png" class="img-responsive" alt="Logo de Energ�a Evoluciona">
           </a>
         </div>
       </div>
     </section>
   </header>
-
   <section class="col-md-12 padTop">
     <div class="col-md-6 col-xs-12 column">
       <h1 class="title"><b>{{ c1.0.0 }}</b></h1>
       <hr>
       <p>{{ c1.0.1 }}
       </p>
-
 <a href="fuentes">
 <button class="btn btn-primary">{{ c1.0.2 }}</button>
 </a>
     </div>
-
            <div class="col-md-6 col-xs-12 column4">
       <div class="column2">
           <img class=" img-responsive " src={% static c1.0.3 %} >
       </div>
            </div></section>
-
-
 {% comment %}    <div class="col-md-6 col-xs-12">
       <div class="column2">
         <div style="position: relative;">
@@ -110,7 +100,7 @@ function filterSelection(c) {
                        <g>
                           <rect x="394" y="32" width="40" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
                           <g>
-                             <text text-anchor="start" x="420" y="41.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">…</text>
+                             <text text-anchor="start" x="420" y="41.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">&</text>
                              <rect x="420" y="32" width="14" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
                           </g>
                           <rect x="394" y="37.5" width="22" height="5.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#3366cc"></rect>
@@ -119,7 +109,7 @@ function filterSelection(c) {
                        <g>
                           <rect x="394" y="50" width="40" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
                           <g>
-                             <text text-anchor="start" x="420" y="59.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">…</text>
+                             <text text-anchor="start" x="420" y="59.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">&</text>
                              <rect x="420" y="50" width="14" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
                           </g>
                           <rect x="394" y="55.5" width="22" height="5.5" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#dc3912"></rect>
@@ -220,25 +210,20 @@ function filterSelection(c) {
                  </div>
               </div>
            </div>
-           <div aria-hidden="true" style="display: none; position: absolute; top: 174px; left: 455px; white-space: nowrap; font-family: Arial; font-size: 11px;">E…</div>
+           <div aria-hidden="true" style="display: none; position: absolute; top: 174px; left: 455px; white-space: nowrap; font-family: Arial; font-size: 11px;">E&</div>
            <div></div>
         </div>
       </div>
     </div>{% endcomment %}
     </div>
   </section>
-
   <section>
     <div>
        <iframe src={{ c2.0.0 }} class="col-md-12 col-xs-12 video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" height="450px" allowfullscreen>
        </iframe>
-
     </div>
-
   </section>
-
   <section>
-
     <div  class="col-md-12 col-xs-12 padTop">
     <hr class="hrline">
       <div class="col-md-6 col-xs-12">
@@ -247,8 +232,6 @@ function filterSelection(c) {
           {% for data in imagesc3 %}
           <img class="filterDiv img-grafica {{ data.1 }}" src={% static data.0 %} >
           {% endfor %}
-
-
               <!--<img class="filterDiv 2019 img-responsive" src=./static/images/img3.png>
               <img class="filterDiv 2018 img-responsive" src=./static/images/repre.png>
               <img class="filterDiv 2017 img-responsive" src=./static/images/energia-evo.png>
@@ -267,26 +250,16 @@ function filterSelection(c) {
       <button class="btn btn-primary botonesAnos" onclick="filterSelection({{ data.1 }})">{{ data.1 }}</button>
         {% endfor %}
     </div>
-
     <hr class="hrline">
     </div>
   </section>
-
   <section class="col-md-8 col-xs-12">
     <div id="carousel-example-generic" class="carousel slide col-md-offset-5" data-ride="carousel">
-
-    <!-- Imágenes de los sliders -->
+    <!-- Im�genes de los sliders -->
     <div class="carousel-inner" role="listbox">
-
-
-
         {% for data in expertos %}
-
 		{% if data.3 == 1 %}
-
 		      <div class="item active" >
-
-
 <a href="expertos.html">
         <img src={% static data.2 %}  alt="..." class="img-responsive" >
 </a>
@@ -305,12 +278,8 @@ function filterSelection(c) {
           <p class="subtitle">{{ data.1 }}</p>
         </div>
       </div>
-
 	  {% endif %}
-
         {% endfor %}
-
-
     </div>
     <!-- Controles del slider -->
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -324,19 +293,15 @@ function filterSelection(c) {
   </div>
   </section>
   <div class="col-md-12 col-xs-12">
-
   </div>
-
-
   <footer>
     <img src="./static/images/repre.png" width="100%" height="100%" class="img-responsive">
   </footer>
-
 <script src="./static/js/jquery-1.11.1.min.js"></script>
 <script src="./static/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
-filterSelection("2020")
+filterSelection("2019")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -346,7 +311,6 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
-
 function w3AddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -355,7 +319,6 @@ function w3AddClass(element, name) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
 }
-
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
@@ -367,7 +330,6 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("change");
 var btns = btnContainer.getElementsByClassName("list");
@@ -379,7 +341,5 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
-
 </body>
-
-</html>
+</html> 
