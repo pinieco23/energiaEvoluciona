@@ -278,7 +278,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% for data in expertos %}
 		{% if data.3 == 1 %}
 		      <div class="item active" >
-<a href="expertos">
+<a href="expertos#{{ data.3 }}">
         <img src={% static data.2 %}  alt="..." class="img-responsive" >
 </a>
         <div class="carousel-caption hidden-sm hidden-xs">
@@ -288,7 +288,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 	  {% else %}
       <div class="item">
-      <a href="expertos">
+      <a href="expertos#{{ data.3 }}">
         <img src={% static data.2 %}  alt="..." class="img-responsive margen">
       </a>
         <div class="carousel-caption hidden-sm hidden-xs">

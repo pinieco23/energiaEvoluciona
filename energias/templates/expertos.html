@@ -63,8 +63,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     {% if data.4 == 0 or data.4 == 2 or data.4 == 4 or data.4 == 6 or data.4 == 8 or data.4 == 10 or data.4 == 12 or data.4 == 14 or data.4 == 16 %}
 
-  <section>
-    <div  class="col-md-12 col-xs-12 padTop ">
+  <section >
+    <div id="{{ data.4 }}" class="col-md-12 col-xs-12 padTop ">
       <div class="col-md-6 col-xs-12">
           <div class="container img-responsive">
               <img class="img-responsive" src={% static data.3 %} >
@@ -83,8 +83,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
         {% else %}
 
-          <section>
-    <div  class="col-md-12 col-xs-12 padTop backgroundLogo">
+          <section >
+    <div id="{{ data.4 }}" class="col-md-12 col-xs-12 padTop backgroundLogo">
       <div class="col-md-6 col-xs-12">
           <div class="container img-responsive">
               <img class="img-responsive" src={% static data.3 %} >
