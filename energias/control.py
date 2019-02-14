@@ -23,7 +23,18 @@ def inicio(request):
 
 
 def expertos(request):
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+    cur = con.cursor()
 
+    cur.execute("SELECT nombre, cargo, descripcion, imagen, id FROM energias_experto WHERE disponible = True;")
+    expertos = cur.fetchall()
 
+    return render(request, 'expertos.html',{'expertos':expertos})
 
-    return render(request, 'expertos.html')
+def error(request):
+
+    return render(request, 'error.html')
+
+def fuentes(request):
+
+    return render(request, 'fuentes.html')

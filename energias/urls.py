@@ -23,4 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', control.inicio),
     url('expertos', control.expertos),
+    url('error', control.error),
+    url('fuentes', control.fuentes),
 ]

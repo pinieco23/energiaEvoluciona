@@ -82,3 +82,31 @@ class redes(models.Model):
 
     def __str__(self):
         return self.titulo
+
+
+#BD de redes
+class comision(models.Model):
+    titulo = models.CharField(max_length=60)
+    descripcion = models.TextField()
+    link  = models.CharField(max_length=60, blank=True)
+    imagen = models.ImageField(upload_to='fotos', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+
+
+class fuentes(models.Model):
+
+    intro = models.CharField(max_length=60)
+    pro = models.TextField()
+    contra = models.TextField()
+    link = models.CharField(max_length=60, blank=True)
+    imagen = models.ImageField(upload_to='fuentes', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.intro
