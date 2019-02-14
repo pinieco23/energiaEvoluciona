@@ -124,7 +124,11 @@ p.subtitle{
 }
 
 .bannerheader {
-   background-image: url(../static/images/asdqwe.jpg) !important;
+    background-image: url(../static/images/repre.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 78%;
+    width: 100%;
 }
 
 
