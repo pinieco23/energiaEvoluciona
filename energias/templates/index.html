@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KWLG64Q');</script>
+<!-- End Google Tag Manager -->
+
     {% load static %}
   <meta name="description" content="Es una iniciativa de los ministerios de Ambiente y Desarrollo Sostenible y Minas y Energ�a, que busca la transici�n de las fuentes de energ�a del pa�s, garantizando un matriz energ�tica m�s diversificada y limpia">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
@@ -47,6 +56,12 @@ function filterSelection(c) {
 </script>
 </head>
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWLG64Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
   <!--Header de la pagina-->
   <header>
     <section class="container-fluid backgroundLogo">
@@ -260,7 +275,7 @@ function filterSelection(c) {
         {% for data in expertos %}
 		{% if data.3 == 1 %}
 		      <div class="item active" >
-<a href="expertos.html">
+<a href="expertos">
         <img src={% static data.2 %}  alt="..." class="img-responsive" >
 </a>
         <div class="carousel-caption hidden-sm hidden-xs">
@@ -270,7 +285,7 @@ function filterSelection(c) {
       </div>
 	  {% else %}
       <div class="item">
-      <a href="expertos.html">
+      <a href="expertos">
         <img src={% static data.2 %}  alt="..." class="img-responsive margen">
       </a>
         <div class="carousel-caption hidden-sm hidden-xs">
