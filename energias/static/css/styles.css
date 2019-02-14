@@ -103,6 +103,8 @@ border-radius: 50px;
 h3.title {
     color: #000000;
     font-size: 60px;
+    width: 208%;
+    margin-left: -54%;
 }
 
 p.subtitle{
