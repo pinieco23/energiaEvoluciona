@@ -56,6 +56,12 @@ p{
   background-color: #FFFFFF;
 }
 
+.column4 {
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-left: 8%;
+}
+
 .column3 {
     padding-right: 12%;
     padding-top: 6%;
@@ -68,16 +74,10 @@ p{
 .botonesAnos {
 
 color: #fff;
-
 background-color: #FF2A64 !important;
-
-width: 9%;
-
 font-weight: bold;
-
 font-size: 12px;
 border-radius: 50px;
-
 
 }
 
@@ -147,13 +147,17 @@ p.subtitle{
 
 
 .img-grafica{
-    width: 50%;
-    margin-left: 20%;
-    margin-top: 8%;
+    width: 80%;
+    margin-left: 22%;
+    margin-top: -12%;
 }
 
 .video{
     width: 90%;
     padding-left: 14%;
     padding-top: 2%;
+}
+
+.margen{
+    padding-top: -15%;
 }

@@ -11,6 +11,7 @@ class contenedor_1(models.Model):
     titulo = models.CharField(max_length=60)
     texto = models.TextField()
     texto_boton = models.CharField(max_length=60)
+    imagen = models.ImageField(upload_to='imagesC1', blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 
@@ -20,7 +21,7 @@ class contenedor_1(models.Model):
 #BD de Contenedor dos
 class contenedor_2(models.Model):
     titulo = models.CharField(max_length=60)
-    link = models.CharField(max_length=120)
+    link = models.TextField()
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 
