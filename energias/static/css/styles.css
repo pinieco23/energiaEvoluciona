@@ -20,14 +20,14 @@ h1.title {
 h2.title {
     font-size: 45px;
     font-weight: bold;
-    color: #00A682;
+    color: #6DA5DD;
     font-family: 'Work Sans';
 }
 
 h2.title-exp{
     font-size: 50px;
     font-weight: bold;
-    color: #00A682;
+    color: #6DA5DD;
     font-family: 'Work Sans';
 }
 
@@ -88,7 +88,7 @@ p{
 .botonesAnos {
 
 color: #fff;
-background-color: #FF2A64 !important;
+background-color: #fba3bb !important;
 font-weight: bold;
 font-size: 12px;
 border-radius: 50px;
@@ -188,4 +188,9 @@ p.subtitle{
     iframe{
         height: 70%;
     }
+}
+
+.activeb, .botonesAnos:hover {
+    background-color: #FF2A64 !important;
+  color: #ffffff !important;
 }

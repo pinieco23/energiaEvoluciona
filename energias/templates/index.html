@@ -263,7 +263,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </div>
     <div  class="col-md-12 col-xs-12 botonesAlineados">
-    <div id="myBtnContainer">
+    <div id="myBtnContainerx">
+          <button class="btn activeb hidden"></button>
         {% for data in imagesc3 %}
       <button class="btn btn-primary botonesAnos" onclick="filterSelection({{ data.1 }})">{{ data.1 }}</button>
         {% endfor %}
@@ -359,5 +360,19 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myBtnContainerx");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("activeb");
+  current[0].className = current[0].className.replace(" activeb", "");
+  this.className += " activeb";
+  });
+}
+</script>
+
 </body>
-</html> 
+</html>
