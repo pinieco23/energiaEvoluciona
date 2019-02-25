@@ -18,21 +18,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="./static/css/styles.css"/>
   <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
-
+<script src="./static/js/jquery-1.11.1.min.js"></script>
+<script src="./static/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
 
     <section class="container-fluid backgroundLogo">
-      <div class="col-md-4">
-        <div class="col-md-6 col-xs-6 padTop2">
-          <a href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" title="Logo Presidencia" target="_blank">
-            <img src="./static/images/Presidencia-logo.png" class="img-responsive" alt="Logo Presidencia">
-          </a>
-        </div>
+
+
+
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+        <img src="./static/images/energia-evo.png" class="img-responsive logo-energia-responsive visible-xs" alt="Logo de Energía Evoluciona">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="navbar-collapse collapse">
+
+              <div class="col-md-4 logo-energia hidden-sm hidden-xs" >
+
         <div class="col-md-6 col-xs-6">
           <a href="/" title="Logo de Energía Evoluciona">
             <img src="./static/images/energia-evo.png" class="img-responsive" alt="Logo de Energía Evoluciona">
           </a>
         </div>
       </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="/">Energia Evoluciona</a></li>
+        <li class="active"><a href="fuentes">Fuente</a></li>
+        <li class="active"><a href="expertos">Expertos</a></li>
+        <li class="active"><a href="minero-energetico">Minero energético</a></li>
+          <li class="active"><a href="estimulacion-hidraulica">Estimulación hidraúlica</a></li>
+          <li class="active"><a href="hidrocarburo">Hidrocarburo</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
     </section>
 </head>
 <body>
@@ -41,7 +70,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <section>
-        <img src={% static fuentes.0.0 %} width="100%" height="100%" class="img-responsive">
+        <img src={% static fuentes.0.0 %} width="100%" height="100%" class="img-responsive hidden-sm hidden-xs">
+
+
+        <img src="./static/fuentessep/Fuentes-de-Energía-header.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/1 Energía-Hidraulica.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/1 Energía-Hidraulica-icono.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/1 Energía-Hidraulica-ventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/1 Energía-Hidraulica-desventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/2 Energía-solar.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/2 Energía-solar-icono.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/2 Energía-solar-ventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/2 Energía-solar-desventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/3 Energá-eólica.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/3 Energá-eólica-iconos.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/3 Energá-eólica-desventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/4 Energía-del-carbón.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/4 Enegía-del-carbón-icono.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/4 Energía-del-carbón-ventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/4 Energía-del-carbón-desventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/5 Combustibles-liquidos.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/5 combustibles-liquidos-iconos.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/5 combustibles-liquidos-ventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/5 combustibles-liquidos-desventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/6 Energía-biomasa.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/6 Energía-biomasa-icono.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/6 Energía-biomasa-ventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/6 Energía-biomasa-desventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/7 Gas-natural.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/7 Gas-natural-icono.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/7 Gas-natuaral-ventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/7-gas-natural-desventajas.png" class="img-responsive visible-xs fuentemobile" >
+        <img src="./static/fuentessep/Footer.png" class="img-responsive visible-xs fuentemobile" >
+
+
+
+
+
     </section>
+
+<footer>
+
+                  <div class="col-md-6 col-xs-6">
+          <a href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" title="Logo Presidencia" target="_blank">
+            <img src="./static/images/Gobierno.png" class="img-responsive logo-presi" alt="Logo Presidencia">
+
+
+
+          </a>
+        </div>
+
+</footer>
+
 </body>
 </html>

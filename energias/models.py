@@ -1,5 +1,5 @@
 from datetime import datetime
-
+from tinymce.models import HTMLField
 from django.contrib.auth.models import User
 from django.db import models
 
@@ -7,10 +7,10 @@ from django.db import models
 from django.db.models import ImageField
 
 #BD de Contenedor uno
-class contenedor_1(models.Model):
+class energiaEvoluciona(models.Model):
     titulo = models.CharField(max_length=60)
     texto = models.TextField()
-    texto_boton = models.CharField(max_length=60)
+    content = HTMLField(blank=True)
     imagen = models.ImageField(upload_to='imagesC1', blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
@@ -19,7 +19,7 @@ class contenedor_1(models.Model):
         return self.titulo
 
 #BD de Contenedor dos
-class contenedor_2(models.Model):
+class video(models.Model):
     titulo = models.CharField(max_length=60)
     link = models.TextField()
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
@@ -31,16 +31,20 @@ class contenedor_2(models.Model):
 
 
 #BD de Contenedor tres
-class contenedor_3(models.Model):
+class transicion(models.Model):
     titulo = models.CharField(max_length=60)
     texto = models.TextField()
+    titulo_resumen = models.CharField(max_length=60)
+    resumen = models.TextField()
+    texto_boton_1 = models.CharField(max_length=60)
+    texto_boton_2 = models.CharField(max_length=60)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 
     def __str__(self):
         return self.titulo
 
-class imagenes_c3(models.Model):
+class matriz(models.Model):
     nombre_boton = models.CharField(max_length=60)
     imagen = models.ImageField(upload_to='imagesC3', blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
@@ -112,3 +116,111 @@ class fuentes(models.Model):
 
     def __str__(self):
         return self.intro
+
+class minero_energetico(models.Model):
+
+    titulo = models.CharField(max_length=60)
+    imagen = models.ImageField(upload_to='minero', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+class hidraulico(models.Model):
+
+    titulo = models.CharField(max_length=60)
+    imagen = models.ImageField(upload_to='hidraulico', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+class hidrocarburo(models.Model):
+
+    titulo = models.CharField(max_length=60)
+    imagen = models.ImageField(upload_to='hidrocarburo', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+class para_comision(models.Model):
+
+    titulo = models.CharField(max_length=60)
+    descripcion = models.TextField()
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+class como_comision(models.Model):
+
+    titulo = models.CharField(max_length=60)
+    descripcion = models.TextField()
+    desc_general = models.TextField()
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+class imagenes_fuente(models.Model):
+
+    titulo = models.CharField(max_length=60)
+    header = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_1 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_2 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_3 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_4  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_5  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_6  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_7  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_8  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_9  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_10  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_11  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_12  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_13  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_14  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_15  = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_16 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_17 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_18 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_19 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_20 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_21 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_22 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_23 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_24 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_25 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_26 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_27 = models.ImageField(upload_to='fuentes', blank=True)
+    imagen_28 = models.ImageField(upload_to='fuentes', blank=True)
+
+
+    footer = models.ImageField(upload_to='fuentes', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+
+
+    def __str__(self):
+        return self.titulo
+
+
+class mitos_realidad(models.Model):
+
+    titulo = models.CharField(max_length=60)
+    mito = models.CharField(max_length=200)
+    realidad_1 = models.TextField()
+    realidad_2 = models.TextField()
+    realidad_3 = models.TextField()
+    realidad_4 = models.TextField()
+    realidad_5 = models.TextField()
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
