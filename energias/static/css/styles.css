@@ -56,7 +56,6 @@ p{
 .txtmatriz{
     margin-left: -5%;
     width: 85%;
-    margin-top: 10%;
 }
 .column-exp {
     float: left;
@@ -169,7 +168,8 @@ p.subtitle{
 .container {
   margin-top: 20px;
   overflow: hidden;
-    width: 75%;
+  width: 87%;
+  padding-bottom: 1%;
 }
 
 /* Style the buttons */
@@ -324,6 +324,15 @@ p.subtitle{
         width: 148% !important;
         margin-left: -23%;
     }
+    .column-mitos{
+        width: 135% !important;
+        margin-left: -20% !important;
+    }
+    .btn-subasta{
+        margin-left: -14%;
+        width: 105%;
+    }
+
 
 }
 
@@ -366,7 +375,7 @@ p.subtitle{
 }
 
 .popindex{
-	background-image: url("../images/pop-up.png");
+	background-image: url("../images/live.png");
     background-size: contain;
     background-repeat: no-repeat;
 	bottom:0px;
@@ -412,6 +421,13 @@ p.subtitle{
   padding: 10px;
 }
 
+.column-mitos {
+  float: left;
+  width: 50%;
+  padding: 10px;
+    height: 385px;
+}
+
 /* Clear floats after the columns */
 .rowx:after {
   content: "";
@@ -444,6 +460,19 @@ p.subtitle{
     font-weight: bold;
 }
 
+.titulo-mitos{
+    text-align: center;
+    color: #009fff;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.texto-mito {
+    padding-left: 10%;
+    margin-top: 23%;
+    font-size: x-large;
+}
+
 .texto-comision {
     padding-left: 10%;
     margin-top: 7%;
@@ -457,3 +486,30 @@ p.subtitle{
 .img-expertos{
     max-width: 100% !important;
 }
+.btn-primary{
+    margin-top: 1%;
+}
+
+.subasta{
+    width: 100%;
+}
+
+.exito{
+    font-size: 30px;
+    width: 1%;
+    margin-block-end: -4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

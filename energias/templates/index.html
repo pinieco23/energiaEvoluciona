@@ -77,6 +77,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!--Header de la pagina-->
   <header>
+
+
+
     <section class="container-fluid backgroundLogo">
 
 
@@ -108,21 +111,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#/">Energia Evoluciona</a></li>
-        <li class="active"><a href="fuentes">Fuente</a></li>
+
+        <li class="active"><a href="minero-energetico">Pacto Energético</a></li>
+          <li class="active"><a href="hidrocarburo">Petróleo</a></li>
+          <li class="active"><a href="estimulacion-hidraulica">Estimulación hidraúlica</a></li>
+          <li class="active"><a href="fuentes">Fuentes de Energía</a></li>
         <li class="active"><a href="expertos">Expertos</a></li>
-        <li class="active"><a href="minero-energetico">Minero energético</a></li>
-        <li class="active"><a href="estimulacion-hidraulica">Estimulación hidraúlica</a></li>
-          <li class="active"><a href="hidrocarburo">Hidrocarburo</a></li>
+          <li class="active"><a href="mitos-realidades">Mitos y realidades</a></li>
+          <li class="active"><a href="subasta">Subasta</a></li>
       </ul>
     </div>
   </div>
 </div>
 
     </section>
-
-
-
 
 
   </header>
@@ -184,28 +186,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <iframe src={{ c2.0.0 }} class="col-md-12 col-xs-12 video allowfullscreen" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" height="450px" allowfullscreen>
        </iframe>
     </div>
+    <br>
+      <a href="minero-energetico">
+        <br><br>
+        <button class="btn btn-primary btn-transicion">{{ c3.0.2 }}</button>
+      </a>
+      <a href="estimulacion-hidraulica">
+        <button class="btn btn-primary">{{ c3.0.3 }}</button>
+      </a>
+
   </section>
 
 
   <section>
     <div  class="col-md-12 col-xs-12 padTop">
-    <hr class="hrline">
+
 
           <div class="col-md-6 col-xs-12 column3">
         <h2 class="title">{{ c3.0.0 }}</h2>
           </br>
         <p>{{ c3.0.1 }}</p>
+              <hr class="hrline">
       </div>
 
     </div>
 
-      <a href="fuentes">
-        </br>
-        <button class="btn btn-primary btn-transicion">{{ c3.0.2 }}</button>
-      </a>
-      <a href="minero-energetico">
-        <button class="btn btn-primary">{{ c3.0.3 }}</button>
-      </a>
+
 
   </section>
 
@@ -217,18 +223,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="col-md-6 col-xs-12 txtmatriz">
           <div class="container">
+
             <h2 class="title">{{ c3.0.5 }}</h2>
+            <p>{{ c3.0.4 }}</p>
 
-          <p>{{ c3.0.4 }}</p>
-
-
+                    <a href="fuentes">
+        <button class="btn btn-primary">{{ c3.0.6 }}</button>
+      </a>
           </div>
+
       </div>
 
       </div>
 
       <div  class="col-md-12 col-xs-12 twocolumns visible-xs">
-
 
       <div class="col-md-6 col-xs-12 ahcno">
           <div class="container img-responsive">
@@ -243,15 +251,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </div>
 
+  </section>
 
 
-
-
-
-
-
-
-
+<section>
 
     <div  class="col-md-12 col-xs-12 twocolumns hidden-sm hidden-xs">
 
@@ -268,7 +271,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       </div>
-
+{#web#}
       <div  class="col-md-12 col-xs-12 twocolumns hidden-sm hidden-xs">
 
 
@@ -277,7 +280,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <h2 class="title">{{ c3.0.5 }}</h2>
 
           <p>{{ c3.0.4 }}</p>
-
+      <a href="fuentes">
+        <button class="btn btn-primary">{{ c3.0.6 }}</button>
+      </a>
 
           </div>
       </div>
@@ -290,29 +295,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% for data in imagesc3 %}
       <button class="btn botonesAnos" onclick="filterSelection({{ data.1 }})">{{ data.1 }}</button>
         {% endfor %}
+        <hr class="hrline">
     </div>
 <br>
-
-
-    <hr class="hrline">
-
-        <h2 class="title text-center">Comisión de expertos</h2>
-{% comment %}
-
-    <img src="./static/images/comisi__n-de-expertos.png" class="img-responsive how center-block hidden-sm hidden-xs" >
-
-    <img src="./static/images/para-que.png" class="img-responsive how center-block visible-xs" >
-    <img src="./static/images/c__mo-se-hizo.png" class="img-responsive how center-block visible-xs" >
-{% endcomment %}
-
-
     </div>
-  </section>
+</section>
+
 
 <section>
-
     <div class="rowx">
+<h2 class="title text-center">Comisión de expertos</h2>
   <div class="columnx col-md-12 col-xs-12 padTop" style="background-color:#c0e2ff;">
+
     <h2 class="titulo1-comision" >¿Para qué?</h2>
       <h2 class="titulo2-comision">y ¿Por qué?</h2>
     <p class="texto-comision">{{ para.0.0 }}</p>
@@ -349,8 +343,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 
-
   <section class="col-md-8 col-xs-12">
+
+
     <div id="carousel-example-generic" class="carousel slide col-md-offset-5" data-ride="carousel">
     <!-- Im�genes de los sliders -->
     <div class="carousel-inner" role="listbox">
@@ -498,7 +493,10 @@ for (var i = 0; i < btns.length; i++) {
       <div class="modal-dialog">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div class="popindex"></div>
-          <a href="#" data-dismiss="modal" class="btn btn-info center-block">Comenzar</a>
+
+
+
+          <a href="subasta" data-dismiss="modal" class="btn btn-info center-block" onclick="location.href = 'subasta';">Comenzar</a>
 
    </div>
 </div>

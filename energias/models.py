@@ -38,6 +38,7 @@ class transicion(models.Model):
     resumen = models.TextField()
     texto_boton_1 = models.CharField(max_length=60)
     texto_boton_2 = models.CharField(max_length=60)
+    texto_boton_3 = models.CharField(max_length=60)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 
@@ -73,6 +74,32 @@ class experto(models.Model):
 
     def __str__(self):
         return self.nombre
+
+class subasta(models.Model):
+    titulo = models.CharField(max_length=100)
+    descripcion = models.TextField()
+    link = models.TextField(blank=True)
+    upload = models.FileField(upload_to='data', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+class casos_de_exito(models.Model):
+    titulo = models.CharField(max_length=100)
+    caso_1 = models.TextField(blank=True)
+    caso_2 = models.TextField(blank=True)
+    caso_3 = models.TextField(blank=True)
+    caso_4 = models.TextField(blank=True)
+    caso_5 = models.TextField(blank=True)
+    link = models.TextField(blank=True)
+    upload = models.FileField(upload_to='casos', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
 
 
 
@@ -214,11 +241,11 @@ class mitos_realidad(models.Model):
 
     titulo = models.CharField(max_length=60)
     mito = models.CharField(max_length=200)
-    realidad_1 = models.TextField()
-    realidad_2 = models.TextField()
-    realidad_3 = models.TextField()
-    realidad_4 = models.TextField()
-    realidad_5 = models.TextField()
+    realidad_1 = models.TextField(blank=True)
+    realidad_2 = models.TextField(blank=True)
+    realidad_3 = models.TextField(blank=True)
+    realidad_4 = models.TextField(blank=True)
+    realidad_5 = models.TextField(blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 

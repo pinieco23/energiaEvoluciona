@@ -18,7 +18,7 @@ def inicio(request):
     cur.execute("SELECT imagen, nombre_boton FROM energias_matriz WHERE disponible = True;")
     imagesc3 = cur.fetchall()
 
-    cur.execute("SELECT titulo, texto, texto_boton_1, texto_boton_2, resumen, titulo_resumen FROM energias_transicion WHERE disponible = True;")
+    cur.execute("SELECT titulo, texto, texto_boton_1, texto_boton_2, resumen, titulo_resumen, texto_boton_3 FROM energias_transicion WHERE disponible = True;")
     c3 = cur.fetchall()
 
     cur.execute("SELECT nombre, cargo,  imagen, id FROM energias_experto WHERE disponible = True ;")
@@ -87,6 +87,35 @@ def hidraulico(request):
 
     return render(request, 'hidraulica.html',{'hidraulico':hidraulico})
 
+def subasta(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, descripcion, link, upload FROM energias_subasta WHERE disponible = True;")
+    subasta = cur.fetchall()
+
+    return render(request, 'subasta.html',{'subasta':subasta})
+
+
+def casos(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, caso_1, caso_2, caso_3, caso_4, caso_5 FROM energias_casos_de_exito WHERE disponible = True;")
+    casos = cur.fetchall()
+
+    return render(request, 'casos.html',{'casos':casos})
+
 def hidrocarburo(request):
 
     # Desarrollo
@@ -116,6 +145,10 @@ def fuentes(request):
     return render(request, 'fuentes.html',{'fuentes':fuentes})
 
 
+def test(request):
+
+    return render(request, 'test.html')
+
 def mitos(request):
 
     # Desarrollo
@@ -125,7 +158,7 @@ def mitos(request):
     # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
 
     cur = con.cursor()
-    cur.execute("SELECT mito, realidad_1, realidad_2, realidad_3, realidad_4, realidad_5 FROM energias_mitos_realidad WHERE disponible = True;")
+    cur.execute("SELECT mito, realidad_1, realidad_2, realidad_3, realidad_4, realidad_5 FROM energias_mitos_realidad WHERE disponible = True ORDER BY id;")
     mitos = cur.fetchall()
 
     return render(request, 'mitos.html', {'mitos':mitos})

@@ -22,7 +22,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="./static/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
-
     <section class="container-fluid backgroundLogo">
 
 
@@ -54,12 +53,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
 
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="/">Energia Evoluciona</a></li>
-        <li class="active"><a href="fuentes">Fuente</a></li>
-        <li class="active"><a href="expertos">Expertos</a></li>
-        <li class="active"><a href="minero-energetico">Minero energético</a></li>
+
+        <li class="active"><a href="minero-energetico">Pacto Energético</a></li>
+          <li class="active"><a href="hidrocarburo">Petróleo</a></li>
           <li class="active"><a href="estimulacion-hidraulica">Estimulación hidraúlica</a></li>
-          <li class="active"><a href="hidrocarburo">Hidrocarburo</a></li>
+          <li class="active"><a href="fuentes">Fuentes de Energía</a></li>
+        <li class="active"><a href="expertos">Expertos</a></li>
+          <li class="active"><a href="mitos-realidades">Mitos y realidades</a></li>
+          <li class="active"><a href="subasta">Subasta</a></li>
       </ul>
     </div>
   </div>
@@ -73,64 +74,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+
+{% for data in mitos %}
+
+    <hr class="hrline">
+
 <section>
 
     <div class="rowx">
-  <div class="columnx col-md-12 col-xs-12 padTop" style="background-color:#c0e2ff;">
-      <h2 class="titulo2-comision">Mito</h2>
-    <p class="texto-comision">{{ mitos.0.0 }}</p>
+
+  <div class="column-mitos col-md-12 col-xs-12 padTop" style="background-color:#c0e2ff;">
+      <h2 class="titulo-mitos">Mito</h2>
+
+    <p class="texto-mito">{{ data.0 }}</p>
+
   </div>
   <div class="columnx col-md-12 col-xs-12 padTop" style="background-color:#e9f4ff;">
-      <h2 class="titulo2-comision">Realidad</h2>
+      <h2 class="titulo-mitos">Realidad</h2>
       </br>
 
-      <table style="width:100%">
-
-
-
+<table style="width:100%">
   <tr>
-
-      <td><h5 class="como-texto">{{ mitos.0.1 }}</h5></td>
-  </tr>
-
-  <tr>
-
-      <td><h5 class="como-texto">{{ mitos.0.2 }}</h5></td>
+      <td><h5 class="como-texto">{{ data.1 }}</h5><br></td>
   </tr>
   <tr>
-
-      <td><h5 class="como-texto">{{ mitos.0.3 }}</h5></td>
+      <td><h5 class="como-texto">{{ data.2 }}</h5><br></td>
   </tr>
-
   <tr>
-
-      <td><h5 class="como-texto">{{ mitos.0.4 }}</h5></td>
+      <td><h5 class="como-texto">{{ data.3 }}</h5><br></td>
   </tr>
-
+  <tr>
+      <td><h5 class="como-texto">{{ data.4 }}</h5><br></td>
+  </tr>
       <tr>
-
-      <td><h5 class="como-texto">{{ mitos.0.5 }}</h5></td>
+      <td><h5 class="como-texto">{{ data.5 }}</h5><br></td>
   </tr>
 
 </table>
+
 
   </div>
 </div>
 
 </section>
+{% endfor %}
 
-<footer>
+<hr class="hrline">
+</body>
 
-                  <div class="col-md-6 col-xs-6">
+  <footer>
+    <img src="./static/images/repre.png" width="100%" height="100%" class="img-responsive">
+
+              <div class="col-md-6 col-xs-6">
           <a href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" title="Logo Presidencia" target="_blank">
             <img src="./static/images/Gobierno.png" class="img-responsive logo-presi" alt="Logo Presidencia">
-
-
-
           </a>
         </div>
 
-</footer>
-
-</body>
+  </footer>
 </html>
