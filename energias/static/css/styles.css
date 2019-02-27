@@ -213,6 +213,7 @@ p.subtitle{
 
     .img-grafica {
         width:  121%;
+        margin-left: 2%;
     }
 
     iframe{
@@ -329,8 +330,21 @@ p.subtitle{
         margin-left: -20% !important;
     }
     .btn-subasta{
-        margin-left: -14%;
-        width: 105%;
+        margin-left: 0% !important;
+        width: 98%;
+        margin-top: -9% !important;
+    }
+    .vid-subasta{
+        width: 128% !important;
+        margin-left: -22% !important;
+}
+    .btn-hidra{
+        margin-top: -37% !important;
+        width: 32% !important;
+        margin-left: 46% !important;
+    }
+    .title-marg{
+        margin-top: -26%;
     }
 
 
@@ -375,7 +389,7 @@ p.subtitle{
 }
 
 .popindex{
-	background-image: url("../images/live.png");
+	background-image: url("../images/pop-up.png");
     background-size: contain;
     background-repeat: no-repeat;
 	bottom:0px;
@@ -500,9 +514,33 @@ p.subtitle{
     margin-block-end: -4%;
 }
 
+.vid-subasta{
+    width: 135%;
+    margin-left: -34%;
+}
 
+.btn-hidra{
+    width: 24%;
+    margin-top: -37%;
+    margin-left: 48%;
+}
 
+.title-ce{
+    width: 66%;
+    padding-left: 21%;
+}
 
+.link{
+    width: 50%;
+}
+
+.hrnoti{
+    margin-left: -3%;
+    margin-right: -9%;
+}
+.title-marg{
+    margin-top: -7%;
+}
 
 
 

@@ -162,3 +162,17 @@ def mitos(request):
     mitos = cur.fetchall()
 
     return render(request, 'mitos.html', {'mitos':mitos})
+
+def noticia(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, descripcion, imagen, link FROM energias_noticia WHERE disponible = True ORDER BY id;")
+    noticia = cur.fetchall()
+
+    return render(request, 'noticia.html', {'noticia':noticia})
