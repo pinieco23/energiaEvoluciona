@@ -33,7 +33,10 @@ def inicio(request):
     cur.execute("SELECT  id, descripcion, desc_general FROM energias_como_comision WHERE disponible = True ORDER BY id;")
     como = cur.fetchall()
 
-    return render(request, 'index.html',{'c1':c1,'imagesc3':imagesc3,'c3':c3,'expertos':expertos,'c2':c2, 'para':para, 'como': como})
+    cur.execute("SELECT imagen, titulo_boton, link FROM energias_popup WHERE disponible = True ORDER BY id;")
+    popup = cur.fetchall()
+
+    return render(request, 'index.html',{'popup': popup,'c1':c1,'imagesc3':imagesc3,'c3':c3,'expertos':expertos,'c2':c2, 'para':para, 'como': como})
 
 
 

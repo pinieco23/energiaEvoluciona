@@ -1,5 +1,4 @@
 from datetime import datetime
-from tinymce.models import HTMLField
 from django.contrib.auth.models import User
 from django.db import models
 
@@ -10,8 +9,6 @@ from django.db.models import ImageField
 class energiaEvoluciona(models.Model):
     titulo = models.CharField(max_length=60)
     texto = models.TextField()
-    content = HTMLField(blank=True)
-    imagen = models.ImageField(upload_to='imagesC1', blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 
@@ -139,6 +136,16 @@ class noticia(models.Model):
 
     def __str__(self):
         return self.titulo
+
+class popup(models.Model):
+    titulo_boton = models.CharField(max_length=120)
+    link = models.CharField(max_length=60, blank=True)
+    imagen = models.ImageField(upload_to='popup', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo_boton
 
 class fuentes(models.Model):
 

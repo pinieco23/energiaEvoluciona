@@ -495,11 +495,12 @@ for (var i = 0; i < btns.length; i++) {
       <div class="modal-dialog">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
-              <div class="popindex"></div>
+              <div class="popindex" style="background-image: url(/static/{{ popup.0.0 }});"></div>
 
+                <a href={{ popup.0.2 }}>
+                    <button data-dismiss="modal" class="btn btn-info center-block z-index:9999px " >{{ popup.0.1 }}</button>
+                </a>
 
-
-          <a data-dismiss="modal" class="btn btn-info center-block" >Comenzar</a>
 
    </div>
 </div>
