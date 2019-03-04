@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from attr.filters import include
+
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
@@ -37,5 +37,4 @@ urlpatterns = [
     url('casos-de-exito', control.casos),
     url('noticias', control.noticia),
     url('test', control.test),
-    url(r'^tinymce/', include('tinymce.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
