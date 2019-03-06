@@ -175,7 +175,13 @@ def noticia(request):
     # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
 
     cur = con.cursor()
-    cur.execute("SELECT titulo, descripcion, imagen, link FROM energias_noticia WHERE disponible = True ORDER BY id;")
+    cur.execute("SELECT titulo, descripcion, imagen, link, fecha_creacion FROM energias_noticia WHERE disponible = True AND noticia_principal = True ORDER BY id;")
+    princial = cur.fetchall()
+
+    cur.execute("SELECT titulo, descripcion, imagen, link, fecha_creacion FROM energias_noticia WHERE disponible = True AND noticia_principal = False  ORDER BY id;")
     noticia = cur.fetchall()
 
-    return render(request, 'noticia.html', {'noticia':noticia})
+    cur.execute("SELECT titulo, link FROM energias_tweet WHERE disponible = True;")
+    tweet = cur.fetchall()
+
+    return render(request, 'noticia.html', {'noticia':noticia, 'tweet':tweet, 'principal':princial})

@@ -23,6 +23,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="./static/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
     <section class="container-fluid backgroundLogo">
 
@@ -62,7 +64,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li class="active"><a href="fuentes">Fuentes de Energía</a></li>
         <li class="active"><a href="expertos">Expertos</a></li>
           <li class="active"><a href="mitos-realidades">Mitos</a></li>
-{#          <li class="active"><a href="noticias">Noticias</a></li>#}
+          <li class="active"><a href="noticias">Noticias</a></li>
           <li class="active"><a href="subasta">Subasta</a></li>
       </ul>
     </div>
@@ -78,20 +80,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <br><br><br>
-{% for data in noticia %}
-  <section class="col-md-12 padTop">
-    <div class="col-md-6 col-xs-12 column">
-        <br><br>
 
-      <h2 class="title title-marg"><b>{{ data.0 }}</b></h2><br>
-        <p>{{ data.1 }}</p>
-        <a class="link" href={{ data.3 }}>{{ data.3 }}</a>
-        <img src={% static data.2 %} width="80%" height="80%" class="img-responsive">
-         <hr class="hrnoti">
+
+
+
+<section>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8">
+      <div id="twitter-home" class="responsive-news-box">
+    <div id="twitter-home-cnt">
+    <div class="col-md-6 col-xs-12" style="width: 100%">
+        <br><br><br>
+
+      <h2 class="title title-marg responsive-news-title"><b>{{ principal.0.0 }}</b></h2>
+        <p>{{ principal.0.1 }}</p>
+</div>
+        <img src={% static principal.0.2 %} width="100%" class="img-responsive">
+        <h6>{{ principal.0.4 }}</h6>
+                  <a href={{ principal.0.3 }} >
+        <button class="btn-primary btn-noti btn-noti-responsive">Ver más</button>
+        </a>
+
+
+</div>
+</div></div>
+  <div class="col-xs-6 col-md-4 twitter-responsive-news ">
+
+      <div id="twitter-home" >
+    <div id="twitter-home-cnt" class="ex1" style="min-height: 687px">
+        {% for data in tweet %}
+            {{ data.1|safe }}
+            <hr class="hrnoti">
+        {% endfor %}
     </div>
 
-  </section>
-{% endfor %}
+            </div></div>
+</div>
+
+
+<div class="row">
+    {% for data in noticia %}
+
+  <div class="col-6 col-md-4">
+
+      <div id="twitter-home">
+    <div id="twitter-home-cnt">
+        <img src={% static data.2 %} width="100%" class="img-responsive">
+        <h6>{{ data.4 }}</h6>
+        <br><br>
+      <h2 class="title title-marg"><b>{{ data.0 }}</b></h2>
+      <p>{{ data.1 }}</p>
+
+        <a href={{ data.3 }} target="_blank">
+        <button class="btn-primary btn-noti btn-noti-responsive">Ver más</button>
+        </a>
+    </div></div>
+
+  </div>
+
+    {% endfor %}
+
+</div>
+
 
 
   <footer>

@@ -127,10 +127,21 @@ class comision(models.Model):
         return self.titulo
 
 class noticia(models.Model):
-    titulo = models.CharField(max_length=120)
-    descripcion = models.TextField()
-    link  = models.CharField(max_length=60, blank=True)
+    titulo = models.CharField(max_length=80, blank=True)
+    descripcion = models.TextField(max_length=700,blank=True)
+    link  = models.TextField( blank=True)
     imagen = models.ImageField(upload_to='noticia', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    noticia_principal = models.BooleanField()
+    disponible = models.BooleanField()
+
+
+    def __str__(self):
+        return self.titulo
+
+class tweet(models.Model):
+    titulo = models.CharField(max_length=80, blank=True)
+    link = models.TextField( blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 
