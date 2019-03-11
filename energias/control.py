@@ -2,6 +2,16 @@ from django.shortcuts import render
 import psycopg2
 
 
+from django.shortcuts import render
+from django.http import HttpResponse
+
+
+def error_404_view(request, exception):
+    data = {"name": "ThePythonDjango.com"}
+    return render(request,'error.html', data)
+
+
+
 def inicio(request):
 
     #Desarrollo
@@ -178,10 +188,27 @@ def noticia(request):
     cur.execute("SELECT titulo, descripcion, imagen, link, fecha_creacion FROM energias_noticia WHERE disponible = True AND noticia_principal = True ORDER BY id;")
     princial = cur.fetchall()
 
-    cur.execute("SELECT titulo, descripcion, imagen, link, fecha_creacion FROM energias_noticia WHERE disponible = True AND noticia_principal = False  ORDER BY id;")
+    cur.execute("SELECT titulo, descripcion, imagen, link, fecha_creacion, id-1 FROM energias_noticia WHERE disponible = True AND noticia_principal = False  ORDER BY id;")
     noticia = cur.fetchall()
 
     cur.execute("SELECT titulo, link FROM energias_tweet WHERE disponible = True;")
     tweet = cur.fetchall()
 
-    return render(request, 'noticia.html', {'noticia':noticia, 'tweet':tweet, 'principal':princial})
+    npag = len(noticia)/3
+    npag = int(npag)
+
+    print(npag)
+
+    finalNoticia=[]
+    tmpNoticia=[]
+    j = 0
+    for i in range(len(noticia)) :
+        tmpNoticia.append(noticia[i])
+        if j == 2:
+            finalNoticia.append(tmpNoticia)
+            tmpNoticia=[]
+            j=0
+        else:
+            j+=1
+
+    return render(request, 'noticia.html', {'noticia':finalNoticia, 'tweet':tweet, 'principal':princial , 'npag':npag})

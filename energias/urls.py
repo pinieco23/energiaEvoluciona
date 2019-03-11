@@ -23,8 +23,13 @@ from energias import control
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.contrib import admin
+from django.urls import path, include
+from django.conf.urls import handler404
+
 urlpatterns = [
     path('LudveJYU2ytT3WuG7RAp3iqrH6y6aan9qXUQuQ/', admin.site.urls),
+    path('', control.inicio, name='inicio'),
     url(r'^$', control.inicio),
     url('expertos', control.expertos),
     url('error', control.error),
@@ -38,3 +43,5 @@ urlpatterns = [
     url('noticias', control.noticia),
     url('test', control.test),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'energias.control.error_404_view'

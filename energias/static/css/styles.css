@@ -160,6 +160,12 @@ p.subtitle{
   display: none;
     margin-left: 8%;
 }
+.filterDiva {
+
+    width: 100%;
+  display: none;
+    margin-left: 0%;
+}
 
 .show {
   display: block;
@@ -599,3 +605,55 @@ div.ex1 {
 
 
 
+.paginacion {
+	margin:20px 0;
+}
+
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#024959;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#037E8C;
+}
+
+.paginacion ul li .active {
+	background: #488a8c;
+	font-weight:bold;
+}
+
+.btn-news.active {
+  background-color: #666;
+  color: white;
+}
+
+.btn-news {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn-news:hover {
+  background-color: #ddd;
+}
+
+.error_page{
+    padding-top: 2%;
+}

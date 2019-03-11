@@ -105,6 +105,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </div>
 </div></div>
+
+
   <div class="col-xs-6 col-md-4 twitter-responsive-news ">
 
       <div id="twitter-home" >
@@ -119,10 +121,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 
-<div class="row">
-    {% for data in noticia %}
 
-  <div class="col-6 col-md-4">
+
+<div class="row">
+{% for datas in noticia %}
+    <div class="filterDiva  {{ forloop.counter }}">
+{% for data in datas %}
+
+
+  <div class="col-6 col-md-4" >
 
       <div id="twitter-home">
     <div id="twitter-home-cnt">
@@ -139,11 +146,69 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 
-    {% endfor %}
+    {% endfor %}</div>
+{% endfor %}
 
 </div>
+</section>
 
+		<section class="paginacion" >
+			<ul id="myBtnContainer">
+                <li ><a onclick="filterSelection('1')" class="btn-news active hidden 1">1</a></li>
 
+            {% for datas in noticia %}
+
+				    <li ><a onclick="filterSelection({{ forloop.counter }})" class="btn-news">{{ forloop.counter }}</a></li>
+
+                {% endfor %}
+			</ul>
+		</section>
+
+<script>
+filterSelection("0")
+document.getElementsByClassName("btn-news active hidden 1")[0].click();
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiva");
+  if (c == "0") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn-news");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
   <footer>
     <img src="./static/images/repre.png" width="100%" height="100%" class="img-responsive">
@@ -158,3 +223,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </body>
 </html>
+
+
+
+
+
+
