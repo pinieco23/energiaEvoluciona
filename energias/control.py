@@ -158,9 +158,19 @@ def fuentes(request):
     return render(request, 'fuentes.html',{'fuentes':fuentes})
 
 
-def test(request):
+def historias(request):
 
-    return render(request, 'test.html')
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, descripcion, video FROM energias_historias WHERE disponible = True ;")
+    historias = cur.fetchall()
+
+    return render(request, 'historias.html',{'historias':historias})
 
 def mitos(request):
 

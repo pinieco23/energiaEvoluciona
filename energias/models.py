@@ -114,6 +114,18 @@ class redes(models.Model):
         return self.titulo
 
 
+class historias(models.Model):
+    titulo = models.CharField(max_length=60, blank=True)
+    descripcion = models.TextField(blank=True)
+    link = models.CharField(max_length=60, blank=True)
+    video = models.TextField(blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+
 #BD de redes
 class comision(models.Model):
     titulo = models.CharField(max_length=60)
