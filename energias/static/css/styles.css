@@ -6,6 +6,7 @@ hr{
 
 }
 
+
 .hrline{
     margin-left: 11%;
     margin-right: 8%;
@@ -160,6 +161,12 @@ p.subtitle{
   display: none;
     margin-left: 8%;
 }
+.filterDiva {
+
+    width: 100%;
+  display: none;
+    margin-left: 0%;
+}
 
 .show {
   display: block;
@@ -213,6 +220,7 @@ p.subtitle{
 
     .img-grafica {
         width:  121%;
+        margin-left: 2%;
     }
 
     iframe{
@@ -329,10 +337,40 @@ p.subtitle{
         margin-left: -20% !important;
     }
     .btn-subasta{
-        margin-left: -14%;
-        width: 105%;
+        margin-left: 0% !important;
+        width: 98%;
+        margin-top: -9% !important;
     }
-
+    .vid-subasta{
+        width: 128% !important;
+        margin-left: -22% !important;
+}
+    .btn-hidra{
+        margin-top: -37% !important;
+        width: 32% !important;
+        margin-left: 46% !important;
+    }
+    .title-marg{
+        margin-top: -26%;
+    }
+    .responsive-news-box{
+    margin-top: -12% !important;
+    }
+    .responsive-news-title{
+        margin-top: -20% !important;
+    }
+    .btn-noti-responsive{
+        margin-left: 34% !important;
+        padding-left: 15px;
+        padding-right: 17px;
+        border-radius: 14px;
+        width: 32%;
+        height: 34px;
+        margin-top: 12px !important;
+    }
+    .twitter-responsive-news{
+        width: 100%;
+    }
 
 }
 
@@ -374,8 +412,38 @@ p.subtitle{
 
 }
 
+
+#twitter-home {
+    background-color: #e7eff8;
+    padding: 15px 15px 30px 15px;
+    overflow: hidden;
+}
+
+#twitter-home-cnt {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    min-height: 200px;
+}
+
+div.ex1 {
+  background-color: lightblue;
+  height: 110px;
+  overflow: auto;
+}
+
+.btn-noti{
+    margin-left: 68%;
+    padding-left: 15px;
+    padding-right: 17px;
+    border-radius: 14px;
+    width: 32%;
+    height: 34px;
+    margin-top: -15px;
+}
+
 .popindex{
-	background-image: url("../images/P2.png");
     background-size: contain;
     background-repeat: no-repeat;
 	bottom:0px;
@@ -500,6 +568,33 @@ p.subtitle{
     margin-block-end: -4%;
 }
 
+.vid-subasta{
+    width: 135%;
+    margin-left: -34%;
+}
+
+.btn-hidra{
+    width: 24%;
+    margin-top: -37%;
+    margin-left: 48%;
+}
+
+.title-ce{
+    width: 66%;
+    padding-left: 21%;
+}
+
+.link{
+    width: 50%;
+}
+
+.hrnoti{
+    margin-left: -3%;
+    margin-right: -9%;
+}
+.title-marg{
+    margin-top: -7%;
+}
 
 
 
@@ -510,6 +605,55 @@ p.subtitle{
 
 
 
+.paginacion {
+	margin:20px 0;
+}
 
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
 
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
 
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#024959;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#037E8C;
+}
+
+.paginacion ul li .active {
+	background: #488a8c;
+	font-weight:bold;
+}
+
+.btn-news.active {
+  background-color: #666;
+  color: white;
+}
+
+.btn-news {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn-news:hover {
+  background-color: #ddd;
+}
+
+.error_page{
+    padding-top: 2%;
+}

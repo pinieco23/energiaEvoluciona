@@ -2,6 +2,16 @@ from django.shortcuts import render
 import psycopg2
 
 
+from django.shortcuts import render
+from django.http import HttpResponse
+
+
+def error_404_view(request, exception):
+    data = {"name": "ThePythonDjango.com"}
+    return render(request,'error.html', data)
+
+
+
 def inicio(request):
 
     #Desarrollo
@@ -33,7 +43,10 @@ def inicio(request):
     cur.execute("SELECT  id, descripcion, desc_general FROM energias_como_comision WHERE disponible = True ORDER BY id;")
     como = cur.fetchall()
 
-    return render(request, 'index.html',{'c1':c1,'imagesc3':imagesc3,'c3':c3,'expertos':expertos,'c2':c2, 'para':para, 'como': como})
+    cur.execute("SELECT imagen, titulo_boton, link FROM energias_popup WHERE disponible = True ORDER BY id;")
+    popup = cur.fetchall()
+
+    return render(request, 'index.html',{'popup': popup,'c1':c1,'imagesc3':imagesc3,'c3':c3,'expertos':expertos,'c2':c2, 'para':para, 'como': como})
 
 
 
@@ -145,9 +158,19 @@ def fuentes(request):
     return render(request, 'fuentes.html',{'fuentes':fuentes})
 
 
-def test(request):
+def historias(request):
 
-    return render(request, 'test.html')
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, descripcion, video FROM energias_historias WHERE disponible = True ;")
+    historias = cur.fetchall()
+
+    return render(request, 'historias.html',{'historias':historias})
 
 def mitos(request):
 
@@ -162,3 +185,40 @@ def mitos(request):
     mitos = cur.fetchall()
 
     return render(request, 'mitos.html', {'mitos':mitos})
+
+def noticia(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, descripcion, imagen, link, fecha_creacion FROM energias_noticia WHERE disponible = True AND noticia_principal = True ORDER BY id;")
+    princial = cur.fetchall()
+
+    cur.execute("SELECT titulo, descripcion, imagen, link, fecha_creacion, id-1 FROM energias_noticia WHERE disponible = True AND noticia_principal = False  ORDER BY id;")
+    noticia = cur.fetchall()
+
+    cur.execute("SELECT titulo, link FROM energias_tweet WHERE disponible = True;")
+    tweet = cur.fetchall()
+
+    npag = len(noticia)/3
+    npag = int(npag)
+
+    print(npag)
+
+    finalNoticia=[]
+    tmpNoticia=[]
+    j = 0
+    for i in range(len(noticia)) :
+        tmpNoticia.append(noticia[i])
+        if j == 2:
+            finalNoticia.append(tmpNoticia)
+            tmpNoticia=[]
+            j=0
+        else:
+            j+=1
+
+    return render(request, 'noticia.html', {'noticia':finalNoticia, 'tweet':tweet, 'principal':princial , 'npag':npag})

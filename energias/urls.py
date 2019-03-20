@@ -13,7 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from attr.filters import include
+
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
@@ -23,8 +23,13 @@ from energias import control
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.contrib import admin
+from django.urls import path, include
+from django.conf.urls import handler404
+
 urlpatterns = [
     path('LudveJYU2ytT3WuG7RAp3iqrH6y6aan9qXUQuQ/', admin.site.urls),
+    path('', control.inicio, name='inicio'),
     url(r'^$', control.inicio),
     url('expertos', control.expertos),
     url('error', control.error),
@@ -35,6 +40,8 @@ urlpatterns = [
     url('mitos-realidades', control.mitos),
     url('subasta', control.subasta),
     url('casos-de-exito', control.casos),
-    url('test', control.test),
-    url(r'^tinymce/', include('tinymce.urls')),
+    url('noticias', control.noticia),
+    url('historias', control.historias),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'energias.control.error_404_view'

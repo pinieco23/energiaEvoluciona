@@ -1,5 +1,4 @@
 from datetime import datetime
-from tinymce.models import HTMLField
 from django.contrib.auth.models import User
 from django.db import models
 
@@ -10,8 +9,6 @@ from django.db.models import ImageField
 class energiaEvoluciona(models.Model):
     titulo = models.CharField(max_length=60)
     texto = models.TextField()
-    content = HTMLField(blank=True)
-    imagen = models.ImageField(upload_to='imagesC1', blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 
@@ -117,6 +114,18 @@ class redes(models.Model):
         return self.titulo
 
 
+class historias(models.Model):
+    titulo = models.CharField(max_length=60, blank=True)
+    descripcion = models.TextField(blank=True)
+    link = models.CharField(max_length=60, blank=True)
+    video = models.TextField(blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+
 #BD de redes
 class comision(models.Model):
     titulo = models.CharField(max_length=60)
@@ -129,7 +138,37 @@ class comision(models.Model):
     def __str__(self):
         return self.titulo
 
+class noticia(models.Model):
+    titulo = models.CharField(max_length=80, blank=True)
+    descripcion = models.TextField(max_length=700,blank=True)
+    link  = models.TextField( blank=True)
+    imagen = models.ImageField(upload_to='noticia', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    noticia_principal = models.BooleanField()
+    disponible = models.BooleanField()
 
+
+    def __str__(self):
+        return self.titulo
+
+class tweet(models.Model):
+    titulo = models.CharField(max_length=80, blank=True)
+    link = models.TextField( blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
+class popup(models.Model):
+    titulo_boton = models.CharField(max_length=120)
+    link = models.CharField(max_length=60, blank=True)
+    imagen = models.ImageField(upload_to='popup', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo_boton
 
 class fuentes(models.Model):
 
