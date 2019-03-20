@@ -5,7 +5,10 @@ hr{
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 
 }
-
+.text-comision-home{
+    padding-top: 83%;
+    text-align: -webkit-center;
+}
 
 .hrline{
     margin-left: 11%;
