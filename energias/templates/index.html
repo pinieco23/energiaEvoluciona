@@ -11,7 +11,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
     {% load static %}
-
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
   <meta name="description" content="Es una iniciativa de los ministerios de Ambiente y Desarrollo Sostenible y Minas y Energ�a, que busca la transici�n de las fuentes de energ�a del pa�s, garantizando un matriz energ�tica m�s diversificada y limpia">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -237,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2 class="title">{{ c3.0.0 }}</h2>
           </br>
         <p>{{ c3.0.1 }}</p>
-              <hr class="hrline">
+              <hr class="">
       </div>
 
     </div>
@@ -248,6 +251,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section>
   <hr class="hrline">
+
 
         <div  class="col-md-12 col-xs-12 twocolumns visible-xs">
 
@@ -326,7 +330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% for data in imagesc3 %}
       <button class="btn botonesAnos" onclick="filterSelection({{ data.1 }})">{{ data.1 }}</button>
         {% endfor %}
-        <hr class="hrline">
+        <hr class="hrline hrlinecomision">
     </div>
 <br>
     </div>
@@ -557,12 +561,27 @@ for (var i = 0; i < btns.length; i++) {
 <body>
    <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
       <div class="modal-dialog">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <a target="_blank" href="/historias">
-              <div class="popindex" style="background-image: url(/static/{{ popup.0.0 }});"></div>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-right: 8%;">&times;</button>
+              <a target="_blank" href="/transformacion">
+              <div class="popindex" style="background-image: url(/static/{{ popup.0.0 }});margin-left: 10%;"></div>
                 </a>
-<a target="_blank" href="/historias">
-                    <button class="btn btn-info center-block" >{{ popup.0.1 }}</button>
+<a target="_blank" href="/transformacion">
+                    <button class="btn btn-info center-block" style="    
+                    width: 55%;
+    margin-top: -9%;
+    border-radius: 30px;
+    background-color: #ec4545;
+    margin-left: 28%;
+    @media screen and (max-width: 890px) {
+
+      .btn-info{
+        width: 30% !important;
+        margin-left: 37% !important;
+        margin-top: -9% !important;
+    }
+  }
+      
+    ">{{ popup.0.1 }}</button>
 </a>
 
    </div>

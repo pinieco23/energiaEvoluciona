@@ -42,6 +42,7 @@ urlpatterns = [
     url('casos-de-exito', control.casos),
     url('noticias', control.noticia),
     url('historias', control.historias),
+    url('transformacion', control.transformacion),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'energias.control.error_404_view'

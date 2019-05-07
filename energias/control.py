@@ -10,7 +10,9 @@ def error_404_view(request, exception):
     data = {"name": "ThePythonDjango.com"}
     return render(request,'error.html', data)
 
+def transformacion(request):
 
+    return render(request,'transformacion.html')
 
 def inicio(request):
 

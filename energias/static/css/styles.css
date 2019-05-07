@@ -229,6 +229,14 @@ p.subtitle{
 
 @media screen and (max-width: 890px) {
 
+    .hrlinecomision{
+        margin-top: -19% !important;
+    }
+
+    .hrline{
+        margin-top: -11%;
+    }
+
     .img-grafica {
         width:  121%;
         margin-left: 2%;
@@ -303,8 +311,7 @@ p.subtitle{
 
     .btn-info{
         width: 30% !important;
-        margin-left: 35% !important;
-        margin-top: 24%;
+        margin-top: -9% !important;
     }
 
     .btn-transicion{
@@ -477,10 +484,10 @@ div.ex1 {
 
 .btn-info{
     width: 55%;
-    margin-top: -16%;
+    margin-top: -9%;
     border-radius: 30px;
     background-color: #ec4545;
-    margin-left: 26%;
+    margin-left: 19%;
 
 }
 
