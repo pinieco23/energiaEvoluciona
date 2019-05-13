@@ -2,57 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/energias/datax.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/energias/templates/infografia.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/energias/templates/reservas-gas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/control.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0002_auto_20190213_0755.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0003_auto_20190213_0801.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0004_auto_20190213_0809.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0005_imagenes_c3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0006_contenedor_5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0007_comision.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0008_fuentes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0009_auto_20190213_2142.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0010_contenedor_1_imagen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0011_experto_link.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0012_imagenes_fuente.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0013_contenedor_1_content.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0014_auto_20190220_1553.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0015_auto_20190220_1755.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0016_transicion_titulo_resumen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0017_minero_energetico.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0018_como_comision_para_comision.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0019_hidraulico.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0020_auto_20190222_1159.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0021_mitos_realidad.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0022_como_comision_desc_general.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0023_auto_20190225_1100.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0024_auto_20190225_1411.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0025_transicion_texto_boton_3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0026_subasta.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0027_subasta_upload.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0028_auto_20190226_0758.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0029_auto_20190227_1445.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0030_popup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0031_remove_energiaevoluciona_content.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0032_auto_20190305_1404.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0033_auto_20190305_1448.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0034_auto_20190305_1720.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0035_auto_20190306_0950.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0036_tweet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0037_noticia_noticia_principal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0038_historias.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/0039_auto_20190318_1528.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/energias/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/templates/reservas-gas.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/reservas-gas.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/energias/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="346">
+              <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
               <folding>
                 <element signature="e#633#665#0" expanded="true" />
               </folding>
@@ -115,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/energias/templates/infografia.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="1770">
               <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
@@ -124,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/energias/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="5040">
               <caret line="336" column="22" selection-start-line="336" selection-start-column="22" selection-end-line="336" selection-end-column="22" />
             </state>
           </provider>
@@ -133,8 +84,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/energias/templates/reservas-gas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="110" column="25" selection-start-line="89" selection-end-line="110" selection-end-column="28" />
+            <state relative-caret-position="105">
+              <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#a#0;n#div#0;n#div#0;n#section#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,11 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/energias/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3345">
+            <state relative-caret-position="481">
               <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -226,6 +177,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,7 +219,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,18 +324,19 @@
       <workItem from="1557769075415" duration="938000" />
       <workItem from="1557772942561" duration="2147000" />
       <workItem from="1557778538888" duration="1816000" />
-      <workItem from="1557780386605" duration="1135000" />
+      <workItem from="1557780386605" duration="2115000" />
+      <workItem from="1557782751230" duration="972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419001000" />
+    <option name="totallyTimeSpent" value="420953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1286" height="947" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24878837" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25282714" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -635,16 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/energias/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="e#633#665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/energias/control.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
@@ -655,34 +597,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/energias/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3345">
-          <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/energias/templates/infografia.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
+        <state relative-caret-position="1770">
           <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/energias/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
+        <state relative-caret-position="5040">
           <caret line="336" column="22" selection-start-line="336" selection-start-column="22" selection-end-line="336" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energias/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energias/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/energias/templates/reservas-gas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="110" column="25" selection-start-line="89" selection-end-line="110" selection-end-column="28" />
+        <state relative-caret-position="105">
+          <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#a#0;n#div#0;n#div#0;n#section#1;n#head#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
