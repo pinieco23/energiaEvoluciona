@@ -152,11 +152,11 @@ class noticia(models.Model):
         return self.titulo
 
 class gas(models.Model):
-    titulo = models.CharField(max_length=80, blank=True)
-    descripcion = models.TextField(max_length=700,blank=True)
+    titulo = models.CharField(max_length=200, blank=True)
+    descripcion = models.TextField(max_length=5000,blank=True)
     imagen = models.ImageField(upload_to='gas', blank=True)
     subtitulo = models.CharField(max_length=80, blank=True)
-    subdescripcion = models.TextField(max_length=700, blank=True)
+    subdescripcion = models.TextField(max_length=2000, blank=True)
     disponible = models.BooleanField()
     link = models.TextField(blank=True)
     nombre_boton = models.CharField(max_length=80, blank=True)
@@ -168,11 +168,11 @@ class gas(models.Model):
 
 
 class reserva(models.Model):
-    titulo = models.CharField(max_length=80, blank=True)
-    descripcion = models.TextField(max_length=700, blank=True)
+    titulo = models.CharField(max_length=200, blank=True)
+    descripcion = models.TextField(max_length=5000, blank=True)
     imagen = models.ImageField(upload_to='reserva', blank=True)
     subtitulo = models.CharField(max_length=80, blank=True)
-    subdescripcion = models.TextField(max_length=700, blank=True)
+    subdescripcion = models.TextField(max_length=2000, blank=True)
     disponible = models.BooleanField()
     link = models.TextField(blank=True)
     nombre_boton = models.CharField(max_length=80, blank=True)
