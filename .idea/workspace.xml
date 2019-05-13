@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/energias/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/energias/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="170" column="43" selection-start-line="170" selection-start-column="43" selection-end-line="170" selection-end-column="43" />
+            <state relative-caret-position="318">
+              <caret line="171" column="47" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -326,18 +325,18 @@
       <workItem from="1557778538888" duration="1816000" />
       <workItem from="1557780386605" duration="2115000" />
       <workItem from="1557782751230" duration="2237000" />
-      <workItem from="1557786157500" duration="76000" />
+      <workItem from="1557786157500" duration="484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422294000" />
+    <option name="totallyTimeSpent" value="422702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1286" height="947" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25686592" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25686592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -351,7 +350,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31668696" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31668696" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -631,8 +630,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/energias/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="170" column="43" selection-start-line="170" selection-start-column="43" selection-end-line="170" selection-end-column="43" />
+        <state relative-caret-position="318">
+          <caret line="171" column="47" selection-start-line="171" selection-start-column="47" selection-end-line="171" selection-end-column="47" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

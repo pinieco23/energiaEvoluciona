@@ -153,7 +153,7 @@ class noticia(models.Model):
 
 class gas(models.Model):
     titulo = models.CharField(max_length=200, blank=True)
-    descripcion = models.TextField(max_length=5000,blank=True)
+    descripcion = models.TextField(max_length=6000,blank=True)
     imagen = models.ImageField(upload_to='gas', blank=True)
     subtitulo = models.CharField(max_length=80, blank=True)
     subdescripcion = models.TextField(max_length=2000, blank=True)
@@ -169,7 +169,7 @@ class gas(models.Model):
 
 class reserva(models.Model):
     titulo = models.CharField(max_length=200, blank=True)
-    descripcion = models.TextField(max_length=5000, blank=True)
+    descripcion = models.TextField(max_length=6000, blank=True)
     imagen = models.ImageField(upload_to='reserva', blank=True)
     subtitulo = models.CharField(max_length=80, blank=True)
     subdescripcion = models.TextField(max_length=2000, blank=True)
