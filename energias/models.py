@@ -151,6 +151,37 @@ class noticia(models.Model):
     def __str__(self):
         return self.titulo
 
+class gas(models.Model):
+    titulo = models.CharField(max_length=80, blank=True)
+    descripcion = models.TextField(max_length=700,blank=True)
+    imagen = models.ImageField(upload_to='gas', blank=True)
+    subtitulo = models.CharField(max_length=80, blank=True)
+    subdescripcion = models.TextField(max_length=700, blank=True)
+    disponible = models.BooleanField()
+    link = models.TextField(blank=True)
+    nombre_boton = models.CharField(max_length=80, blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+
+
+    def __str__(self):
+        return self.titulo
+
+
+class reserva(models.Model):
+    titulo = models.CharField(max_length=80, blank=True)
+    descripcion = models.TextField(max_length=700, blank=True)
+    imagen = models.ImageField(upload_to='reserva', blank=True)
+    subtitulo = models.CharField(max_length=80, blank=True)
+    subdescripcion = models.TextField(max_length=700, blank=True)
+    disponible = models.BooleanField()
+    link = models.TextField(blank=True)
+    nombre_boton = models.CharField(max_length=80, blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+
+    def __str__(self):
+        return self.titulo
+
+
 class tweet(models.Model):
     titulo = models.CharField(max_length=80, blank=True)
     link = models.TextField( blank=True)
@@ -193,6 +224,16 @@ class minero_energetico(models.Model):
     def __str__(self):
         return self.titulo
 
+class infografia(models.Model):
+
+    titulo = models.CharField(max_length=60)
+    imagen = models.ImageField(upload_to='infografia', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
 class hidraulico(models.Model):
 
     titulo = models.CharField(max_length=60)
@@ -212,6 +253,7 @@ class hidrocarburo(models.Model):
 
     def __str__(self):
         return self.titulo
+
 
 class para_comision(models.Model):
 

@@ -88,6 +88,20 @@ def minero(request):
 
     return render(request, 'minero.html',{'minener':minener})
 
+def infografia(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT imagen FROM energias_infografia WHERE disponible = True;")
+    info = cur.fetchall()
+
+    return render(request, 'infografia.html',{'info':info})
+
 def hidraulico(request):
 
     # Desarrollo
@@ -158,6 +172,35 @@ def fuentes(request):
     fuentes = cur.fetchall()
 
     return render(request, 'fuentes.html',{'fuentes':fuentes})
+
+def reservas(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, descripcion, imagen, subtitulo, subdescripcion, link, nombre_boton FROM energias_reserva WHERE disponible = True;")
+    form = cur.fetchall()
+
+    return render(request, 'reservas-gas.html',{'form':form})
+
+
+def gas(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, descripcion, imagen, subtitulo, subdescripcion, link, nombre_boton FROM energias_gas WHERE disponible = True;")
+    form = cur.fetchall()
+
+    return render(request, 'reservas-gas.html',{'form':form})
 
 
 def historias(request):
