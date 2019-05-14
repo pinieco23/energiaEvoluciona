@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/templates/infografia.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/infografia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/energias/static/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/energias/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="101">
@@ -78,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/energias/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+            <state relative-caret-position="105">
+              <caret line="514" column="21" lean-forward="true" selection-start-line="514" selection-start-column="21" selection-end-line="514" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -159,13 +157,13 @@
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/energias/urls.py" />
         <option value="$PROJECT_DIR$/energias/admin.py" />
-        <option value="$PROJECT_DIR$/energias/static/css/styles.css" />
         <option value="$PROJECT_DIR$/energias/models.py" />
         <option value="$PROJECT_DIR$/energias/templates/reservas-gas.html" />
         <option value="$PROJECT_DIR$/energias/templates/reservas.html" />
         <option value="$PROJECT_DIR$/energias/control.py" />
         <option value="$PROJECT_DIR$/energias/templates/infografia.html" />
         <option value="$PROJECT_DIR$/energias/templates/index.html" />
+        <option value="$PROJECT_DIR$/energias/static/css/styles.css" />
       </list>
     </option>
   </component>
@@ -334,12 +332,12 @@
       <workItem from="1557787970962" duration="879000" />
       <workItem from="1557838513554" duration="1820000" />
       <workItem from="1557840362674" duration="1716000" />
-      <workItem from="1557842516970" duration="357000" />
+      <workItem from="1557842516970" duration="731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="428769000" />
+    <option name="totallyTimeSpent" value="429143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1286" height="947" extended-state="6" />
@@ -616,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/energias/static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/energias/templates/gas.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -653,6 +644,13 @@
             <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#a#1;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energias/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="514" column="21" lean-forward="true" selection-start-line="514" selection-start-column="21" selection-end-line="514" selection-end-column="21" />
         </state>
       </provider>
     </entry>
