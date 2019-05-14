@@ -44,8 +44,8 @@ urlpatterns = [
     url('historias', control.historias),
     url('transformacion', control.transformacion),
     url('reservas', control.reservas),
-    url('gas', control.gas),
-    url('infografia', control.infografia),
+    url('infografia-reserva', control.infografiaReserva),
+    url('infografia-gas', control.infografiaGas),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'energias.control.error_404_view'

@@ -88,20 +88,6 @@ def minero(request):
 
     return render(request, 'minero.html',{'minener':minener})
 
-def infografia(request):
-
-    # Desarrollo
-    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
-
-    # Produccion
-    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
-
-    cur = con.cursor()
-    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2, upload2, nombre_boton3 FROM energias_infografia WHERE disponible = True;")
-    info = cur.fetchall()
-
-    return render(request, 'infografia.html',{'info':info})
-
 def hidraulico(request):
 
     # Desarrollo
@@ -185,10 +171,14 @@ def reservas(request):
     cur.execute("SELECT titulo, descripcion, imagen, subtitulo, subdescripcion, link, nombre_boton FROM energias_reserva WHERE disponible = True;")
     form = cur.fetchall()
 
-    return render(request, 'reservas.html', {'form':form})
+    cur = con.cursor()
+    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2, upload2, nombre_boton3, imagen2 FROM energias_infografia WHERE disponible = True;")
+    info = cur.fetchall()
+
+    return render(request, 'reservas.html', {'form':form, 'info':info})
 
 
-def gas(request):
+def infografiaGas(request):
 
     # Desarrollo
     con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
@@ -200,8 +190,25 @@ def gas(request):
     cur.execute("SELECT titulo, descripcion, imagen, subtitulo, subdescripcion, link, nombre_boton FROM energias_gas WHERE disponible = True;")
     form = cur.fetchall()
 
-    return render(request, 'gas.html', {'form':form})
+    cur = con.cursor()
+    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2, upload2, nombre_boton3, imagen2 FROM energias_infografia WHERE disponible = True;")
+    info = cur.fetchall()
 
+    return render(request, 'infografia-gas.html', {'info':info})
+
+def infografiaReserva(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2, upload2, nombre_boton3, imagen2 FROM energias_infografia WHERE disponible = True;")
+    info = cur.fetchall()
+
+    return render(request, 'infografia-reserva.html',{'info':info})
 
 def historias(request):
 
