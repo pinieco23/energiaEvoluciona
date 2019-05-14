@@ -4,6 +4,7 @@
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/energias/templates/infografia-gas.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/infografia-gas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/energias/templates/infografia-reserva.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/infografia-reserva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/templates/reservas.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/reservas.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/energias/templates/infografia-gas.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="91">
-              <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
+              <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -48,20 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/energias/templates/infografia-reserva.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="73" column="68" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+              <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/energias/templates/reservas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" column="71" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
+            <state relative-caret-position="255">
+              <caret line="80" column="59" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -137,10 +138,10 @@
         <option value="$PROJECT_DIR$/energias/models.py" />
         <option value="$PROJECT_DIR$/energias/urls.py" />
         <option value="$PROJECT_DIR$/energias/control.py" />
-        <option value="$PROJECT_DIR$/energias/templates/reservas.html" />
         <option value="$PROJECT_DIR$/energias/static/css/styles.css" />
-        <option value="$PROJECT_DIR$/energias/templates/infografia-gas.html" />
         <option value="$PROJECT_DIR$/energias/templates/infografia-reserva.html" />
+        <option value="$PROJECT_DIR$/energias/templates/infografia-gas.html" />
+        <option value="$PROJECT_DIR$/energias/templates/reservas.html" />
       </list>
     </option>
   </component>
@@ -313,12 +314,12 @@
       <workItem from="1557844335402" duration="1065000" />
       <workItem from="1557846197132" duration="1696000" />
       <workItem from="1557848065991" duration="1786000" />
-      <workItem from="1557849882741" duration="1443000" />
+      <workItem from="1557849882741" duration="1628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="436183000" />
+    <option name="totallyTimeSpent" value="436368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1286" height="947" extended-state="6" />
@@ -579,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/energias/templates/reservas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="84" column="71" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/energias/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -616,17 +610,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/energias/templates/infografia-gas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/energias/templates/infografia-reserva.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="73" column="68" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+          <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energias/templates/infografia-gas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="73" column="66" selection-start-line="73" selection-start-column="66" selection-end-line="73" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/energias/templates/reservas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="80" column="59" selection-start-line="80" selection-start-column="59" selection-end-line="80" selection-end-column="59" />
         </state>
       </provider>
     </entry>
