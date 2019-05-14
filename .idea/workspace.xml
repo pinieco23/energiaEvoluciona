@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/energias/templates/infografia-gas.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/infografia-gas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/templates/infografia-reserva.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/infografia-reserva.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/energias/templates/infografia-reserva.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="240">
+              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -313,12 +312,12 @@
       <workItem from="1557844335402" duration="1065000" />
       <workItem from="1557846197132" duration="1696000" />
       <workItem from="1557848065991" duration="1786000" />
-      <workItem from="1557849882741" duration="670000" />
+      <workItem from="1557849882741" duration="1029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="435410000" />
+    <option name="totallyTimeSpent" value="435769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1286" height="947" extended-state="6" />
@@ -618,8 +617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/energias/templates/infografia-reserva.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="240">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
