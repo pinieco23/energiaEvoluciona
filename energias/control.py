@@ -97,7 +97,7 @@ def infografia(request):
     # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
 
     cur = con.cursor()
-    cur.execute("SELECT imagen FROM energias_infografia WHERE disponible = True;")
+    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2 FROM energias_infografia WHERE disponible = True;")
     info = cur.fetchall()
 
     return render(request, 'infografia.html',{'info':info})
@@ -185,7 +185,7 @@ def reservas(request):
     cur.execute("SELECT titulo, descripcion, imagen, subtitulo, subdescripcion, link, nombre_boton FROM energias_reserva WHERE disponible = True;")
     form = cur.fetchall()
 
-    return render(request, 'reservas-gas.html',{'form':form})
+    return render(request, 'reservas.html', {'form':form})
 
 
 def gas(request):
@@ -200,7 +200,7 @@ def gas(request):
     cur.execute("SELECT titulo, descripcion, imagen, subtitulo, subdescripcion, link, nombre_boton FROM energias_gas WHERE disponible = True;")
     form = cur.fetchall()
 
-    return render(request, 'reservas-gas.html',{'form':form})
+    return render(request, 'gas.html', {'form':form})
 
 
 def historias(request):
