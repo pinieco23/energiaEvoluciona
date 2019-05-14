@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/energias/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/energias/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,12 +66,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/energias/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="564" column="53" lean-forward="true" selection-start-line="564" selection-start-column="53" selection-end-line="564" selection-end-column="53" />
+            <state relative-caret-position="257">
+              <caret line="578" column="35" selection-start-line="578" selection-start-column="35" selection-end-line="578" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#a#1;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/energias/static/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="514" column="21" lean-forward="true" selection-start-line="514" selection-start-column="21" selection-end-line="514" selection-end-column="21" />
+            <state relative-caret-position="285">
+              <caret line="334" column="23" selection-start-line="334" selection-start-column="23" selection-end-line="334" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -332,12 +332,12 @@
       <workItem from="1557787970962" duration="879000" />
       <workItem from="1557838513554" duration="1820000" />
       <workItem from="1557840362674" duration="1716000" />
-      <workItem from="1557842516970" duration="731000" />
+      <workItem from="1557842516970" duration="1463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429143000" />
+    <option name="totallyTimeSpent" value="429875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1286" height="947" extended-state="6" />
@@ -637,20 +637,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/energias/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="564" column="53" lean-forward="true" selection-start-line="564" selection-start-column="53" selection-end-line="564" selection-end-column="53" />
+        <state relative-caret-position="257">
+          <caret line="578" column="35" selection-start-line="578" selection-start-column="35" selection-end-line="578" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#a#1;n#div#0;n#div#0;n#body#0;n#html#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/energias/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="514" column="21" lean-forward="true" selection-start-line="514" selection-start-column="21" selection-end-line="514" selection-end-column="21" />
+        <state relative-caret-position="285">
+          <caret line="334" column="23" selection-start-line="334" selection-start-column="23" selection-end-line="334" selection-end-column="23" />
         </state>
       </provider>
     </entry>
