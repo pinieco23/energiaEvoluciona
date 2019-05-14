@@ -75,9 +75,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br>
 
           <div class="col-md-6 col-xs-12 col-par-principal">
-        <h2 class="title">{{ form.0.0 | safe }}</h2>
+        <h2 class="title">{{ form.0.0 }}</h2>
           </br>
-              <p>{{ form.0.1 }}</p>
+              <p>{{ form.0.1|safe }}</p>
               <a href={{ form.0.5 }}>
                   <button class="btn btn-primary center-block" style="width: 80%;margin-top: 4%;margin-bottom: 4%;">{{ form.0.6 }}</button>
               </a>
