@@ -229,8 +229,10 @@ class infografia(models.Model):
     titulo = models.CharField(max_length=60)
     imagen = models.ImageField(upload_to='infografia', blank=True)
     upload = models.FileField(upload_to='gas', blank=True)
+    upload2 = models.FileField(upload_to='gas', blank=True)
     nombre_boton1 = models.CharField(max_length=80)
     nombre_boton2 = models.CharField(max_length=80)
+    nombre_boton3 = models.CharField(max_length=80)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 

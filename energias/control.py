@@ -97,7 +97,7 @@ def infografia(request):
     # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
 
     cur = con.cursor()
-    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2 FROM energias_infografia WHERE disponible = True;")
+    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2, upload2, nombre_boton3 FROM energias_infografia WHERE disponible = True;")
     info = cur.fetchall()
 
     return render(request, 'infografia.html',{'info':info})
