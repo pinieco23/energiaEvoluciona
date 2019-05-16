@@ -65,7 +65,7 @@ def expertos(request):
     cur.execute("SELECT nombre, cargo, descripcion, imagen, id, link FROM energias_experto WHERE disponible = True ORDER BY id;")
     expertos = cur.fetchall()
 
-    cur.execute("SELECT titulo, descripcion, imagen FROM energias_comision WHERE disponible = True;")
+    cur.execute("SELECT titulo, descripcion, imagen, nombre_boton1, nombre_boton2, upload1, upload2 FROM energias_comision WHERE disponible = True;")
     comision = cur.fetchall()
 
     return render(request, 'expertos.html',{'comision':comision, 'expertos':expertos})
