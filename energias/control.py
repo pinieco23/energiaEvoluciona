@@ -48,7 +48,14 @@ def inicio(request):
     cur.execute("SELECT imagen, titulo_boton, link FROM energias_popup WHERE disponible = True ORDER BY id;")
     popup = cur.fetchall()
 
-    return render(request, 'index.html',{'popup': popup,'c1':c1,'imagesc3':imagesc3,'c3':c3,'expertos':expertos,'c2':c2, 'para':para, 'como': como})
+    cur.execute("SELECT imagen, link FROM energias_banner WHERE disponible = True;")
+    banner = cur.fetchall()
+
+    bansize = len(banner)
+    print(bansize)
+
+
+    return render(request, 'index.html',{'bansize':bansize,'banner':banner,'popup': popup,'c1':c1,'imagesc3':imagesc3,'c3':c3,'expertos':expertos,'c2':c2, 'para':para, 'como': como})
 
 
 

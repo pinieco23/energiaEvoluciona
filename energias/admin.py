@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from energias.models import infografia, gas, reserva, historias,tweet, popup, noticia, casos_de_exito, subasta, mitos_realidad, hidrocarburo, hidraulico, para_comision, como_comision, minero_energetico, energiaEvoluciona, video, transicion,matriz, experto, redes, contenedor_5, comision, fuentes, imagenes_fuente
+from energias.models import banner, infografia, gas, reserva, historias,tweet, popup, noticia, casos_de_exito, subasta, mitos_realidad, hidrocarburo, hidraulico, para_comision, como_comision, minero_energetico, energiaEvoluciona, video, transicion,matriz, experto, redes, contenedor_5, comision, fuentes, imagenes_fuente
 
 
 admin.site.register(energiaEvoluciona)
@@ -25,3 +25,4 @@ admin.site.register(historias)
 admin.site.register(gas)
 admin.site.register(reserva)
 admin.site.register(infografia)
+admin.site.register(banner)
