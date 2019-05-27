@@ -60,6 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				    	<li id="toggle23" class="e"><a href="javascript:mostrarConformaFoco5()">Foco 5</a></li>
 		    		</ul>
 		    	</li>
+		    	<a id="toggle24" class="e" href="javascript:mostrarMemorias()">Memorias</a>
 		    </ul>
 		  </nav>
 
@@ -76,6 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			    	<li id="toggle17" class="e"><a href="javascript:mostrarConformaFoco5()">Foco 5</a></li>
 			    </ul>
 		    <a id="toggle11" class="e" href="#">¿Qué va a entregar la Misión?</a>
+		    <a id="toggle25" class="e" href="javascript:mostrarMemorias()">Memorias</a>
 		  </div>
 		<!--Fin Menú-->
 	<div class="instrucciones">
@@ -130,6 +132,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<p>Los artículos de recomendaciones finales de cada uno de los focos de estudio serán revisados por pares independientes de la industria y la academia, estos pares revisarán los comentarios realizados por los agentes del sector.</p>
 						<ul class="links">
 							<li><a class="github" href="javascript:ocultarEntregarMision()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+
+		<!--Memorias-->
+		<section id="memorias" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>Memorias</em></h1>
+						</header>
+						<h2>Lanzamiento de la Misión de la Transformación Energética (Parte 1)</h2>
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HOG7Qle0X-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br/><br/>
+						<h2>Lanzamiento de la Misión de la Transformación Energética (Parte 2)</h2>
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ILLDQQjix28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarMemorias()">Cerrar</a></li>
 						</ul>
 						</div>
 					</div>
@@ -235,7 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="cables center accelerate">
 					<div class="panel accelerate">
 						<header>
-							<h1>Foco 1: <br/>Competitividad, participación y estructura de mercado</em></h1>
+							<h1>Foco 1: <br/>Competencia, participación y estructura del mercado eléctrico</em></h1>
 						</header>
 						<p>En 1994 se reformó el funcionamiento del sector eléctrico colombiano, con lo que se ha logrado garantizar el suministro, aumentar la cobertura y afrontar las dificultades que traen los fenómenos climáticos, como el fenómeno de El Niño.
 						Sin embargo, en Colombia existe una alta concentración en la generación y comercialización del servicio público de energía eléctrica, un bajo despliegue de Fuentes No Convencionales de Energía Renovables (FNCER), como la energía solar y eólica, a gran y pequeña escala y un uso limitado de instrumentos financieros y nuevos esquemas transaccionales, lo que resulta en señales de precios ineficientes que impactan en la tarifa que pagan los usuarios finales. 
@@ -483,11 +507,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			$toggle21 = $('#toggle21'),
 			$toggle22 = $('#toggle22'),
 			$toggle23 = $('#toggle23'),
+			$toggle24 = $('#toggle24'),
+			$toggle25 = $('#toggle25'),
 			$quienConforma = $('#quienConforma'),
 			$cerrar = $('#cerrar'),
 			$github = $('#github'),
 			$queMision = $('#queMision'),
 			$entregarMision = $('#entregarMision'),
+			$memorias = $('#memorias'),
 			$foco1 = $('#foco1'),
 			$foco2 = $('#foco2'),
 			$foco3 = $('#foco3'),
@@ -626,6 +653,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		document.getElementById('toggle10').href="javascript:mostrarQuienConforma()";
 	}
 
+	function mostrarMemorias() {
+		$memorias.removeClass('hide');
+		$memorias.addClass('cuadroEncima');
+		$toggle24.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+
 	function mostrarSubmenu() {
 		$subMenu.removeClass('submenu');
 		document.getElementById('subMenu2').href="javascript:ocultarSubmenu()";
@@ -674,6 +709,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		$ConformaCoordinacion.removeClass('cuadroEncima');
 		$toggle12.addClass('e');
 	}	
+
+	function ocultarMemorias() {	
+		$memorias.addClass('hide');
+		$memorias.removeClass('cuadroEncima');
+		$toggle24.addClass('e');
+		$toggle25.addClass('e');
+	}
+
 	function ocultarConformaFoco1() {	
 		$ConformaFoco1.addClass('hide');
 		$ConformaFoco1.removeClass('cuadroEncima');
@@ -757,6 +800,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	});	
 	$toggle17.on('click', function(event) {
 		$ConformaFoco5.hasClass('e') ? mostrarConformaFoco5() : ocultarConformaFoco5();
+	});	
+	$toggle24.on('click', function(event) {
+		$memorias.hasClass('e') ? mostrarMemorias() : ocultarMemorias();
+	});	
+	$toggle25.on('click', function(event) {
+		$memorias.hasClass('e') ? mostrarMemorias() : ocultarMemorias();
 	});	
 
 	// Pretty simple huh?
