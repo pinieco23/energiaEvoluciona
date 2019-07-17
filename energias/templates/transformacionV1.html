@@ -35,7 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWLG64Q"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!--Inicio Menú-->
-		<nav id="Navbar" class="navbar">
+		<nav class="navbar">
 			<div class="logo"></div>
 			    <span class="open-slide">
 			      <a href="#" onclick="openSlideMenu()">
@@ -53,7 +53,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    	<li id="toggle8"><a id="subMenu2" href="javascript:mostrarSubmenu()">¿Quién conforma la Misión?</a>
 		    		<ul id="subMenu" class="submenu">
 				    	<li id="toggle18" class="e"><a href="javascript:mostrarConformaCoordinacion()">Coordinación</a></li>
-				    	<li id="toggle26" class="e"><a href="javascript:mostrarConformaPeerReviewers()">Peer Reviewers</a></li>
 				    	<li id="toggle19" class="e"><a href="javascript:mostrarConformaFoco1()">Foco 1</a></li>
 				    	<li id="toggle20" class="e"><a href="javascript:mostrarConformaFoco2()">Foco 2</a></li>
 				    	<li id="toggle21" class="e"><a href="javascript:mostrarConformaFoco3()">Foco 3</a></li>
@@ -71,7 +70,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    <a id="toggle10" href="javascript:mostrarQuienConforma()">¿Quién conforma la Misión?</a>
 			    <ul id="quienConforma" class="mostrarConforma">
 			    	<li id="toggle12" class="e"><a href="javascript:mostrarConformaCoordinacion()">Coordinación</a></li>
-			    	<li id="toggle27" class="e"><a href="javascript:mostrarConformaPeerReviewers()">Peer Reviewers</a></li>
 			    	<li id="toggle13" class="e"><a href="javascript:mostrarConformaFoco1()">Foco 1</a></li>
 			    	<li id="toggle14" class="e"><a href="javascript:mostrarConformaFoco2()">Foco 2</a></li>
 			    	<li id="toggle15" class="e"><a href="javascript:mostrarConformaFoco3()">Foco 3</a></li>
@@ -178,21 +176,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</section>
 
 		<!--¿Quién la conforma?
-			PEER REVIEWERS-->
-		<section id="ConformaPeerReviewers" class="wrapper about hide accelerate">
-			<div class="cell accelerate">
-				<div class="cables center accelerate">
-					<div class="panel accelerate">
-						<div class="imgConformaPeerReviewers"></div>
-						<ul class="links">
-							<li><a class="github" href="javascript:ocultarConformaPeerReviewers()">Cerrar</a></li>
-						</ul>
-						</div>
-					</div>
-				</div>
-		</section>
-
-		<!--¿Quién la conforma?
 			FOCO1-->
 		<section id="ConformaFoco1" class="wrapper about hide accelerate">
 			<div class="cell accelerate">
@@ -244,6 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="cables center accelerate">
 					<div class="panel accelerate">
 						<div class="imgConformaFoco4-1"></div>
+						<div class="imgConformaFoco4-2"></div>
 						<ul class="links">
 							<li><a class="github" href="javascript:ocultarConformaFoco4()">Cerrar</a></li>
 						</ul>
@@ -525,8 +509,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			$toggle23 = $('#toggle23'),
 			$toggle24 = $('#toggle24'),
 			$toggle25 = $('#toggle25'),
-			$toggle26 = $('#toggle26'),
-			$toggle27 = $('#toggle27'),
 			$quienConforma = $('#quienConforma'),
 			$cerrar = $('#cerrar'),
 			$github = $('#github'),
@@ -539,14 +521,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			$foco4 = $('#foco4'),
 			$foco5 = $('#foco5'),
 			$ConformaCoordinacion = $('#ConformaCoordinacion'),
-			$ConformaPeerReviewers = $('#ConformaPeerReviewers'),
 			$ConformaFoco1 = $('#ConformaFoco1'),
 			$ConformaFoco2 = $('#ConformaFoco2'),
 			$ConformaFoco3 = $('#ConformaFoco3'),
 			$ConformaFoco4 = $('#ConformaFoco4'),
 			$ConformaFoco5 = $('#ConformaFoco5'),
 			$subMenu = $('#subMenu'),
-			$navbar = $('#Navbar'),
 			$subMenu2 = $('#subMenu2'),
 			$scene = $('#scene');
 
@@ -633,13 +613,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		document.getElementById('side-menu').style.width = '0';
       	document.getElementById('main').style.marginLeft = '0';
 	}
-	function mostrarConformaPeerReviewers() {
-		$ConformaPeerReviewers.removeClass('hide');
-		$ConformaPeerReviewers.addClass('cuadroEncima');
-		$toggle26.removeClass('e');
-		document.getElementById('side-menu').style.width = '0';
-      	document.getElementById('main').style.marginLeft = '0';
-	}
 	function mostrarConformaFoco1() {
 		$ConformaFoco1.removeClass('hide');
 		$ConformaFoco1.addClass('cuadroEncima');
@@ -691,7 +664,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	function mostrarSubmenu() {
 		$subMenu.removeClass('submenu');
 		document.getElementById('subMenu2').href="javascript:ocultarSubmenu()";
-		$navbar.addClass('expandNavbar');
 	}
 
 	// Oculta el recuadro de textos
@@ -738,12 +710,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		$toggle12.addClass('e');
 	}	
 
-	function ocultarConformaPeerReviewers() {	
-		$ConformaPeerReviewers.addClass('hide');
-		$ConformaPeerReviewers.removeClass('cuadroEncima');
-		$toggle26.addClass('e');
-	}
-
 	function ocultarMemorias() {	
 		$memorias.addClass('hide');
 		$memorias.removeClass('cuadroEncima');
@@ -784,7 +750,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	function ocultarSubmenu() {
 		$subMenu.addClass('submenu');
 		document.getElementById('subMenu2').href="javascript:mostrarSubmenu()";
-		$navbar.removeClass('expandNavbar');
 	}
 
 	// Listen for toggle click event.
@@ -820,9 +785,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	});	
 	$toggle12.on('click', function(event) {
 		$ConformaCoordinacion.hasClass('e') ? mostrarConformaCoordinacion() : ocultarConformaCoordinacion();
-	});
-	$toggle26.on('click', function(event) {
-		$ConformaPeerReviewers.hasClass('e') ? mostrarConformaPeerReviewers() : ocultarConformaPeerReviewers();
 	});
 	$toggle13.on('click', function(event) {
 		$ConformaFoco1.hasClass('e') ? mostrarConformaFoco1() : ocultarConformaFoco1();
@@ -873,10 +835,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function closeSlideMenu(){
       document.getElementById('side-menu').style.width = '0';
       document.getElementById('main').style.marginLeft = '0';
-    }
-
-    function expandNavbar(){
-      document.getElementById('#Navbar').style.height = '12%';
     }
 
 	</script>
