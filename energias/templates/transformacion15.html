@@ -61,18 +61,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				    	<li id="toggle23" class="e"><a href="javascript:mostrarConformaFoco5()">Foco 5</a></li>
 		    		</ul>
 		    	</li>
-		    	<li id="toggle27"><a id="subMenu4" class="e" href="javascript:mostrarSubmenu3()">Documentos</a>
-		    		<ul id="subMenu3" class="submenu4">
-				    	<li id="toggle25" class="e"><a href="javascript:mostrarMemorias()">Memorias de talleres</a></li>
-				    	<li id="toggle28" class="e"><a href="javascript:mostrarDocumentosMision()">Documentos de la Misión</a></li>
-				    	<li id="toggle29" class="e"><a href="https://drive.google.com/drive/folders/1K0Wo-H7lIlaH_zRGnoIH2C5GpANfqpQj" target="_blank">Archivos</a></li>
-		    		</ul>
-		    	</li>
+		    	<a id="toggle24" class="e" href="javascript:mostrarMemorias()">Memorias</a>
 		    </ul>
 		  </nav>
 
 		  <div id="side-menu" class="side-nav">
-		    <a href="#" class="btn-close" onclick="closeSlideMenu()"></a>
+		    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
 		    <a id="toggle9" class="e" href="#">¿Qué es la Misión?</a>
 		    <a id="toggle10" href="javascript:mostrarQuienConforma()">¿Quién conforma la Misión?</a>
 			    <ul id="quienConforma" class="mostrarConforma">
@@ -85,13 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			    	<li id="toggle17" class="e"><a href="javascript:mostrarConformaFoco5()">Foco 5</a></li>
 			    </ul>
 		    <a id="toggle11" class="e" href="#">¿Qué va a entregar la Misión?</a>
-		    <a id="toggle30" class="e" href="javascript:mostrarDocumentos()">Documentos</a>
-	    		<ul id="mostrarDocumentos" class="mostrarDocumento">
-			    	<li id="toggle24" class="e"><a href="javascript:mostrarMemorias()">Memorias de talleres</a></li>
-			    	<li id="toggle31" class="e"><a href="javascript:mostrarDocumentosMision()">Documentos de la Misión</a></li>
-			    	<li id="toggle32" class="e"><a href="https://drive.google.com/drive/folders/1K0Wo-H7lIlaH_zRGnoIH2C5GpANfqpQj" target="_blank">Archivos</a></li>
-	    		</ul>
-		    	</li>
+		    <a id="toggle25" class="e" href="javascript:mostrarMemorias()">Memorias</a>
 		  </div>
 		<!--Fin Menú-->
 	<div class="instrucciones">
@@ -159,48 +147,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="cables center accelerate">
 					<div class="panel accelerate">
 						<header>
-							<h1>Memorias de talleres</em></h1>
+							<h1>Memorias</em></h1>
 						</header>
 						<h2>Lanzamiento de la Misión de la Transformación Energética (Parte 1)</h2>
 							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HOG7Qle0X-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<br/><br/>
 						<h2>Lanzamiento de la Misión de la Transformación Energética (Parte 2)</h2>
 							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ILLDQQjix28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						<h2 style="text-align: center; margin: 2%;">Presentación sobre la Transformación Energética</h2>
-						<p style="text-align: center;">Conoce la presentación de la Transformación Energética realizada por la Ministra de Energía, María Fernanda Suárez<br/>
-							<a href="https://www.minenergia.gov.co/documents/10192/24090708/Mision+transformacion.pdf" target="_blank">¡Aquí!</a>
-						</p>
 						<ul class="links">
 							<li><a class="github" href="javascript:ocultarMemorias()">Cerrar</a></li>
 						</ul>
-						</p>
-						</div>
-					</div>
-				</div>
-		</section>
-
-		<!--DOCUMENTOS DE LA MISIÓN
-			DOCUMENTOS-->
-		<section id="documentosMision" class="wrapper about hide accelerate">
-			<div class="cell accelerate">
-				<div class="cables center accelerate">
-					<div class="panel accelerate">
-						<header>
-							<h1>Documentos de la Misión Transformación Energética</em></h1>
-						</header>
-						<h2 style="text-align: center; margin: 2%;">Segundo informe sobre la Misión</h2>
-						<p style="text-align: center;">Conoce el segundo Informe de la Consultoría para definir el alcance de la Misión de transformación energética y modernización de la industria eléctrica: hoja de ruta para la energía del futuro<br/>
-							<a href="https://www.minenergia.gov.co/documents/10192/24126247/Informe+2_Mision+Transformacion+-+Espa%C3%B1ol.pdf" target="_blank">¡Aquí!</a>
-						</p>
-
-						<h2 style="text-align: center; margin: 2%;">Second report about the Mission</h2>
-						<p style="text-align: center;">Meet the second report of the Consultancy to define the scope of the Mission of energy transformation and modernization of the electric industry: road map for the energy of the future<br/>
-							<a href="https://www.minenergia.gov.co/documents/10192/24126247/Report+2+Mission+Transformation+-+English+%281%29.pdf" target="_blank">¡Here!</a>
-						</p>
-						<ul class="links">
-							<li><a class="github" href="javascript:ocultarDocumentosMision()">Cerrar</a></li>
-						</ul>
-						</p>
 						</div>
 					</div>
 				</div>
@@ -571,19 +527,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			$toggle25 = $('#toggle25'),
 			$toggle26 = $('#toggle26'),
 			$toggle27 = $('#toggle27'),
-			$toggle28 = $('#toggle28'),
-			$toggle29 = $('#toggle29'),
-			$toggle30 = $('#toggle30'),
-			$toggle31 = $('#toggle31'),
-			$toggle32 = $('#toggle32'),
 			$quienConforma = $('#quienConforma'),
-			$mostrarDocumentos = $('#mostrarDocumentos'),
 			$cerrar = $('#cerrar'),
 			$github = $('#github'),
 			$queMision = $('#queMision'),
 			$entregarMision = $('#entregarMision'),
 			$memorias = $('#memorias'),
-			$documentosMision = $('#documentosMision'),
 			$foco1 = $('#foco1'),
 			$foco2 = $('#foco2'),
 			$foco3 = $('#foco3'),
@@ -597,10 +546,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			$ConformaFoco4 = $('#ConformaFoco4'),
 			$ConformaFoco5 = $('#ConformaFoco5'),
 			$subMenu = $('#subMenu'),
-			$subMenu2 = $('#subMenu2'),
-			$subMenu3 = $('#subMenu3'),
-			$subMenu4 = $('#subMenu4'),
 			$navbar = $('#Navbar'),
+			$subMenu2 = $('#subMenu2'),
 			$scene = $('#scene');
 
 	// Hide browser menu.
@@ -732,10 +679,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		$quienConforma.removeClass('mostrarConforma');
 		document.getElementById('toggle10').href="javascript:mostrarQuienConforma()";
 	}
-	function mostrarDocumentos() {
-		$mostrarDocumentos.removeClass('mostrarDocumento');
-		document.getElementById('toggle30').href="javascript:mostrarDocumentos()";
-	}
 
 	function mostrarMemorias() {
 		$memorias.removeClass('hide');
@@ -744,22 +687,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		document.getElementById('side-menu').style.width = '0';
       	document.getElementById('main').style.marginLeft = '0';
 	}
-	function mostrarDocumentosMision() {
-		$documentosMision.removeClass('hide');
-		$documentosMision.addClass('cuadroEncima');
-		$toggle28.removeClass('e');
-		document.getElementById('side-menu').style.width = '0';
-      	document.getElementById('main').style.marginLeft = '0';
-	}
+
 	function mostrarSubmenu() {
 		$subMenu.removeClass('submenu');
 		document.getElementById('subMenu2').href="javascript:ocultarSubmenu()";
-		$navbar.addClass('expandNavbar');
-	}
-
-	function mostrarSubmenu3() {
-		$subMenu3.removeClass('submenu4');
-		document.getElementById('subMenu4').href="javascript:ocultarSubmenu3()";
 		$navbar.addClass('expandNavbar');
 	}
 
@@ -816,13 +747,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	function ocultarMemorias() {	
 		$memorias.addClass('hide');
 		$memorias.removeClass('cuadroEncima');
-		$toggle28.addClass('e');
-		$toggle31.addClass('e');
-	}
-
-	function ocultarDocumentosMision() {	
-		$documentosMision.addClass('hide');
-		$documentosMision.removeClass('cuadroEncima');
 		$toggle24.addClass('e');
 		$toggle25.addClass('e');
 	}
@@ -857,18 +781,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		$quienConforma.addClass('mostrarConforma');
 		document.getElementById('toggle10').href="javascript:ocultarQuienConforma()";
 	}
-	function ocultarDocumentos() {
-		$mostrarDocumentos.addClass('mostrarDocumento');
-		document.getElementById('toggle30').href="javascript:ocultarDocumentos()";
-	}
 	function ocultarSubmenu() {
 		$subMenu.addClass('submenu');
 		document.getElementById('subMenu2').href="javascript:mostrarSubmenu()";
-		$navbar.removeClass('expandNavbar');
-	}
-	function ocultarSubmenu3() {
-		$subMenu3.addClass('submenu4');
-		document.getElementById('subMenu4').href="javascript:mostrarSubmenu3()";
 		$navbar.removeClass('expandNavbar');
 	}
 
@@ -930,15 +845,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	$toggle25.on('click', function(event) {
 		$memorias.hasClass('e') ? mostrarMemorias() : ocultarMemorias();
 	});	
-	$toggle28.on('click', function(event) {
-		$documentosMision.hasClass('e') ? mostrarDocumentosMision() : ocultarDocumentosMision();
-	});	
-	$toggle31.on('click', function(event) {
-		$documentosMision.hasClass('e') ? mostrarDocumentosMision() : ocultarDocumentosMision();
-	});	
-	$toggle30.on('click', function(event) {
-		$mostrarDocumentos.hasClass('mostrarDocumento') ? mostrarDocumentos() : ocultarDocumentos();
-	});
 
 	// Pretty simple huh?
 	$scene.parallax();
