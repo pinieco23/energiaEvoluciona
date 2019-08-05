@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario de registro</title>
+<script src="js-formulario.js"></script>
+<link href="styles-formulario.css" rel="stylesheet" type="text/css"  />
+
+<script>
+ var vcc = function(g_recaptcha_response) {
+ var $captcha = $( '#recaptcha' );
+ 
+ $( '.msg-error' ).text('');
+    $captcha.removeClass( "error" );
+ };
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=renderRecaptcha&render=explicit" async defer></script>
+
+
+</head>
+
+<body>
+
+<div id="contenido-formulario">
+	<div id="formulario-registro-taller">
+		<div id="encabezado-formulario">
+			<img src="/Style Library/formulario-registro/cabezote-form.jpg" alt=""/>
+			<hr>
+		</div>
+		<div id="datos-taller">
+			<div id="linea1">Inscripción al Taller Construyendo País</div>
+			<div id="linea2"><span id="ciudad"></span>,
+							<span id="departamento"></span>,
+							<span id="fecha"></span>.
+			</div>
+			<div id="linea3">(<span class="obligatorio">*</span>) Campos obligatorios</div>
+		</div>
+		<div id="datos-usuario">
+			<div class="fila" id="nombres">
+				<div class="nombre-campo">Nombres <span class="obligatorio">*</span></div>
+				<div class="campo"><input type="text" /></div>
+			</div>
+			<div class="fila" id="apellidos">
+				<div class="nombre-campo">Apellidos <span class="obligatorio">*</span></div>
+				<div class="campo"><input type="text" /></div>
+			</div>
+			<div class="fila" id="cedula">
+				<div class="nombre-campo">Cédula de Ciudadanía <span class="obligatorio">*</span></div>
+				<div class="campo"><input type="text" value="" /></div>
+			</div>
+			<div class="fila" id="correo">
+				<div class="nombre-campo">Correo Electrónico</div>
+				<div class="campo"><input type="email" ></input></div>
+			</div>
+			<div class="fila" id="telefono">
+				<div class="nombre-campo">Teléfono Cedular <span class="obligatorio">*</span></div>
+				<div class="campo"><input type="number" /></div>
+			</div>
+			<div class="fila" id="entidad">
+				<div class="nombre-campo">Entidad</div>
+				<div class="campo"><input type="text" /></div>
+			</div>
+			<div class="fila" id="cargo">
+				<div class="nombre-campo">Cargo</div>
+				<div class="campo"><input type="text" /></div>
+			</div>
+			<div class="fila" id="ciudad">
+				<div class="nombre-campo">Ciudad <span class="obligatorio">*</span></div>
+				<div class="campo"><input type="text" /></div>
+			</div>
+		</div>
+		<div id="check-recaptcha">
+			<div id="ReCaptchContainer"></div>  
+			<label id="lblMessage" runat="server" clientidmode="static"></label>  
+		</div>
+	</div>
+	<div id="guardar"><input type="button" value="Guardar" onclick="validarRegistro()"  /></div>
+</div>
+
+
+
+
+
+<script type="text/javascript">  
+	var bot = ""
+    var your_site_key = '<%= ConfigurationManager.AppSettings["SiteKey"]%>';  
+    var renderRecaptcha = function () {  
+        grecaptcha.render('ReCaptchContainer', {  
+            'sitekey': '6Lc_xKcUAAAAABY1KckhhxDSTEqq9bntjwAXSz2X',  
+            'callback': reCaptchaCallback,  
+            theme: 'light', //light or dark    
+            type: 'image',// image or audio    
+            size: 'normal'//normal or compact   
+        });  
+    };  
+  
+    var reCaptchaCallback = function (response) {  
+        if (response !== '') {  
+            $('#lblMessage').css('color', 'green').html('Verificación exitosa'); 
+            bot = "OK" //aqui va la instrucccion cuando el verificion fue existosa
+            //en caso de utilizar la validacion con formularios tradicionales establecer el valor en un campo obligatorio $("#IDdelcampo input").val("valor");
+			//se recomienda cada vez que se cargue la pagina establecer el valor del campo validador en blanco $("#IDdelcampo input").val(" ");
+        }  
+    };  
+  
+    $('#guardar input').click(function(e) {  
+        var message = 'Por favor haga clic en la casilla de verificación';  
+        if (typeof (grecaptcha) != 'undefined') {  
+            var response = grecaptcha.getResponse();  
+            (response.length === 0) ? (message = 'La verificación fallo') : (message = 'Verificación exitosa!');  
+        }  
+        $('#lblMessage').html(message);  
+        $('#lblMessage').css('color', (message.toLowerCase() == 'Verificación exitosa') ? "green" : "red");  
+    });  
+  
+</script>  	
+
+
+</body>
+
+</html>

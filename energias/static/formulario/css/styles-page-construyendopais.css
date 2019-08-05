@@ -1,0 +1,19 @@
+﻿div#sec1 img {
+    width: 100%;
+    display: block;
+    margin: 0 !important;
+}
+div#sec2 {
+    max-width: 1000px;
+    margin: auto;
+    padding:20px;
+}
+div#sec3{
+	background:#cdd2dd;
+	padding-left:5%;
+	padding-right:5%;
+}
+div#sec3 > div{
+	max-width:1000px;
+	margin:auto;
+}

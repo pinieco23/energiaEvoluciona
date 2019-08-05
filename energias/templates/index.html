@@ -129,6 +129,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
     </section>
+<br><br>
+{% if bansizse != 0 %}
+      <div class="w3-content w3-display-container" style="max-width:100%">
+          {% for data in banner %}
+              <a target="_blank" href={{ data.1 }} >
+            <img class="mySlides mySlidesBanner" src={% static data.0 %}  style="width:100%">
+              </a>
+          {% endfor %}
+{#  <img class="mySlides mySlidesBanner" src="./static/images/b1.png" style="width:100%">#}
+{#  <img class="mySlides mySlidesBanner" src="./static/images/b2.png" style="width:100%">#}
+{#  <img class="mySlides mySlidesBanner" src="./static/images/b3.jpg" style="width:100%">#}
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+
+  {% if bansize == 1 %}
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      {% elif bansize == 2 %}
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        {% elif bansize == 3 %}
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      {% else %}
+              {% with myvar=bansize %}
+     {% for i in i|rjust:bansize %}
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv({{ forloop.counter }})"></span>
+    {% endfor %}
+  {% endwith %}
+  {% endif %}
+{% endif %}
+
+
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+
+
+
 
 
           <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
@@ -165,40 +235,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-
-<h1 class="hidden">fraking</h1>
-<h1 class="hidden">fraking</h1>
-<h1 class="hidden">fraking</h1>
-<h1 class="hidden">fraking</h1>
-<h1 class="hidden">fraking</h1>
-<h1 class="hidden">fraking</h1>
-<h1 class="hidden">frakin</h1>
-<h1 class="hidden">fracking naturaleza</h1>
-<h1 class="hidden">fracking</h1>
-<h1 class="hidden">fracking</h1>
-<h1 class="hidden">el fracking</h1>
-<h1 class="hidden">fracking producción</h1>
-<h1 class="hidden">minería con fracking</h1>
-<h1 class="hidden">fracking petroleo</h1>
-<h1 class="hidden">que es fracking naturaleza</h1>
-<h1 class="hidden">fracking producción que es</h1>
-<h1 class="hidden">qué es la minería con fracking</h1>
-<h1 class="hidden">fracking qué es</h1>
-<h1 class="hidden">fracking del petroleo que es</h1>
-<h1 class="hidden">Qué es el fracking</h1>
-<h1 class="hidden">Que es frakin</h1>
-<h1 class="hidden">Que es fracking</h1>
-<h1 class="hidden">Franking colombia</h1>
-<h1 class="hidden">Fraking en usa</h1>
-<h1 class="hidden">Franking en Colombia</h1>
-<h1 class="hidden">Actividad de Franking en Colombia</h1>
-<h1 class="hidden">Frakin Colombia</h1>
-<h1 class="hidden">Fraking en canada</h1>
-
-
-<br>
   <section class="col-md-12 padTop">
-    <div class="col-md-6 col-xs-12 column">
+    <div class="col-md-6 col-xs-12 column titlenopad">
       <h1 class="title"><b>{{ c1.0.0 }}</b></h1>
       <hr>
       <p>{{ c1.0.1 }}
@@ -558,15 +596,15 @@ for (var i = 0; i < btns.length; i++) {
 
 
 </head>
-<body>
+{% comment %}<body>
    <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
       <div class="modal-dialog">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-right: -6%;">&times;</button>
               <a target="_blank" href={{ popup.0.2 }}>
               <div class="popindex" style="background-image: url(/static/{{ popup.0.0 }});"></div>
                 </a>
-<a target="_blank" href="/reservas">
-                    <button class="btn btn-info center-block" style="    
+<a target="_blank" href={{ popup.0.2 }}>
+                    <button class="btn btn-info center-block" style="
                     width: 55%;
     margin-top: -55%;
     border-radius: 30px;
@@ -579,11 +617,11 @@ for (var i = 0; i < btns.length; i++) {
         margin-left: 37% !important;
     }
   }
-      
+
     ">{{ popup.0.1 }}</button>
 </a>
 
    </div>
 </div>
-</body>
+</body>{% endcomment %}
 </html>

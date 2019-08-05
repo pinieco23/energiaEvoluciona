@@ -1,0 +1,886 @@
+<html>
+<head>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KWLG64Q');</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134516492-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-134516492-1');
+	</script>
+
+	<meta charset="utf-8">
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!--Script-->
+	<script type="text/javascript" src="assets/scripts/js/parallax.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/js/libraries.min.js"></script>
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/styles.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWLG64Q"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!--Inicio Menú-->
+		<nav id="Navbar" class="navbar">
+			<div class="logo"></div>
+			    <span class="open-slide">
+			      <a href="#" onclick="openSlideMenu()">
+			        <svg width="30" height="30">
+			            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+			            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+			            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+			        </svg>
+			      </a>
+			    </span>
+			<div></div>
+		    <ul class="navbar-nav">
+		    	<li id="toggle6" class="e"><a href="#">¿Qué es la Misión?</a></li>
+		    	<li id="toggle7" class="e"><a href="#">¿Qué va a entregar la Misión?</a></li>
+		    	<li id="toggle8"><a id="subMenu2" href="javascript:mostrarSubmenu()">¿Quién conforma la Misión?</a>
+		    		<ul id="subMenu" class="submenu">
+				    	<li id="toggle18" class="e"><a href="javascript:mostrarConformaCoordinacion()">Coordinación</a></li>
+				    	<li id="toggle26" class="e"><a href="javascript:mostrarConformaPeerReviewers()">Peer Reviewers</a></li>
+				    	<li id="toggle19" class="e"><a href="javascript:mostrarConformaFoco1()">Foco 1</a></li>
+				    	<li id="toggle20" class="e"><a href="javascript:mostrarConformaFoco2()">Foco 2</a></li>
+				    	<li id="toggle21" class="e"><a href="javascript:mostrarConformaFoco3()">Foco 3</a></li>
+				    	<li id="toggle22" class="e"><a href="javascript:mostrarConformaFoco4()">Foco 4</a></li>
+				    	<li id="toggle23" class="e"><a href="javascript:mostrarConformaFoco5()">Foco 5</a></li>
+		    		</ul>
+		    	</li>
+		    	<a id="toggle24" class="e" href="javascript:mostrarMemorias()">Memorias</a>
+		    </ul>
+		  </nav>
+
+		  <div id="side-menu" class="side-nav">
+		    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		    <a id="toggle9" class="e" href="#">¿Qué es la Misión?</a>
+		    <a id="toggle10" href="javascript:mostrarQuienConforma()">¿Quién conforma la Misión?</a>
+			    <ul id="quienConforma" class="mostrarConforma">
+			    	<li id="toggle12" class="e"><a href="javascript:mostrarConformaCoordinacion()">Coordinación</a></li>
+			    	<li id="toggle27" class="e"><a href="javascript:mostrarConformaPeerReviewers()">Peer Reviewers</a></li>
+			    	<li id="toggle13" class="e"><a href="javascript:mostrarConformaFoco1()">Foco 1</a></li>
+			    	<li id="toggle14" class="e"><a href="javascript:mostrarConformaFoco2()">Foco 2</a></li>
+			    	<li id="toggle15" class="e"><a href="javascript:mostrarConformaFoco3()">Foco 3</a></li>
+			    	<li id="toggle16" class="e"><a href="javascript:mostrarConformaFoco4()">Foco 4</a></li>
+			    	<li id="toggle17" class="e"><a href="javascript:mostrarConformaFoco5()">Foco 5</a></li>
+			    </ul>
+		    <a id="toggle11" class="e" href="#">¿Qué va a entregar la Misión?</a>
+		    <a id="toggle25" class="e" href="javascript:mostrarMemorias()">Memorias</a>
+		  </div>
+		<!--Fin Menú-->
+	<div class="instrucciones">
+		<p>Bienvenidos. <br/>Los invitamos a que naveguen por la página y conozcan la Misión que trazará la hoja de ruta de la nueva energía del país</p>
+		<p><b>¡Desliza el mouse por la ilustración!</b></p>
+	</div>
+
+	<div id="container" class="wrapper">
+		<ul id="scene" class="scene unselectable"
+			data-friction-x="0.05"
+			data-friction-y="0.1"
+			data-scalar-x="20"
+			data-scalar-y="5">
+			<li class="layer" data-depth="0.00"></li>
+			<li class="layer" data-depth="0.10"><div class="background"></div></li>
+			<li class="layer" data-depth="0.30"><div class="nubes depth-30"></div></li>
+			<li class="layer" data-depth="0.70"><div class="montana plain depth-70"></div></li>
+			<li class="layer" data-depth="0.80"><div class="edificios depth-90"></div></li>
+			<li class="layer" data-depth="0.90"><div class="montana paint depth-80"></div></li>
+			<li class="layer"><div class="ciudad depth-100"></div></li>
+		</ul>
+
+		<!--¿Qué es la Misión de la Transformación Energética?-->
+		<section id="queMision" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>¿Qué es la Misión de la Transformación Energética?</em></h1>
+						</header>
+						<p>El Gobierno de Colombia está interesado en estructurar una propuesta de modernización del marco institucional y regulatorio del sector eléctrico, que facilite la incorporación de nuevos agentes, tecnologías y esquemas transaccionales en el mercado.</p>
+						<p>Desde hace 25 años, Colombia ha llevado a cabo cambios regulatorios y operativos que han hecho que se posicione como un referente en temas de energía en la región. A pesar de los avances, aún quedan esfuerzos por realizar para garantizar el suministro de la energía a precios eficientes en todo momento, lograr una mayor calidad y cobertura del servicio y aumentar la resiliencia ante fenómenos climáticos.</p>
+						<p>El Ministerio de Minas y Energía convocó una Misión para establecer, en un periodo de seis meses, el mapa de ruta para implementar los ajustes requeridos en el mercado de energía eléctrica. Este mapa será diseñado por un grupo expertos nacionales e internacionales los cuales se seleccionarán de conformidad con su experiencia y conocimientos sobre cada de 5 focos de trabajo definidos para la Misión.</p>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarQueMision()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!--¿Qué va a entregar la Misión?-->
+		<section id="entregarMision" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>¿Qué va a entregar la Misión?</em></h1>
+						</header>
+						<p>Los expertos para cada foco deberán elaborar un artículo que resuma la situación actual de la temática, plantee la visión que se ha discutido con el Ministerio de Minas y Energía y sus entidades adscritas y vinculadas y proponga las acciones que deben cumplirse. Cada equipo mantendrá discusiones previas con las entidades y agentes relacionados directamente con la temática, incluyendo los gremios y la academia (a favor y en contra).</p>
+						<p>Los artículos de recomendaciones serán socializados y discutidos en seminarios con una amplia participación de la industria y demás instituciones del Gobierno Nacional. En estos seminarios se evaluarán las acciones de política, planeación, regulación y de otro tipo, necesarias para lograr la visión propuesta a partir del estado inicial y de las tendencias internacionales.</p>
+						<p>Los artículos de recomendaciones finales de cada uno de los focos de estudio serán revisados por pares independientes de la industria y la academia, estos pares revisarán los comentarios realizados por los agentes del sector.</p>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarEntregarMision()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+
+		<!--Memorias-->
+		<section id="memorias" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>Memorias</em></h1>
+						</header>
+						<h2>Lanzamiento de la Misión de la Transformación Energética (Parte 1)</h2>
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HOG7Qle0X-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<br/><br/>
+						<h2>Lanzamiento de la Misión de la Transformación Energética (Parte 2)</h2>
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ILLDQQjix28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarMemorias()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!--¿Quién la conforma?
+			COORDINACIÓN-->
+		<section id="ConformaCoordinacion" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<div class="imgConformaCoordinacion"></div>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarConformaCoordinacion()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!--¿Quién la conforma?
+			PEER REVIEWERS-->
+		<section id="ConformaPeerReviewers" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<div class="imgConformaPeerReviewers"></div>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarConformaPeerReviewers()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!--¿Quién la conforma?
+			FOCO1-->
+		<section id="ConformaFoco1" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<div class="imgConformaFoco1"></div>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarConformaFoco1()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!--¿Quién la conforma?
+			FOCO2-->
+		<section id="ConformaFoco2" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<div class="imgConformaFoco2"></div>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarConformaFoco2()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+			<!--¿Quién la conforma?
+			FOCO3-->
+		<section id="ConformaFoco3" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<div class="imgConformaFoco3"></div>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarConformaFoco3()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!--¿Quién la conforma?
+			FOCO4-->
+		<section id="ConformaFoco4" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<div class="imgConformaFoco4-1"></div>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarConformaFoco4()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+
+
+		<!--¿Quién la conforma?
+			FOCO5-->
+		<section id="ConformaFoco5" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<div class="imgConformaFoco5"></div>
+						<ul class="links">
+							<li><a class="github" href="javascript:ocultarConformaFoco5()">Cerrar</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!--Aumento de la competitividad y disminución de la concentración-->
+		<section id="foco1" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>Foco 1: <br/>Competencia, participación y estructura del mercado eléctrico</em></h1>
+						</header>
+						<p>En 1994 se reformó el funcionamiento del sector eléctrico colombiano, con lo que se ha logrado garantizar el suministro, aumentar la cobertura y afrontar las dificultades que traen los fenómenos climáticos, como el fenómeno de El Niño.
+						Sin embargo, en Colombia existe una alta concentración en la generación y comercialización del servicio público de energía eléctrica, un bajo despliegue de Fuentes No Convencionales de Energía Renovables (FNCER), como la energía solar y eólica, a gran y pequeña escala y un uso limitado de instrumentos financieros y nuevos esquemas transaccionales, lo que resulta en señales de precios ineficientes que impactan en la tarifa que pagan los usuarios finales. 
+						</p>
+						<div class="panel2">
+							<h2>Objetivos</h2>
+							<div class="panelIzquierdo">
+								<ul>
+									<li >Diseño de esquemas contractuales, garantías y coberturas de riesgo</li><hr>
+									<li >Inversión, cargo por confiabilidad y contratos</li><hr>
+									<li >Participación de las FNCER en la matriz de generación</li><hr>
+									<li >Restricciones, precios nodales e infraestructura de transmisión</li>
+								</ul>
+							</div>
+							<div class="panelDerecho">
+								<ul>
+									<li>Nuevos servicios y agentes: sistemas de almacenamiento y agregadores</li><hr>
+									<li>Información abierta y transparente</li><hr>
+									<li>Estructura del mercado</li>
+								</ul>
+							</div>
+						</div>
+						<div class="colorFoco1">
+							<div class="imgFoco1"></div>
+						</div>
+						<div class="panel">
+							<ul class="links">
+								<li><a class="github" href="javascript:ocultarFoco1()">Cerrar</a></li>
+							</ul>
+						<div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Abastecimiento de gas como combustible de transición y generación térmica-->
+		<section id="foco2" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>Foco 2: <br/>El rol del gas en la Transformación Energética</em></h1>
+						</header>
+						<p>En los últimos años, el país se ha enfrentado a una reducción gradual y sostenida en la producción de gas natural. Para el año 2021, la demanda de gas será mayor que la oferta. Por lo tanto, Colombia necesitaría gas importado para el uso de gas domiciliario o el uso de gas vehicular, lo que implicaría mayores costos para los usuarios.</p> 
+
+						<p>Es necesario que el país tenga un plan de abastecimiento de gas natural sostenible y de largo plazo que asegure una generación térmica confiable, dada la complementariedad que la misma otorga en los períodos de baja hidrología.</p>
+
+						<p>El gas natural se ha convertido en un producto transable y, después de las fuentes no convencionales de energía renovable (FNCER) presenta la mayor tasa de crecimiento entre los energéticos destinados a la generación eléctrica. La flexibilidad que ofrece esta tecnología es un complemento importante para la penetración de fuentes variables de generación eléctrica, por lo que es imperativo desarrollar un esquema de suministro de gas natural amplio, diverso, competitivo y estable para permitir a los actores del mercado tomar decisiones de largo plazo.
+						</p>
+
+						<div class="panel2">
+							<h2>Objetivos</h2>
+							<div class="panelIzquierdo">
+								<ul>
+									<li>Esquema de abastecimiento</li><hr>
+									<li>Comercialización de la producción</li><hr>
+									<li>Infraestructura de transporte y su remuneración</li><hr>
+									<li>Almacenamiento y libre acceso a las plantas de regasificación</li>
+								</ul>
+							</div>
+							<div class="panelDerecho">
+								<ul>
+									<li>Información y coordinación de la actividad</li><hr>
+									<li>Energy Systems Integration</li><hr>
+									<li>Aspectos institucionales y regulatorios</li>
+								</ul>
+							</div>
+						</div>
+						<div class="colorFoco2">
+							<div class="imgFoco2"></div>
+						</div>
+						<div class="panel">
+							<ul class="links">
+								<li><a class="github" href="javascript:ocultarFoco2()">Cerrar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Descentralización, digitalización de la industria y la gestión eficiente de la demanda-->
+		<section id="foco3" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>Foco 3: <br/>Descentralización y digitalización de la industria y gestión eficiente de la demanda</em></h1>
+						</header>
+						<p>Colombia necesita migrar hacia una economía que consuma electricidad de forma eficiente y con la intensidad que requiere el desarrollo económico e industrial del país, y para ello requiere políticas y medidas regulatorias para incentivar la adopción y financiación de tecnologías y servicios.</p>
+						<p>Asimismo, se necesitan medidas que promuevan la digitalización y descentralización del sector y fomenten la participación activa e informada de la demanda en el consumo y la adopción de tecnologías para gestión de consumo, almacenamiento, o generación, además, de incentivar a las empresas para que implementen nuevos servicios para la gestión eficiente de la demanda y genere beneficios reales para los usuarios.</p>
+						
+						<div class="panel2">
+							<h2>Objetivos</h2>
+							<div class="panelIzquierdo">
+								<ul>
+									<li>Planeación integral de los sistemas de distribución</li><hr>
+									<li>Aumentar la visibilidad y transparencia de los sistemas de distribución</li><hr>
+									<li>Creación de una plataforma de intercambio de servicios de distribución</li>
+								</ul>
+							</div>
+							<div class="panelDerecho">
+								<ul>
+									<li>Recursos energéticos distribuidos</li><hr>
+									<li>Fomentar la gestión eficiente de la demanda</li><hr>
+									<li>Reforma a tarifas de distribución para reflejar los costos del sistema de distribución</li>
+								</ul>
+							</div>
+						</div>
+						<div class="colorFoco3">
+							<div class="imgFoco3"></div>
+						</div>
+						<div class="panel">
+							<ul class="links">
+								<li><a class="github" href="javascript:ocultarFoco3()">Cerrar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Aumento de la cobertura, mejora de la calidad y focalización de subsidios-->
+		<section id="foco4" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>Foco 4: <br/>Cierre de brechas, mejora de la calidad y diseño y formulación eficiente de subsidios</em></h1>
+						</header>
+						<p>Aunque la cobertura del servicio de electricidad es hoy superior al 97%, en el país hay más de 431.000 viviendas sin servicio de energía eléctrica. La reducción de este déficit de servicio asegurando niveles adecuados de calidad, ha sido uno de los propósitos de la política pública y es un elemento indispensable para cumplir los objetivos del Plan de Desarrollo del actual Gobierno. El costo estimado para lograr una cobertura total del servicio de energía eléctrica es de $5 billones y se necesita de un monto similar para normalizar las redes a nivel nacional y lograr niveles adecuados en la calidad del servicio.</p>
+						<p>Para avanzar de manera eficiente en el aumento de la cobertura se deberá tener un enfoque de energización y no solamente de extensión de redes, pues a través de los años se ha demostrado que esto último no tiene el potencial de transformar los modos de generación de energía y la calidad de vida de las poblaciones. Asimismo, deben contemplarse los nuevos desarrollos tecnológicos disponibles, como las micro redes con servicios de energía, bombeo de agua y riego, etc. A forma de complemento, se deben desarrollar sistemas de comunicaciones para supervisar la micro red y facilitar la autoreparación y la detección y reporte de problemas de operación y funcionamiento, y esquemas empresariales sostenibles.</p>
+						<p>En el mercado eléctrico colombiano, existen dos fondos que tienen como finalidad otorgar subsidios al consumidor final (FSSRI y FOES), y cuatro fondos que tienen como finalidad otorgar subsidios a los agentes del mercado FAZNI, FAER, PRONE y el FNRSGR, este último no exclusivo del sector. La proliferación de subsidios ejerce una presión fiscal creciente e insostenible en el Presupuesto General de la Nación.</p>
+						
+						<div class="panel2">
+							<h2>Objetivos</h2>
+							<div class="panelIzquierdo">
+								<ul>
+									<li>Aumento de la cobertura</li><hr>
+							<li>Mejoras en la calidad del servicio</li>
+								</ul>
+							</div>
+							<div class="panelDerecho">
+								<ul>
+									<li>Alcance, efectividad y eficiencia de los fondos existentes</li><hr>
+									<li>Fortalecimiento del marco institucional y regulatorio</li>
+								</ul>
+							</div>
+						</div>
+						<div class="colorFoco4">
+							<div class="imgFoco4"></div>
+						</div>
+						<div class="panel">
+							<ul class="links">
+								<li><a class="github" href="javascript:ocultarFoco4()">Cerrar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Reforma institucional y regulatoria-->
+		<section id="foco5" class="wrapper about hide accelerate">
+			<div class="cell accelerate">
+				<div class="cables center accelerate">
+					<div class="panel accelerate">
+						<header>
+							<h1>Foco 5: <br/>Revisión del marco institucional y regulatorio</em></h1>
+						</header>
+						<p>La necesidad de la transición hacia una industria más innovadora, un mercado flexible que propicie la entrada de nuevos agentes, tecnologías y esquemas transaccionales y una matriz energética más diversa y resiliente, exige cambios en el marco institucional y regulatorio. En este sentido, se hace necesario revisar la estructura del MME, la Unidad de Planeación Minero Energética (UPME), la Comisión de Regulación de Energía y Gas (CREG), el Instituto de Planificación y Promoción de Soluciones Energéticas para las Zonas no Interconectadas (IPSE), y las demás instituciones gubernamentales involucradas, con el fin de que exista una coordinación efectiva entre ellas y sus funciones estén en línea con las tendencias del sector. De igual manera, debe revisarse la forma de desarrollar la regulación.</p>
+						<p>La CREG y la Superintendencia de Servicio Públicos Domiciliarios (SSPD) han demostrado su compromiso en alinear su regulación de acuerdo a los cambios que está experimentando el sector. En particular, la CREG ha propuesto una regulación más flexible, con mayor libertad de acción e innovación, para esto, plantea la definición de principios generales y criterios macro que delimiten el campo de juego en los negocios y el señalamiento de reglas y lineamientos de comportamiento. Habría entonces una mayor autorregulación por parte de los agentes vigilada por la SSPD, la cual debería fortalecerse en su control ex post. Se propone además revisar si es pertinente continuar regulando por actividades o por servicios.</p>
+
+						<div class="panel2">
+							<h2>Objetivos</h2>
+							<div class="panelIzquierdo">
+								<ul>
+									<li>Mercado Mayorista de Energía </li><hr>
+									<li>Función de la actividad de distribución</li>				
+								</ul>
+							</div>
+							<div class="panelDerecho">
+								<ul>
+									<li>Marco institucional y coordinación</li><hr>
+									<li>Función de la regulación</li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<ul class="links">
+								<li><a class="github" href="javascript:ocultarFoco5()">Cerrar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		<button id="toggle" class="botonParticipacion tooltip toggle e">
+			<span class="tooltiptext">Competitividad, participación y estructura de mercado</span>
+		</button>
+		<button id="toggle2" class="botonGas tooltip toggle2 e">
+			<span class="tooltiptext">El rol del gas en la Transformación Energética</span>
+		</button>
+		<button id="toggle3" class="botonDescentralizacion tooltip toggle3 e">
+			<span class="tooltiptext">Descentralización y digitalización de la industria y gestión eficiente de la demanda</span>
+		</button>
+		<button id="toggle4" class="botonApetura tooltip toggle4 e">
+			<span class="tooltiptext">Cierre de brechas, mejora de la calidad y diseño y formulación eficiente de subsidios</span>
+		</button>
+		<button id="toggle5" class="botonRegulatorio tooltip toggle5 e">
+			<span class="tooltiptext">Revisión del marco institucional y regulatorio</span>
+		</button>
+
+	<!-- Scripts -->
+	<script src="assets/scripts/js/libraries.min.js"></script>
+	<script src="assets/scripts/js/jquery.parallax.js"></script>
+	<script>
+
+	// jQuery Selections
+	var $html = $('html'),
+			$container = $('#container'),
+			$prompt = $('#prompt'),
+			$toggle = $('#toggle'),
+			$toggle2 = $('#toggle2'),
+			$toggle3 = $('#toggle3'),
+			$toggle4 = $('#toggle4'),
+			$toggle5 = $('#toggle5'),
+			$toggle6 = $('#toggle6'),
+			$toggle7 = $('#toggle7'),
+			$toggle8 = $('#toggle8'),
+			$toggle9 = $('#toggle9'),
+			$toggle10 = $('#toggle10'),
+			$toggle11 = $('#toggle11'),
+			$toggle12 = $('#toggle12'),
+			$toggle13 = $('#toggle13'),
+			$toggle14 = $('#toggle14'),
+			$toggle15 = $('#toggle15'),
+			$toggle16 = $('#toggle16'),
+			$toggle17 = $('#toggle17'),
+			$toggle18 = $('#toggle18'),
+			$toggle19 = $('#toggle19'),
+			$toggle20 = $('#toggle20'),
+			$toggle21 = $('#toggle21'),
+			$toggle22 = $('#toggle22'),
+			$toggle23 = $('#toggle23'),
+			$toggle24 = $('#toggle24'),
+			$toggle25 = $('#toggle25'),
+			$toggle26 = $('#toggle26'),
+			$toggle27 = $('#toggle27'),
+			$quienConforma = $('#quienConforma'),
+			$cerrar = $('#cerrar'),
+			$github = $('#github'),
+			$queMision = $('#queMision'),
+			$entregarMision = $('#entregarMision'),
+			$memorias = $('#memorias'),
+			$foco1 = $('#foco1'),
+			$foco2 = $('#foco2'),
+			$foco3 = $('#foco3'),
+			$foco4 = $('#foco4'),
+			$foco5 = $('#foco5'),
+			$ConformaCoordinacion = $('#ConformaCoordinacion'),
+			$ConformaPeerReviewers = $('#ConformaPeerReviewers'),
+			$ConformaFoco1 = $('#ConformaFoco1'),
+			$ConformaFoco2 = $('#ConformaFoco2'),
+			$ConformaFoco3 = $('#ConformaFoco3'),
+			$ConformaFoco4 = $('#ConformaFoco4'),
+			$ConformaFoco5 = $('#ConformaFoco5'),
+			$subMenu = $('#subMenu'),
+			$navbar = $('#Navbar'),
+			$subMenu2 = $('#subMenu2'),
+			$scene = $('#scene');
+
+	// Hide browser menu.
+	(function() {
+		setTimeout(function(){window.scrollTo(0,0);},0);
+	})();
+
+	// Setup FastClick.
+	FastClick.attach(document.body);
+
+	// Add touch functionality.
+	if (Hammer.HAS_TOUCHEVENTS) {
+		$container.hammer({drag_lock_to_axis: true});
+		_.tap($html, 'a,button,[data-tap]');
+	}
+
+	// Add touch or mouse class to html element.
+	$html.addClass(Hammer.HAS_TOUCHEVENTS ? 'touch' : 'mouse');
+
+	// Resize handler.
+	(resize = function() {
+		$scene[0].style.width = window.innerWidth + 'px';
+		$scene[0].style.height = window.innerHeight + 'px';
+		if (!$prompt.hasClass('hide')) {
+			if (window.innerWidth < 600) {
+				$toggle.addClass('hide');
+			} else {
+				$toggle.removeClass('hide');
+			}
+		}
+	})();
+
+	// Attach window listeners.
+	window.onresize = _.debounce(resize, 200);
+	window.onscroll = _.debounce(resize, 200);
+
+	// Habilita el recuadro de textos
+	function mostrarFoco1() {
+		$foco1.removeClass('hide');
+		$foco1.addClass('cuadroEncima');
+		$toggle.removeClass('e');
+	}
+	function mostrarFoco2() {
+		$foco2.removeClass('hide');
+		$foco2.addClass('cuadroEncima');
+		$toggle2.removeClass('e');
+	}
+	function mostrarFoco3() {
+		$foco3.removeClass('hide');
+		$foco3.addClass('cuadroEncima');
+		$toggle3.removeClass('e');
+	}
+	function mostrarFoco4() {
+		$foco4.removeClass('hide');
+		$foco4.addClass('cuadroEncima');
+		$toggle4.removeClass('e');
+	}
+	function mostrarFoco5() {
+		$foco5.removeClass('hide');
+		$foco5.addClass('cuadroEncima');
+		$toggle5.removeClass('e');
+	}
+	function mostrarQueMision() {
+		$queMision.removeClass('hide');
+		$queMision.addClass('cuadroEncima');
+		$toggle6.removeClass('e');
+		$toggle9.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+	function mostrarEntregarMision() {
+		$entregarMision.removeClass('hide');
+		$entregarMision.addClass('cuadroEncima');
+		$toggle7.removeClass('e');
+		$toggle11.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+	function mostrarConformaCoordinacion() {
+		$ConformaCoordinacion.removeClass('hide');
+		$ConformaCoordinacion.addClass('cuadroEncima');
+		$toggle12.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+	function mostrarConformaPeerReviewers() {
+		$ConformaPeerReviewers.removeClass('hide');
+		$ConformaPeerReviewers.addClass('cuadroEncima');
+		$toggle26.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+	function mostrarConformaFoco1() {
+		$ConformaFoco1.removeClass('hide');
+		$ConformaFoco1.addClass('cuadroEncima');
+		$toggle13.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+	function mostrarConformaFoco2() {
+		$ConformaFoco2.removeClass('hide');
+		$ConformaFoco2.addClass('cuadroEncima');
+		$toggle14.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}	
+	function mostrarConformaFoco3() {
+		$ConformaFoco3.removeClass('hide');
+		$ConformaFoco3.addClass('cuadroEncima');
+		$toggle15.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+	function mostrarConformaFoco4() {
+		$ConformaFoco4.removeClass('hide');
+		$ConformaFoco4.addClass('cuadroEncima');
+		$toggle16.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+	function mostrarConformaFoco5() {
+		$ConformaFoco5.removeClass('hide');
+		$ConformaFoco5.addClass('cuadroEncima');
+		$toggle17.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+	function mostrarQuienConforma() {
+		$quienConforma.removeClass('mostrarConforma');
+		document.getElementById('toggle10').href="javascript:mostrarQuienConforma()";
+	}
+
+	function mostrarMemorias() {
+		$memorias.removeClass('hide');
+		$memorias.addClass('cuadroEncima');
+		$toggle24.removeClass('e');
+		document.getElementById('side-menu').style.width = '0';
+      	document.getElementById('main').style.marginLeft = '0';
+	}
+
+	function mostrarSubmenu() {
+		$subMenu.removeClass('submenu');
+		document.getElementById('subMenu2').href="javascript:ocultarSubmenu()";
+		$navbar.addClass('expandNavbar');
+	}
+
+	// Oculta el recuadro de textos
+	function ocultarFoco1() {
+		$foco1.addClass('hide');
+		$foco1.removeClass('cuadroEncima');
+		$toggle.addClass('e');
+	}
+	function ocultarFoco2() {
+		$foco2.addClass('hide');
+		$foco2.removeClass('cuadroEncima');
+		$toggle2.addClass('e');
+	}	
+	function ocultarFoco3() {
+		$foco3.addClass('hide');
+		$foco3.removeClass('cuadroEncima');
+		$toggle3.addClass('e');
+	}
+	function ocultarFoco4() {
+		$foco4.addClass('hide');
+		$foco4.removeClass('cuadroEncima');
+		$toggle4.addClass('e');
+	}
+	function ocultarFoco5() {	
+		$foco5.addClass('hide');
+		$foco5.removeClass('cuadroEncima');
+		$toggle5.addClass('e');
+	}
+	function ocultarQueMision() {	
+		$queMision.addClass('hide');
+		$queMision.removeClass('cuadroEncima');
+		$toggle6.addClass('e');
+		$toggle9.addClass('e');
+	}
+	function ocultarEntregarMision() {	
+		$entregarMision.addClass('hide');
+		$entregarMision.removeClass('cuadroEncima');
+		$toggle7.addClass('e');
+		$toggle11.addClass('e');
+	}
+	function ocultarConformaCoordinacion() {	
+		$ConformaCoordinacion.addClass('hide');
+		$ConformaCoordinacion.removeClass('cuadroEncima');
+		$toggle12.addClass('e');
+	}	
+
+	function ocultarConformaPeerReviewers() {	
+		$ConformaPeerReviewers.addClass('hide');
+		$ConformaPeerReviewers.removeClass('cuadroEncima');
+		$toggle26.addClass('e');
+	}
+
+	function ocultarMemorias() {	
+		$memorias.addClass('hide');
+		$memorias.removeClass('cuadroEncima');
+		$toggle24.addClass('e');
+		$toggle25.addClass('e');
+	}
+
+	function ocultarConformaFoco1() {	
+		$ConformaFoco1.addClass('hide');
+		$ConformaFoco1.removeClass('cuadroEncima');
+		$toggle13.addClass('e');
+	}	
+	function ocultarConformaFoco2() {	
+		$ConformaFoco2.addClass('hide');
+		$ConformaFoco2.removeClass('cuadroEncima');
+		$toggle14.addClass('e');
+	}	
+	function ocultarConformaFoco3() {	
+		$ConformaFoco3.addClass('hide');
+		$ConformaFoco3.removeClass('cuadroEncima');
+		$toggle15.addClass('e');
+	}
+	function ocultarConformaFoco4() {	
+		$ConformaFoco4.addClass('hide');
+		$ConformaFoco4.removeClass('cuadroEncima');
+		$toggle16.addClass('e');
+	}
+
+	function ocultarConformaFoco5() {	
+		$ConformaFoco5.addClass('hide');
+		$ConformaFoco5.removeClass('cuadroEncima');
+		$toggle17.addClass('e');
+	}
+	function ocultarQuienConforma() {
+		$quienConforma.addClass('mostrarConforma');
+		document.getElementById('toggle10').href="javascript:ocultarQuienConforma()";
+	}
+	function ocultarSubmenu() {
+		$subMenu.addClass('submenu');
+		document.getElementById('subMenu2').href="javascript:mostrarSubmenu()";
+		$navbar.removeClass('expandNavbar');
+	}
+
+	// Listen for toggle click event.
+	$toggle.on('click', function(event) {
+		$toggle.hasClass('e') ? mostrarFoco1() : ocultarFoco1();
+	});
+	$toggle2.on('click', function(event) {
+		$toggle2.hasClass('e') ? mostrarFoco2() : ocultarFoco2();
+	});	
+	$toggle3.on('click', function(event) {
+		$toggle3.hasClass('e') ? mostrarFoco3() : ocultarFoco3();
+	});	
+	$toggle4.on('click', function(event) {
+		$toggle4.hasClass('e') ? mostrarFoco4() : ocultarFoco4();
+	});	
+	$toggle5.on('click', function(event) {
+		$toggle5.hasClass('e') ? mostrarFoco5() : ocultarFoco5();
+	});
+	$toggle6.on('click', function(event) {
+		$toggle6.hasClass('e') ? mostrarQueMision() : ocultarQueMision();
+	});	
+	$toggle7.on('click', function(event) {
+		$toggle7.hasClass('e') ? mostrarEntregarMision() : ocultarEntregarMision();
+	});
+	$toggle9.on('click', function(event) {
+		$toggle9.hasClass('e') ? mostrarQueMision() : ocultarQueMision();
+	});	
+	$toggle10.on('click', function(event) {
+		$quienConforma.hasClass('mostrarConforma') ? mostrarQuienConforma() : ocultarQuienConforma();
+	});	
+	$toggle11.on('click', function(event) {
+		$toggle11.hasClass('e') ? mostrarEntregarMision() : ocultarEntregarMision();
+	});	
+	$toggle12.on('click', function(event) {
+		$ConformaCoordinacion.hasClass('e') ? mostrarConformaCoordinacion() : ocultarConformaCoordinacion();
+	});
+	$toggle26.on('click', function(event) {
+		$ConformaPeerReviewers.hasClass('e') ? mostrarConformaPeerReviewers() : ocultarConformaPeerReviewers();
+	});
+	$toggle13.on('click', function(event) {
+		$ConformaFoco1.hasClass('e') ? mostrarConformaFoco1() : ocultarConformaFoco1();
+	});
+	$toggle14.on('click', function(event) {
+		$ConformaFoco2.hasClass('e') ? mostrarConformaFoco2() : ocultarConformaFoco2();
+	});		
+	$toggle15.on('click', function(event) {
+		$ConformaFoco3.hasClass('e') ? mostrarConformaFoco3() : ocultarConformaFoco3();
+	});
+	$toggle16.on('click', function(event) {
+		$ConformaFoco4.hasClass('e') ? mostrarConformaFoco4() : ocultarConformaFoco4();
+	});	
+	$toggle17.on('click', function(event) {
+		$ConformaFoco5.hasClass('e') ? mostrarConformaFoco5() : ocultarConformaFoco5();
+	});	
+	$toggle24.on('click', function(event) {
+		$memorias.hasClass('e') ? mostrarMemorias() : ocultarMemorias();
+	});	
+	$toggle25.on('click', function(event) {
+		$memorias.hasClass('e') ? mostrarMemorias() : ocultarMemorias();
+	});	
+
+	// Pretty simple huh?
+	$scene.parallax();
+
+	// Check for orientation support.
+	setTimeout(function() {
+		if ($scene.data('mode') === 'cursor') {
+			$prompt.removeClass('hide');
+			if (window.innerWidth < 600) $toggle.addClass('hide');
+			$prompt.on('click', function(event) {
+				$prompt.addClass('hide');
+				if (window.innerWidth < 600) {
+					setTimeout(function() {
+						$toggle.removeClass('hide');
+					},1200);
+				}
+			});
+		}
+	},1000);
+
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+
+    function expandNavbar(){
+      document.getElementById('#Navbar').style.height = '12%';
+    }
+
+	</script>
+
+</body>
+</body>
+</html>

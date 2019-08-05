@@ -1,0 +1,185 @@
+﻿.ms-srch-result {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+div#numero-talleres {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+    background-image: url("/Style Library/construyendopais/img/fondo-talleres.png");
+    background-repeat: no-repeat;
+    background-size: 220px;
+    background-position: center;
+    background-position-y: 2px;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+div#numero-talleres .linea1 {
+    font-size: 18px;
+}
+div#numero-talleres .linea3 {
+    color: #dd6014;
+    font-size: 18px;
+    font-weight: bold;
+}
+div#talleresrealizados {
+    font-weight: bold;
+    font-size: 22px;
+}
+div#resultado-talleres {
+    padding: 20px;
+    padding-top:10px;
+    text-align:center;
+}
+.ms-srch-result {
+    text-align: center;
+}
+.itemtallerrealizado {
+    width: 300px;
+    display: inline-block;
+    background-color: #dbdcde;
+    margin: 10px;
+    vertical-align: top;
+}
+.itemtallerrealizado:hover {
+    -webkit-box-shadow: 0px 3px 5px -1px rgb(67, 66, 67);
+	-moz-box-shadow: 0px 3px 5px -1px rgb(67, 66, 67);
+	box-shadow: 0px 3px 5px -1px rgb(67, 66, 67);
+}
+.itemtallerrealizado .fechacorta {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    border-right: 70px solid #dd6014;
+    border-top: 50px solid transparent;
+    border-left: 70px solid transparent;
+    border-bottom: 50px solid #dd6014;
+}
+.itemtallerrealizado .imagentaller {
+    position: relative;
+    width: 100%;
+}
+
+.itemtallerrealizado .titulotaller {
+    width: 100%;
+    position: relative;
+}
+.itemtallerrealizado .taller-sec2 {
+    background: #dbdcde;
+    padding: 15px;
+    height: 180px;
+    box-sizing: border-box;
+    position: relative;
+}
+.itemtallerrealizado  .fechataller {
+    display: none;
+}
+.itemtallerrealizado .departamentotaller, .ciudadtaller {
+    display: inline;
+    text-shadow: 1px 2px #000;
+    font-weight: bold;
+}
+.itemtallerrealizado .departamentotaller {
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+    left: 15px;
+    font-size: 25px;
+    text-shadow: -2px 2px 1px #000;
+    width: 230px;
+    text-align: left;
+}
+.itemtallerrealizado .ciudadtaller {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 15px;
+    font-size: 16px;
+    text-shadow: -2px 2px 1px #000;
+}
+.itemtallerrealizado .imagentaller img {
+    width: 100%;
+}
+.itemtallerrealizado .participantestaller {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+        font-size: 16px;
+}
+.itemtallerrealizadospan.numpartcipantes {
+    font-size: 22px;
+}
+.itemtallerrealizado .textopartcipantes {
+    font-size: 14px;
+}
+.itemtallerrealizado .vertaller {
+    bottom: 10px;
+    position: absolute;
+    width: 90%;
+    text-align: left;
+}
+.itemtallerrealizado .vertaller button {
+    padding: 3px;
+    background: #dd6014;
+    color: #fff;
+    width: 80px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    z-index: 9;
+    position: relative;
+}
+.itemtallerrealizado .descripciontaller {
+    text-align: left;
+    height: 80px;
+    overflow: hidden;
+}
+.itemtallerrealizado hr.lineataller {
+    bottom: 10px;
+    position: absolute;
+    width: calc(100% - 95px);
+    right: 0;
+    border: 0.5px solid #504f4f;
+}
+.itemtallerrealizado .fechacorta div {
+    color: #fff;
+}
+.itemtallerrealizado .diataller {
+    bottom: 30px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+    z-index: 9;
+    color: #fff;
+    font-size: 30px;
+}
+.itemtallerrealizado .mestaller {
+    bottom: 6px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+    z-index: 9;
+    color: #fff;
+    font-size: 18px;
+}
+.itemtallerrealizado .triangulo {
+    right: 45px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #fff;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    bottom: 43px;
+    z-index: 1;
+}

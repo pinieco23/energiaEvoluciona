@@ -113,6 +113,16 @@ class redes(models.Model):
     def __str__(self):
         return self.titulo
 
+class banner(models.Model):
+    titulo = models.CharField(max_length=60)
+    link  = models.CharField(max_length=60)
+    imagen = models.ImageField(upload_to='banner', blank=True)
+    fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
+    disponible = models.BooleanField()
+
+    def __str__(self):
+        return self.titulo
+
 
 class historias(models.Model):
     titulo = models.CharField(max_length=60, blank=True)
@@ -131,6 +141,10 @@ class comision(models.Model):
     titulo = models.CharField(max_length=60)
     descripcion = models.TextField()
     link  = models.CharField(max_length=60, blank=True)
+    nombre_boton1 = models.CharField(max_length=60)
+    nombre_boton2 = models.CharField(max_length=60)
+    upload1 = models.FileField(upload_to='expertos', blank=True)
+    upload2 = models.FileField(upload_to='expertos', blank=True)
     imagen = models.ImageField(upload_to='fotos', blank=True)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
@@ -228,9 +242,12 @@ class infografia(models.Model):
 
     titulo = models.CharField(max_length=60)
     imagen = models.ImageField(upload_to='infografia', blank=True)
+    imagen2 = models.ImageField(upload_to='infografia', blank=True)
     upload = models.FileField(upload_to='gas', blank=True)
+    upload2 = models.FileField(upload_to='gas', blank=True)
     nombre_boton1 = models.CharField(max_length=80)
     nombre_boton2 = models.CharField(max_length=80)
+    nombre_boton3 = models.CharField(max_length=80)
     fecha_creacion = models.DateTimeField(default=datetime.now, blank=True)
     disponible = models.BooleanField()
 
@@ -335,3 +352,71 @@ class mitos_realidad(models.Model):
 
     def __str__(self):
         return self.titulo
+
+
+#####################################################Formulario
+class inscripcion(models.Model):
+    nombres = models.CharField(max_length=100)
+    apellidos = models.CharField(max_length=100)
+    cedula = models.CharField(max_length=100)
+    correo = models.CharField(blank=True, max_length=100)
+    telefono = models.CharField(max_length=100)
+    fecha_de_creacion = models.DateTimeField(default=datetime.now)
+    servidor = models.ForeignKey('servidor', on_delete=models.CASCADE, blank=True)
+    cargo = models.CharField(max_length=100, blank=True)
+    ciudad = models.CharField(max_length=170, blank=True)
+    taller = models.ForeignKey('taller', on_delete=models.CASCADE)
+    candidato = models.ForeignKey('candidato', on_delete=models.CASCADE, blank=True)
+    participar = models.ForeignKey('participar', on_delete=models.CASCADE)
+    interes = models.ForeignKey('interes', on_delete=models.CASCADE)
+    ingreso_al_taller = models.BooleanField(blank=True, null=True)
+    salida_del_taller = models.BooleanField(blank=True, null=True)
+    taller_previo = models.BooleanField(blank=True, null=True)
+    entidad = models.CharField(max_length=100, blank=True)
+
+
+    def __str__(self):
+        return self.nombres
+
+class taller(models.Model):
+    ciudad = models.CharField(max_length=100)
+    fecha = models.DateTimeField(default=datetime.now)
+
+    def __str__(self):
+        return self.ciudad
+
+class servidor(models.Model):
+    opcion = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.opcion
+
+class previa(models.Model):
+    opcion = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.opcion
+
+class candidato(models.Model):
+    opcion = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.opcion
+
+class participar(models.Model):
+    opcion = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.opcion
+
+class ciudad(models.Model):
+    opcion = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.opcion
+
+class interes(models.Model):
+    opcion = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.opcion

@@ -1,3 +1,8 @@
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
 hr{
     border: 0;
     height: 1px;
@@ -90,9 +95,9 @@ p{
 }
 
 .btn-infografia{
-    width: 45%;
+    width: 30%;
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 2%;
     margin-bottom: 2%;
     color: #fff;
     background-color: #337ab7;
@@ -249,6 +254,16 @@ p.subtitle{
 }
 
 @media screen and (max-width: 890px) {
+
+    .mySlidesBanner {
+        margin-top: 8% !important;
+        margin-bottom: -20% !important;
+    }
+    .titlenopad{
+        padding-top: 0% !important;
+        margin-top: 13% !important;
+    }
+
 
     .hrlinecomision{
         margin-top: -19% !important;

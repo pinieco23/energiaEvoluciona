@@ -78,9 +78,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h2 class="title">{{ form.0.0 }}</h2>
           </br>
               <p>{{ form.0.1|safe }}</p>
-              <a href={{ form.0.5 }}>
-                  <button class="btn btn-primary center-block" style="width: 80%;margin-top: 4%;margin-bottom: 4%;">{{ form.0.6 }}</button>
-              </a>
+              <a href="infografia-reserva" target="_blank" >
+        <button class="btn btn-infografia" target="_blank"> {{ info.0.2 }} </button>
+      </a>
+              <a href="infografia-gas" target="_blank" >
+        <button class="btn btn-infografia" target="_blank"> {{ info.0.3 }} </button>
+      </a>
+{#      <a href="reservas">#}
+{#        <a class="btn btn-infografia" href="https://energiaevoluciona.org/static/{{ info.0.1 }}" target="_blank"> {{ info.0.3 }} </a>#}
+        <a class="btn btn-infografia" href="https://energiaevoluciona.org/static/{{ info.0.4 }}" target="_blank"> {{ info.0.5 }} </a>
+{#          <a class="btn btn-primary center-block btn-subasta" href="https://energiaevoluciona.org/static/{{ info.0.1 }}" target="_blank">Conoce más detalles, haz click aquí</a>#}
+{#      </a>#}
+
       </div>
 
     </div>

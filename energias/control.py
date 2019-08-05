@@ -1,9 +1,13 @@
+import datetime
+from translate import Translator
 from django.shortcuts import render
 import psycopg2
 
 
 from django.shortcuts import render
 from django.http import HttpResponse
+
+from energias.form import insForm, tallerForm
 
 
 def error_404_view(request, exception):
@@ -48,7 +52,14 @@ def inicio(request):
     cur.execute("SELECT imagen, titulo_boton, link FROM energias_popup WHERE disponible = True ORDER BY id;")
     popup = cur.fetchall()
 
-    return render(request, 'index.html',{'popup': popup,'c1':c1,'imagesc3':imagesc3,'c3':c3,'expertos':expertos,'c2':c2, 'para':para, 'como': como})
+    cur.execute("SELECT imagen, link FROM energias_banner WHERE disponible = True;")
+    banner = cur.fetchall()
+
+    bansize = len(banner)
+    print(bansize)
+
+
+    return render(request, 'index.html',{'bansize':bansize,'banner':banner,'popup': popup,'c1':c1,'imagesc3':imagesc3,'c3':c3,'expertos':expertos,'c2':c2, 'para':para, 'como': como})
 
 
 
@@ -65,7 +76,7 @@ def expertos(request):
     cur.execute("SELECT nombre, cargo, descripcion, imagen, id, link FROM energias_experto WHERE disponible = True ORDER BY id;")
     expertos = cur.fetchall()
 
-    cur.execute("SELECT titulo, descripcion, imagen FROM energias_comision WHERE disponible = True;")
+    cur.execute("SELECT titulo, descripcion, imagen, nombre_boton1, nombre_boton2, upload1, upload2 FROM energias_comision WHERE disponible = True;")
     comision = cur.fetchall()
 
     return render(request, 'expertos.html',{'comision':comision, 'expertos':expertos})
@@ -87,20 +98,6 @@ def minero(request):
     minener = cur.fetchall()
 
     return render(request, 'minero.html',{'minener':minener})
-
-def infografia(request):
-
-    # Desarrollo
-    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
-
-    # Produccion
-    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
-
-    cur = con.cursor()
-    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2 FROM energias_infografia WHERE disponible = True;")
-    info = cur.fetchall()
-
-    return render(request, 'infografia.html',{'info':info})
 
 def hidraulico(request):
 
@@ -185,10 +182,14 @@ def reservas(request):
     cur.execute("SELECT titulo, descripcion, imagen, subtitulo, subdescripcion, link, nombre_boton FROM energias_reserva WHERE disponible = True;")
     form = cur.fetchall()
 
-    return render(request, 'reservas.html', {'form':form})
+    cur = con.cursor()
+    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2, upload2, nombre_boton3, imagen2 FROM energias_infografia WHERE disponible = True;")
+    info = cur.fetchall()
+
+    return render(request, 'reservas.html', {'form':form, 'info':info})
 
 
-def gas(request):
+def infografiaGas(request):
 
     # Desarrollo
     con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
@@ -200,8 +201,25 @@ def gas(request):
     cur.execute("SELECT titulo, descripcion, imagen, subtitulo, subdescripcion, link, nombre_boton FROM energias_gas WHERE disponible = True;")
     form = cur.fetchall()
 
-    return render(request, 'gas.html', {'form':form})
+    cur = con.cursor()
+    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2, upload2, nombre_boton3, imagen2 FROM energias_infografia WHERE disponible = True;")
+    info = cur.fetchall()
 
+    return render(request, 'infografia-gas.html', {'info':info})
+
+def infografiaReserva(request):
+
+    # Desarrollo
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT imagen, upload, nombre_boton1, nombre_boton2, upload2, nombre_boton3, imagen2 FROM energias_infografia WHERE disponible = True;")
+    info = cur.fetchall()
+
+    return render(request, 'infografia-reserva.html',{'info':info})
 
 def historias(request):
 
@@ -267,3 +285,79 @@ def noticia(request):
             j+=1
 
     return render(request, 'noticia.html', {'noticia':finalNoticia, 'tweet':tweet, 'principal':princial , 'npag':npag})
+
+
+
+################################################################# Formulario
+
+def vocero(request):
+    formulariotaller = tallerForm()
+    if request.method == 'POST':
+        form = tallerForm(request.POST)
+        taller = form['taller'].value()
+
+        if form.is_valid():
+            con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+            cur = con.cursor()
+            cur.execute("SELECT s.nombres, s.apellidos, s.correo, s.telefono FROM energias_taller t, energias_inscripcion s WHERE t.id = %s AND s.taller_id = %s AND s.participar_id = 2 AND s.ingreso_al_taller = true AND s.salida_del_taller = false ORDER BY RANDOM() LIMIT 1", (taller, taller))
+            row = cur.fetchall()
+            return render(request, 'sVocero.html', {'taller': formulariotaller, 'nombres':row})
+
+
+    return render(request, 'vocero.html', {'taller':formulariotaller})
+
+def sVocero(request):
+    return render(request, 'vocero.html')
+
+def candidato(request):
+    return render(request, 'candidato.html')
+
+def formulario(request):
+    now = datetime.datetime.now()
+    now = now.astimezone()
+
+    if request.method == 'POST':
+        form = insForm(request.POST)
+        nombre = form['nombres'].value()
+        ciudad = form['ciudad'].value()
+        candidato = form['candidato'].value()
+        taller = form['taller'].value()
+
+        if form.is_valid():
+            form.save()
+            con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+            cur = con.cursor()
+            cur.execute("SELECT * FROM energias_taller WHERE id = %s ", (taller))
+            row = cur.fetchall()
+            row = row[0][2]
+            translator = Translator(to_lang="es")
+            translation = translator.translate(row.strftime("%A"))
+            dia = translation+' '+str(row.day)
+            translator = Translator(to_lang="es")
+            translation = translator.translate(row.strftime("%B"))
+            mes = translation
+            anho = row.year
+
+            if int(candidato) == 2:
+                return render(request, 'candidato.html', {'nombre':nombre, 'ciudad':ciudad, 'now':now, 'taller':taller, 'taller':row, 'dia':dia, 'mes':mes, 'anho':anho})
+            else:
+                formularioIns = insForm()
+                return render(request, 'gracias.html')
+
+        else:
+            formularioIns = insForm()
+
+    else:
+        formularioIns = insForm()
+    return render(request, 'formulario.html', {'formulario':formularioIns})
+
+def validacion(request):
+
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+    cur = con.cursor()
+    cur.execute("SELECT ins.cedula, ins.nombres, ins.apellidos, ins.cedula, ins.correo, ins.telefono FROM energias_inscripcion AS ins INNER JOIN energias_taller AS taller ON ins.taller_id = taller.id")
+    row = cur.fetchall()
+
+    return render(request, 'validacion.html', {'inscritos':row})
+
+

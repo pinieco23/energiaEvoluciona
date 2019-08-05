@@ -1,0 +1,357 @@
+﻿div#sec-zonabanner img {
+    width: 100%;
+}
+
+div#sec-sabiasque {
+    padding-top: 20px;
+}
+div#sec-datos-taller-realizado > div {
+    display: inline-block;
+    width: 33%;
+    padding: 10px;
+    padding-top: 30px;
+    vertical-align:top;
+}
+.columna1 > div {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.columna2 > div {
+    width: 100%;
+    display: block;
+}
+.columna3 > div {
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+    padding-right: 50px;
+    text-align: left;
+}
+.mapa img {
+    max-width: 150px;
+}
+.participantes span {
+    width: 100%;
+    display: block;
+}
+.participantes span:nth-child(1) {
+    color: #dd6014;
+    font-size: 26px;
+    font-weight: bold;
+}
+.participantes span:nth-child(2) {
+    font-size: 22px;
+    font-weight: bold;
+}
+.taller-ciudad {
+    font-size: 24px;
+    font-weight: bold;
+}
+.taller-departamento {
+    font-size: 16px;
+    font-weight: bold;
+}
+.taller-descripcion {
+    font-size: 14px;
+    text-align: left;
+    padding-top: 15px;
+}
+.Lugar div:nth-child(1), .Lugar div:nth-child(2), .Lugar div:nth-child(3){
+    border-left: 2px solid #000;
+}
+.Lugar div {
+    padding-left: 10px;
+}
+.Lugar div:nth-child(1) {
+    color: #dd6014;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Lugar div:nth-child(2), .Lugar div:nth-child(3) {
+    font-size: 14px;
+}
+.Lugar div:nth-child(4) {
+    text-align: left;
+    color: #dd6014;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight:bold;
+}
+.imagenes-sabiasque {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.imagenes-sabiasque > div {
+    width: 330px;
+    display: inline-block;
+    vertical-align: top;
+}
+div#titulo-sabiasque {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #dd6014;
+    font-size: 24px;
+    font-weight: bold;
+}
+div#sec-sabiasque div img {
+    width: 100%;
+    vertical-align: top;
+    padding: 20px;
+}
+div#titulo-sabiasque div:nth-child(1) {
+    position: relative;
+    top: 15px;
+}
+div#titulo-sabiasque div:nth-child(2) {
+    width: 200px;
+    margin: auto;
+    background: #fff;
+    position: relative;
+}
+div#titulo-sabiasque hr {
+    border-top: 2px solid #434242;
+    width: 97%;
+    margin: auto;
+    text-align: center;
+}
+
+#sec-asi{
+	background:#dbdcde;
+}
+#sec-asi {
+    background: #dbdcde;
+    padding: 20px;
+    text-align: center;
+}
+.videofila1 {
+    font-size: 24px;
+    color: #dd6014;
+    font-weight: bold;
+}
+.videofila2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+div#video-mesas {
+    background: #dbdcde;
+    text-align: center;
+    padding: 5%;
+}
+
+/*Taller proximo*/
+.detalleTallerRealizado {
+    background: #dee1e6;
+    padding: 10px 10px 0px 0px;
+}
+
+.detalleTallerProximo {
+    background: #dee1e6;
+    margin-top: -5px;
+    padding:0px 5% 0px 5%;
+}
+.detalleTallerProximo .columa1, .detalleTallerProximo .columna2 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.detalleTallerProximo .tituloTaller div {
+    text-align: left;
+    display: block;
+    width: 100%;
+    color: #212121;
+    font-size: 26px;
+}
+.detalleTallerProximo .tituloTaller span {
+    color: #dd6014;
+}
+.detalleTallerProximo .tituloTaller div:nth-child(2) {
+    font-weight: bold;
+}
+.detalleTallerProximo .tituloTaller img {
+    padding-left: 10px;
+}
+.detalleTallerProximo .descripcionTaller {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.detalleTallerProximo .columa1 {
+    padding: 40px 60px 0px 60px;
+}
+.detalleTallerProximo .lugarTaller {
+    padding-top: 15px;
+    text-align: center;
+}
+.detalleTallerProximo .lugarTaller div {
+    display: inline-block;
+}
+.detalleTallerProximo .ubicacionTaller {
+    border-left: 3px solid;
+}
+.detalleTallerProximo .triangulo {
+    width: 0;
+    height: 0;
+    border-left: 15px solid #dd6014;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    top: 0px;
+    position: relative;
+    display: inherit;
+}
+.detalleTallerProximo .fechaTaller > div > div {
+    display: block;
+    width: 100%;
+}
+.dia-detaller-Proximo div:nth-child(1) {
+    font-size: 20px;
+    text-align: left;
+}
+.dia-detaller-Proximo div:nth-child(2) {
+    position: relative;
+    color: #dd6014;
+    font-size: 20px;
+}
+.detalleTallerProximo .numero-detaller-Proximo {
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.detalleTallerProximo .ubicacionTaller div {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+}
+.detalleTallerProximo .fechaTaller {
+    padding-right: 15px;
+    vertical-align: bottom;
+}
+.detalleTallerProximo  .ubicacionTaller {
+    font-size: 14px;
+}
+.detalleTallerProximo .lugar-detalle-Proximo {
+    color: #dd6014;
+    font-size: 20px;
+    font-weight: bold;
+}
+.detalleTallerProximo .participarTaller {
+    background: #dd6014;
+    padding: 10px;
+    font-size: 16px;
+    width: 55%;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+}
+.detalleTallerProximo .participarTaller a {
+    color: #fff !important;
+    text-decoration: none;
+    width:100%;
+    display:block;
+}
+.detalleTallerProximo .columna2 img {
+    width: auto;
+    margin: auto;
+    max-height: 350px;
+    display: block;
+}
+.detalleTallerProximo .columna2 {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/*Estilos galeria*/
+div#sec-galeria {
+    text-align: center;
+}
+div#sec-galeria img {
+    max-width: 300px;
+    display: inline-block;
+    padding: 15px;
+    vertical-align: top;
+}
+div#imagenesTalleres {
+    width: 80%;
+    margin: auto;
+}
+div#titulo-galeria {
+    text-align: center;
+    font-size: 24px;
+    color: #dd6014;
+    padding: 10px;
+    font-weight: bold;
+}
+div#titulo-galeria img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+div#encabezadoTaller {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background: #d2d2d2;
+}
+
+
+@media all and  (min-width:200px) and (max-width:800px){
+div#sec-datos-taller-realizado > div {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.columna3 > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+#sec-sabiasque .imagenes-sabiasque > div{
+    width: 45%;
+}
+div#sec-sabiasque div img {
+    padding: 5px;
+}
+.detalleTallerProximo .columa1, .detalleTallerProximo .columna2 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.detalleTallerProximo .columa1{
+	padding: 5%;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    max-width:760px;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div#imagenesTalleres {
+    width: 90%;
+}
+div#sec-galeria img {
+    max-width: 150px;
+    padding: 5px;
+}
+div#titulo-galeria img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+}

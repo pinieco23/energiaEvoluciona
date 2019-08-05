@@ -310,6 +310,9 @@ footer {
   position: absolute;
   z-index: 1;
 }
+.expandNavbar{
+  height: 12%;
+}
 
 .navbar a{
   float:left;
@@ -332,6 +335,9 @@ footer {
 }
 .submenu{
   display: none;
+}
+.submenu4{
+ display: none; 
 }
 .side-nav{
   height:100%;
@@ -371,6 +377,9 @@ footer {
     margin-left: 5%; }
 
 .mostrarConforma{
+  display: none;
+}
+.mostrarDocumento{
   display: none;
 }
 .instrucciones{
@@ -716,6 +725,13 @@ footer {
     background-size: cover;
     background-position: center;
     margin: auto; }
+.imgConformaPeerReviewers{
+    background: url(../../images/expertos/expertosPeerReviewers-mme.png);
+    width: 100%;
+    height: 180%;
+    background-size: cover;
+    background-position: center;
+    margin: auto; }
 .imgConformaFoco1{
     background: url(../../images/expertos/expertosFoco1-mme.png);
     width: 60%;    
@@ -731,26 +747,26 @@ footer {
     background-position: center;
     margin: auto; }
 .imgConformaFoco3{
-    background: url(../../images/expertos/expertosFoco3-mme.png);
+    background: url(../../images/expertos/expertosFoco3-mme.jpg);
     width: 50%;    
     height: 150%;
     background-size: cover;
     background-position: center;
     margin: auto; }
 .imgConformaFoco4-1{
-    background: url(../../images/expertos/ExpertosFoco4-1-mme.png);
-    width: 70%;    
-    height: 90%;
+    background: url(../../images/expertos/ExpertosFoco4-1-mme.jpg);
+    width: 50%;
+    height: 200%;
     background-size: cover;
     background-position: center;
     margin: auto; }
-.imgConformaFoco4-2{
+/*.imgConformaFoco4-2{
     background: url(../../images/expertos/ExpertosFoco4-2-mme.png);
     width: 60%;    
     height: 130%;
     background-size: cover;
     background-position: center;
-    margin: auto; }
+    margin: auto; }*/
 
 .imgConformaFoco5{
     background: url(../../images/expertos/expertosFoco5-mme.png);
@@ -1094,6 +1110,9 @@ footer {
   .imgConformaCoordinacion{
     width: 100%;    
     height: 30%;}
+  .imgConformaPeerReviewers{
+    width: 100%;
+    height: 57%;}
   .imgConformaFoco1{
     width: 100%;    
     height: 95%;}
@@ -1102,13 +1121,13 @@ footer {
     height: 95%;}
   .imgConformaFoco3{
     width: 100%;    
-    height: 90%;}
+    height: 100%;}
   .imgConformaFoco4-1{
     width: 100%;    
-    height: 40%;}
-  .imgConformaFoco4-2{
+    height: 120%;}
+  /*.imgConformaFoco4-2{
     width: 100%;    
-    height: 58%;}
+    height: 58%;}*/
   .imgConformaFoco5{
     width: 100%;    
     height: 90%;}
@@ -1243,6 +1262,9 @@ footer {
   .imgConformaCoordinacion{
     width: 100%;    
     height: 30%;}
+  .imgConformaPeerReviewers{
+    width: 100%;    
+    height: 100%;}
   .imgConformaFoco1{
     width: 70%;    
     height: 90%;}
@@ -1251,13 +1273,13 @@ footer {
     height: 90%;}
   .imgConformaFoco3{
     width: 70%;    
-    height: 90%;}
+    height: 140%;}
   .imgConformaFoco4-1{
+    width: 80%;
+    height: 190%;}
+  /*.imgConformaFoco4-2{
     width: 100%;    
-    height: 40%;}
-  .imgConformaFoco4-2{
-    width: 100%;    
-    height: 58%;}
+    height: 58%;}*/
   .imgConformaFoco5{
     width: 70%;    
     height: 90%;}

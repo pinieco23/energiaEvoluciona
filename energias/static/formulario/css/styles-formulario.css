@@ -1,0 +1,109 @@
+﻿div#contenido-formulario {
+    width: 100%;
+    padding: 30px 15px;
+}
+div#formulario-registro-taller {
+    max-width: 700px;
+    margin: auto;
+}
+div#formulario-registro-taller {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    -moz-box-shadow: 0px 2px 2px 1px rgba(135,135,135,1);
+    box-shadow: 0px 2px 2px 1px rgba(135,135,135,1);
+}
+div#contenido-formulario  div#encabezado-formulario{
+	text-align:center;
+}
+div#contenido-formulario  div#encabezado-formulario img {
+    width: 80%;
+}
+div#contenido-formulario  div#encabezado-formulario hr {
+    border-top: 2px solid #dd6014;
+}
+div#contenido-formulario  div#datos-taller > div {
+    display:block;
+    width:100%;
+}
+div#contenido-formulario  div#linea1 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+div#contenido-formulario  .obligatorio {
+    color: red;
+}
+div#contenido-formulario  div#linea3 {
+    padding: 10px;
+    padding-left: 0;
+    padding-left: 15px;
+}
+div#contenido-formulario  div#datos-usuario {
+    font-size: 14px;
+}
+div#contenido-formulario  .fila {
+    padding: 5px;
+    height: 35px;
+    padding-left: 15px;
+}
+div#contenido-formulario  .fila:nth-child(odd) {
+    background: #dbdcde;
+}
+div#contenido-formulario  .nombre-campo {
+    max-width: 200px;
+    display:inline-block;
+    vertical-align: -webkit-baseline-middle;
+}
+div#contenido-formulario  .campo {
+    width: calc(100% - 210px);
+    display: inline-block;
+    float: right;
+}
+div#contenido-formulario  .campo input {
+    width: 97%;
+}
+div#contenido-formulario  div#guardar {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+div#contenido-formulario div#linea2 {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+/*estilos pagina gracias*/
+div#contenido-registro-exitoso {
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    margin: auto;
+}
+div#contenido-registro-exitoso div#encabezado img {
+    max-width: 600px;
+    width:90%;
+}
+div#contenido-registro-exitoso div#encabezado hr {
+    border-top: 2px solid #dd6014;
+}
+div#contenido-registro-exitoso div#linea1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+div#contenido-registro-exitoso div#linea2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3%;
+}
+div#linea3 div{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+}
+div#check-recaptcha {
+    padding: 10px;
+}

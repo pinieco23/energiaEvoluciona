@@ -1,0 +1,23 @@
+﻿.ms-formfieldlabelcontainer {
+    display: none;
+}
+div#zona1 {
+    background: #dbdcde;
+}
+div#zona2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    background: #dbdcde;
+}
+div#zona3 {
+    background: #cdd2dd;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+}
+.sec > div {
+    max-width: 1000px;
+    margin: auto;
+}
