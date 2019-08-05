@@ -1,0 +1,17 @@
+{% block content %}
+    {% if user.is_authenticated %}
+    {% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validacion</title>
+</head>
+<body>
+
+{{ inscritos }}
+
+</body>
+</html>
+    {% endif %}
+{% endblock %}

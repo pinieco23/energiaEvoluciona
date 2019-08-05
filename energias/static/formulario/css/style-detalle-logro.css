@@ -1,0 +1,268 @@
+﻿div#sec-logrosycompromisos {
+    text-align: center;
+    background: #e9e9f4;
+    margin-bottom:10px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+div#encadezado-logro {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    background: #d2d2d2;
+}
+div#sec-logrosycompromisos div#titulo-logro {/*Estilo cuando se carga en la pagina detalle taller*/
+    width: 100%;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    padding:20px;
+}
+div#sec-logrosycompromisos div#titulo-logro div:nth-child(1){/*Estilo cuando se carga en la pagina detalle taller*/
+	color: #dd6014;
+}
+
+div#sec-logrosycompromisos > div {
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+
+}
+div#sec-logrosycompromisos div#columna1 {
+    width: 50%;
+    padding-left: 10%;
+    vertical-align: bottom;
+        padding-right: 3%;
+}
+
+/*div#sec-logrosycompromisos div#columna1 {
+    width: 60%;
+    padding-left: 10%;
+}*/
+
+div#sec-logrosycompromisos div#columna2 {
+    width: 30%;
+    margin-right: 0;
+}
+div#sec-logrosycompromisos div#columna2 .itemLogro {
+    border-left: 2px solid;
+    padding-left: 10%;
+}
+div#sec-logrosycompromisos div#columna2 .descripcionLogro {
+    height: 50px;
+    overflow: hidden;
+    font-size: 13px;
+}
+div#sec-logrosycompromisos img.check {
+    width: 15px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+div#sec-logrosycompromisos #columna1 .iconoCategoria img {
+    width: 100px;
+}
+div#sec-logrosycompromisos #columna1 .tituloLogro {
+    font-size: 24px;
+}
+div#sec-logrosycompromisos .iconoCategoria img {
+    width: 40px;
+}
+#sec-logrosycompromisos #columna1 .tituloCategoriaLogro {
+    font-size: 26px;
+    padding: 5px;
+    padding-bottom: 30px;
+}
+div#sec-logrosycompromisos .tituloCategoria {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+div#sec-logrosycompromisos .tituloLogro {
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+div#sec-logrosycompromisos .descripcionLogro {
+    text-align: left !important;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+div#sec-logrosycompromisos .vermasLogro {
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+div#sec-logrosycompromisos .vermasLogro button {
+    border: 0;
+    color: #dd6014;
+    padding: 5px;
+    margin-left: 0;
+    font-size: 14px;
+    font-family: "Montserrat","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    z-index: 9;
+    position: relative;
+    background: transparent;
+    cursor:pointer;
+    text-align: left;
+}
+div#sec-logrosycompromisos .vermasLogro hr {
+    position: relative;
+    top: -15px;
+    border-color: #000;
+    z-index: 5;
+    width: calc(100% - 90px);
+    margin-left: 90px;
+}
+
+/*seccion banner*/
+div#sec-zonabanner img {
+    width: 100%;
+    display: block;
+}
+div#tituloBannerLogro {
+    background: #d6d4db;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#000;
+}
+
+
+/*Estilos modal logro*/
+div#modalLogro {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 100;
+}
+.contentModal {
+    margin: 5% 10% 10% 10%;
+    display: block;
+    width: auto;
+    max-height: 80%;
+    background: #fff;
+    border-radius: 10px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow-y: auto;
+}
+div#cerrar {
+    text-align: right;
+    position: fixed;
+    right: 20%;
+    top: 5%;
+}
+div#cerrar img {
+    cursor: pointer;
+}
+#data-modal{
+	padding-top:15px;
+}
+div#data-modal img {
+    width: 100% !important;
+    max-width: 500px;
+    height: auto !important;
+}
+div#titulo-modal {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+div#sec-logrosycompromisos div#columna2 {
+    width: 40%;
+    padding-right: 10%;
+    max-height: 402px;
+    overflow: auto;
+}
+
+/*Estilos galeria*/
+div#sec-galeria {
+    text-align: center;
+}
+div#sec-galeria img {
+    max-width: 300px;
+    display: inline-block;
+    padding: 15px;
+    vertical-align: top;
+}
+div#imagenesTalleres {
+    max-width: 1000px;
+    margin: auto;
+}
+div#titulo-galeria {
+    text-align: center;
+    font-size: 24px;
+    color: #dd6014;
+    padding: 10px;
+    font-weight: bold;
+}
+div#titulo-galeria img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+div#encabezadoTaller {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background: #d2d2d2;
+}
+
+
+@media all and  (min-width:200px) and (max-width:600px){ /*RESOLUCION PARA CELULAR*/
+div#sec-logrosycompromisos div#columna1, div#sec-logrosycompromisos div#columna2 {
+    width: 100%;
+    display: block;
+}
+div#sec-logrosycompromisos div#columna1{
+	padding-left: 5%;
+    padding-right: 5%;
+}
+div#sec-logrosycompromisos .iconoCategoriaLogro img {
+    width: 70px !important;
+}
+div#sec-logrosycompromisos div#columna2 .descripcionLogro{
+	font-size: 14px;
+}
+div#sec-logrosycompromisos div#columna2 .itemLogro {
+    border-left: 0;
+}
+#sec-logrosycompromisos #columna1 .tituloCategoriaLogro{
+	font-size:20px;
+}
+div#sec-logrosycompromisos #columna1 .tituloLogro {
+    font-size: 20px;
+}
+div#sec-logrosycompromisos div#sec-logrosycompromisos div#columna1 {
+    padding: 1% 10% 1% 10%;
+}
+div#sec-logrosycompromisos div#columna2 {
+    max-height: 100%;
+}
+.contentModal {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+div#sec-logrosycompromisos > div {
+
+    padding: 5px;
+}
+div#cerrar {
+    right: 10%;
+    top: 3%;
+}
+
+}

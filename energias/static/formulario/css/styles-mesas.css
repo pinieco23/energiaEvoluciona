@@ -1,0 +1,191 @@
+﻿div#mesas {
+    background: #dbdcde;
+    padding: 10px;
+    text-align:center;
+}
+#mesas div#contenido-mesas {
+    margin-bottom: 10px;
+}
+#mesas div#titulo-mesas {
+    text-align: center;
+    font-size: 24px;
+    color: #dd6014;
+    padding: 15px;
+    font-weight: bold;
+}
+div#mesas #datos-mesas > div {
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+}
+div#mesas div#columna1 {
+    width: 50%;
+    padding-left: 10%;
+    vertical-align: bottom;
+    padding-right: 3%;
+}
+div#mesas div#columna2{
+	width: 40%;
+    padding-right: 10%;
+    max-height: 402px;
+    overflow: auto;
+}
+#mesas #columna2 {
+    border-left: 2px solid;
+}
+#mesas #columna1 .iconoCategoria img {
+    width: 100px;
+}
+#mesas #columna2 .iconoCategoria img {
+    width: 40px;
+}
+
+#mesas .tituloCategoria {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#mesas .tituloLogro {
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#mesas span.participantes-mesas {
+    font-size: 16px;
+}
+
+
+#mesas .titulo-mesa {
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+#mesas #columna1 .titulo-mesa {
+    font-size: 24px;
+}
+#mesas #columna2 .descripcion-mesa {
+    height: 50px;
+    overflow: hidden;
+    font-size: 13px;
+    text-align: left;
+}
+#mesas #columna1 .descripcion-mesa {
+    font-size: 14px;
+    text-align: left;
+}
+#mesas .item-mesa {
+    padding-left: 10%;
+}
+	
+ 
+#mesas .vermasMesa {
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+#mesas .vermasMesa button {
+    border: 0;
+    color: #dd6014;
+    padding: 5px;
+    margin-left: 0;
+    font-size: 14px;
+    font-family: "Montserrat","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    z-index: 9;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+}
+#mesas .vermasMesa hr {
+    position: relative;
+    top: -15px;
+    border-color: #000;
+    z-index: 5;
+    width: calc(100% - 90px);
+    margin-left: 90px;
+}
+
+div#modal-mesa {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 100;
+}
+#content-modal-mesa{
+	margin: 5% 10% 10% 10%;
+    display: block;
+    width: auto;
+    max-height: 80%;
+    background: #fff;
+    border-radius: 10px;
+    height: auto;
+    padding: 20px;
+    font-size:14px;
+    box-sizing: border-box;
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow-y: auto;
+}
+div#titulo-modal {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#descripcion-mesa-modal img{
+	max-width:100%;
+}
+div#cerrarMesa {
+    text-align: right;
+    position: fixed;
+    right: 20%;
+    top: 5%;
+}
+div#cerrarMesa img {
+    cursor: pointer;
+}
+
+div#sec-comunicados {
+	max-width:1000px;
+    padding: 20px;
+    margin: auto;
+    font-family: "Montserrat","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+}
+div#titulo-comunicados {
+    text-align: center;
+    font-size: 24px;
+    color: #dd6014;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+@media all and  (min-width:200px) and (max-width:600px){ /*RESOLUCION PARA CELULAR*/
+div#mesas div#columna1, div#mesas div#columna2{
+	width:90%;	
+	padding-left:0;
+	padding-right:0;
+}
+#mesas .item-mesa {
+    padding-left: 0;
+}
+#mesas #columna2 {
+    border-left: 0;
+}
+#mesas #columna2 .descripcion-mesa {
+    font-size: 14px;
+}
+div#content-modal-mesa {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+div#cerrarMesa {
+    right: 10%;
+    top: 3%;
+}
+
+}

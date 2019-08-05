@@ -1,9 +1,13 @@
+import datetime
+from translate import Translator
 from django.shortcuts import render
 import psycopg2
 
 
 from django.shortcuts import render
 from django.http import HttpResponse
+
+from energias.form import insForm, tallerForm
 
 
 def error_404_view(request, exception):
@@ -281,3 +285,79 @@ def noticia(request):
             j+=1
 
     return render(request, 'noticia.html', {'noticia':finalNoticia, 'tweet':tweet, 'principal':princial , 'npag':npag})
+
+
+
+################################################################# Formulario
+
+def vocero(request):
+    formulariotaller = tallerForm()
+    if request.method == 'POST':
+        form = tallerForm(request.POST)
+        taller = form['taller'].value()
+
+        if form.is_valid():
+            con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+            cur = con.cursor()
+            cur.execute("SELECT s.nombres, s.apellidos, s.correo, s.telefono FROM energias_taller t, energias_inscripcion s WHERE t.id = %s AND s.taller_id = %s AND s.participar_id = 2 AND s.ingreso_al_taller = true AND s.salida_del_taller = false ORDER BY RANDOM() LIMIT 1", (taller, taller))
+            row = cur.fetchall()
+            return render(request, 'sVocero.html', {'taller': formulariotaller, 'nombres':row})
+
+
+    return render(request, 'vocero.html', {'taller':formulariotaller})
+
+def sVocero(request):
+    return render(request, 'vocero.html')
+
+def candidato(request):
+    return render(request, 'candidato.html')
+
+def formulario(request):
+    now = datetime.datetime.now()
+    now = now.astimezone()
+
+    if request.method == 'POST':
+        form = insForm(request.POST)
+        nombre = form['nombres'].value()
+        ciudad = form['ciudad'].value()
+        candidato = form['candidato'].value()
+        taller = form['taller'].value()
+
+        if form.is_valid():
+            form.save()
+            con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+            cur = con.cursor()
+            cur.execute("SELECT * FROM energias_taller WHERE id = %s ", (taller))
+            row = cur.fetchall()
+            row = row[0][2]
+            translator = Translator(to_lang="es")
+            translation = translator.translate(row.strftime("%A"))
+            dia = translation+' '+str(row.day)
+            translator = Translator(to_lang="es")
+            translation = translator.translate(row.strftime("%B"))
+            mes = translation
+            anho = row.year
+
+            if int(candidato) == 2:
+                return render(request, 'candidato.html', {'nombre':nombre, 'ciudad':ciudad, 'now':now, 'taller':taller, 'taller':row, 'dia':dia, 'mes':mes, 'anho':anho})
+            else:
+                formularioIns = insForm()
+                return render(request, 'gracias.html')
+
+        else:
+            formularioIns = insForm()
+
+    else:
+        formularioIns = insForm()
+    return render(request, 'formulario.html', {'formulario':formularioIns})
+
+def validacion(request):
+
+    con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+    cur = con.cursor()
+    cur.execute("SELECT ins.cedula, ins.nombres, ins.apellidos, ins.cedula, ins.correo, ins.telefono FROM energias_inscripcion AS ins INNER JOIN energias_taller AS taller ON ins.taller_id = taller.id")
+    row = cur.fetchall()
+
+    return render(request, 'validacion.html', {'inscritos':row})
+
+

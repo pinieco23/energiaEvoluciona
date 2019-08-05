@@ -46,6 +46,11 @@ urlpatterns = [
     url('reservas', control.reservas),
     url('infografia-reserva', control.infografiaReserva),
     url('infografia-gas', control.infografiaGas),
+    url('formulario', control.formulario),
+    url('candidato', control.candidato),
+    url('validacion', control.validacion),
+    url('vocero', control.vocero),
+    url('sVocero', control.sVocero),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'energias.control.error_404_view'

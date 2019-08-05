@@ -1,0 +1,297 @@
+﻿.ms-srch-result {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+div#Result {
+    padding-top: 10px;
+}
+cdiv#Result {
+    max-width: 1000px;
+    margin: auto;
+}
+div#numero-talleres-proximos-home {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    
+}
+div#numero-talleres-proximos-home .linea1 {
+    font-size: 18px;
+}
+div#numero-talleres-proximos-home .linea2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+div#numero-talleres-proximos-home .linea3 {
+    font-size: 18px;
+}
+
+
+div#encabezadotalleresproximos {
+    width: 100%;
+    margin-top: 10px;
+    background: #dee1e6;
+    padding: 10px;
+    color: #212121;
+    font-size: 20px;
+    text-align: center;
+}
+div#encabezadotalleresproximos > div {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+div#encabezadotalleresproximos .textoencabezado {
+    position: relative;
+}
+div#encabezadotalleresproximos .numerotalleresproximos {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+div#talleresrealizados {
+    font-weight: bold;
+    font-size: 22px;
+}
+div#resultado-talleres {
+    text-align:center;
+}
+.ms-srch-result {
+    text-align: center;
+}
+.itemtallerproximo {
+    width: 300px;
+    display: inline-block;
+    background-color: #dbdcde;
+    margin: 10px;
+    vertical-align: top;
+    color:#fff;
+}
+.itemtallerproximo:hover {
+    -webkit-box-shadow: 0px 3px 5px -1px rgb(67, 66, 67);
+	-moz-box-shadow: 0px 3px 5px -1px rgb(67, 66, 67);
+	box-shadow: 0px 3px 5px -1px rgb(67, 66, 67);
+}
+
+.itemtallerproximo .imagentaller {
+    position: relative;
+    width: 100%;
+    display: grid;
+}
+.itemtallerproximo .imagentaller img {
+    width: 100%;
+}
+.itemtallerproximo .participar {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+.itemtallerproximo .participar a {
+    color: #dd6014 !important;
+    font-weight:bold;
+}
+.itemtallerproximo .datostaller {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    padding: 10px;
+    text-align: left;
+    text-shadow: -1px 1.4px 1px #000;
+    font-weight: bold;
+}
+.itemtallerproximo .ciudadtaller{
+    font-size: 30px;
+
+}
+.itemtallerproximo .departamentotaller {
+    font-size: 18px;
+    font-weight: initial;
+}
+.itemtallerproximo .fechataller{
+	display:none;
+}
+.fechapersonalizada div {
+    display: inline-block;
+}
+.itemtallerproximo .diataller {
+    font-size: 34px;
+}
+.itemtallerproximo .mestaller {
+    font-size: 26px;
+    padding-right: 10px;
+    font-weight: 100;
+    padding-left: 5px;
+}
+.itemtallerproximo .triangulo {
+    width: 0;
+    height: 0;
+    border-left: 15px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 0px;
+    position: relative;
+}
+.vermas {
+    float: right;
+    bottom: -20px;
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.detalleTallerRealizado {
+    background: #dee1e6;
+    padding: 10px 10px 0px 0px;
+}
+
+.detalleTallerProximo {
+    background: #dee1e6;
+}
+.detalleTallerProximo .columa1, .detalleTallerProximo .columna2 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.detalleTallerProximo .tituloTaller div {
+    text-align: left;
+    display: block;
+    width: 100%;
+    color: #212121;
+    font-size: 26px;
+}
+.detalleTallerProximo .tituloTaller span {
+    color: #dd6014;
+}
+.detalleTallerProximo .tituloTaller div:nth-child(2) {
+    font-weight: bold;
+}
+.detalleTallerProximo .tituloTaller img {
+    padding-left: 10px;
+}
+.detalleTallerProximo .descripcionTaller {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.detalleTallerProximo .columa1 {
+    padding: 40px 60px 0px 60px;
+}
+.detalleTallerProximo .lugarTaller {
+    padding-top: 15px;
+}
+.detalleTallerProximo .lugarTaller div {
+    display: inline-block;
+}
+.detalleTallerProximo .ubicacionTaller {
+    border-left: 3px solid;
+}
+.detalleTallerProximo .triangulo {
+    width: 0;
+    height: 0;
+    border-left: 15px solid #dd6014;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    top: 0px;
+    position: relative;
+    display: inherit;
+    padding-right: 15px;
+}
+.detalleTallerProximo .fechaTaller > div > div {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.dia-detaller-Proximo div:nth-child(1) {
+    font-size: 20px;
+    text-align: left;
+}
+.dia-detaller-Proximo div:nth-child(2) {
+    position: relative;
+    color: #dd6014;
+    font-size: 26px;
+}
+.detalleTallerProximo .numero-detaller-Proximo {
+    font-size: 50px;
+    padding-left: 15px;
+}
+.detalleTallerProximo .ubicacionTaller div {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+}
+.detalleTallerProximo .fechaTaller {
+    padding-right: 15px;
+    vertical-align: bottom;
+}
+.detalleTallerProximo  .ubicacionTaller {
+    font-size: 14px;
+}
+.detalleTallerProximo .lugar-detalle-Proximo {
+    color: #dd6014;
+    font-size: 20px;
+    font-weight: bold;
+}
+.detalleTallerProximo .participarTaller {
+    background: #dd6014;
+    padding: 10px;
+    font-size: 16px;
+    width: 330px;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.detalleTallerProximo .participarTaller a {
+    color: #fff !important;
+    text-decoration: none;
+    width:100%;
+    display:block;
+}
+.detalleTallerProximo .columna2 img {
+    width: auto;
+    margin: auto;
+    max-height: 350px;
+}
+.detalleTallerProximo .columna2 {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+@media all and  (min-width:200px) and (max-width:600px){
+div#encabezadotalleresproximos > div {
+    text-align: center;
+}
+.icono-arbol img {
+    width: 70px;
+}
+div#encabezadotalleresproximos {
+    font-size: 16px;
+}
+div#encabezadotalleresproximos .icono-arbol {
+    width: 100%;
+}
+div#encabezadotalleresproximos .numerotalleresproximos {
+    font-size: 20px;
+}
+.detalleTallerProximo .columa1,.detalleTallerProximo .columa1 .columna2 {
+    width: 100%;
+}
+.detalleTallerProximo .columa1{
+	padding:10px;
+}
+.detalleTallerProximo .tituloTaller div{
+	text-align: center;
+}
+
+}

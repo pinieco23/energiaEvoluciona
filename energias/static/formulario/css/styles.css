@@ -1,0 +1,541 @@
+﻿*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "Montserrat","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+}
+/**naranja: #dd6014*/
+div#RibbonContainer-TabRowRight {
+    display: none !important;
+}
+.ms-belltown-anonspacer {
+    height: 0;
+}
+.ms-pub-logon {
+    display: none;
+    visibility: hidden;
+}
+/*estilos encabezado GOV*/
+div#menu-gov {
+    background: #005bca;
+    width: 100%;
+    display: block;
+}
+div#menu-gov-box {
+    max-width: 1200px;
+    margin: auto;
+}
+div#menu-gov img{
+	width:100%;
+}
+div#col1-gov {
+    width: 150px;
+    display: inline-block;
+}
+div#col2-gov {
+    width: calc(98% - 150px);
+    display: inline-block;
+    text-align: right;
+}
+div#col3-gov {
+    width: 70px;
+    display: inline-block;
+}
+div#menu-gov-box > div {
+    vertical-align: middle;
+}
+div#col2-gov ul li {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom:2px solid transparent;
+}
+div#col2-gov ul li a{
+	 color: #fff;
+    text-decoration: none;
+    padding:10px;
+}
+div#col2-gov ul li:hover {
+    border-bottom: 2px solid #FFAB00;
+}
+div#col1-gov img {
+    width: 150px;
+}
+div#col3-gov img {
+    width: 60px;
+}
+div#banner-gov {
+    background: #fff;
+}
+/*estilos encabezado GOV*/
+
+h1#pageTitle {
+    display: none;
+    z-index:99;
+}
+div#titlerow {
+    background: #fff;
+    z-index:99;
+}
+#titleAreaBox {
+    margin: auto;
+    background: #fff;
+}
+div#siteIcon {
+    margin: 15px 20px auto 20px;
+}
+h1#pageContentTitle {
+    display: none;
+}
+.ms-verticalAlignTop {
+    vertical-align: bottom;
+}
+div.article, div.welcome{
+	padding:0;
+}
+.js-webpart-titleCell {
+    display: none;
+}
+.ms-webpart-controlBox{
+	right:0;
+}	
+.ocultar{
+	display:none;
+}
+.ms-WPBorder {
+    border: 0;
+}
+
+
+/*Miga de pan*/
+div#miga {
+    padding: 10px;
+    background: #dbdcde;
+    text-align: left;
+    min-height: 37px;
+}
+div#miga div{
+	display:none;
+}	
+span.BreadPathSeparator {
+    background-image: url("/Style%20Library/construyendopais/img/proximo-miga.png");
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+    background-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    vertical-align: bottom;    margin-right: 10px;
+}
+#miga a {
+    color: #212121 !important;
+}
+
+	
+/*menu*/
+.ms-breadcrumb-box {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.ms-core-listMenu-horizontalBox {
+    width: 100%;
+}
+
+#DeltaHorizontalQuickLaunch ul {
+    width: 100%;
+    display: inline-flex;
+}
+#DeltaHorizontalQuickLaunch ul li {
+    border-left: 1px solid #212121;
+    text-align: center;
+    cursor:pointer;
+    flex:auto;
+}
+#DeltaHorizontalQuickLaunch ul li:first-child {
+    border-left: 0px;
+}
+#DeltaHorizontalQuickLaunch ul li a{
+	width:100%;
+}
+#DeltaHorizontalQuickLaunch ul li a, #DeltaHorizontalQuickLaunch ul li span{
+	color:#212121;
+	font-size:16px;
+}
+
+#DeltaHorizontalQuickLaunch ul li:hover a,#DeltaHorizontalQuickLaunch ul li:hover span {
+    color: #dd6014;
+}
+#DeltaHorizontalQuickLaunch ul li ul {
+    display: block;
+}
+
+
+#DeltaHorizontalQuickLaunch ul li ul li {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+#DeltaHorizontalQuickLaunch ul li ul li{
+	border:0px;
+	text-align:left;
+}
+#DeltaHorizontalQuickLaunch ul li:hover ul li a{
+	color:#212121;
+}
+#DeltaHorizontalQuickLaunch ul li ul li {
+    border: 0px;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px dotted #dd6014;
+}
+#DeltaHorizontalQuickLaunch .ms-selected,
+#DeltaHorizontalQuickLaunch .ms-pivotControl-surfacedOpt-selected,
+#DeltaHorizontalQuickLaunch .ms-core-listMenu-selected,
+#DeltaHorizontalQuickLaunch .ms-hero-command-enabled-alt {
+    font-weight: initial;
+}
+
+
+
+
+
+/*buscador*/
+div#DeltaPlaceHolderSearchArea {
+    padding: 0;
+}
+div#SearchBox > div{
+	border-radius: 5px;
+    padding: 3px;
+    height: 35px;
+    border-color: #212121;
+}
+div#searchInputBox input {
+	width:150px;
+    font-size: 14px;
+    height: 25px;
+}
+#searchInputBox {
+    border-radius: 5px;
+    padding: 3px;
+    height: 35px;
+    border-color: #212121;
+}
+
+/*contenido principal*/
+#contentBox{
+	padding:0px 0px 20px 0px;
+}
+.article-content, .welcome-content {
+    margin: 0;
+}
+#contentBox .ms-rtestate-field p,#contentBox p.ms-rteElement-P {
+    margin: 0;
+    line-height: 0;
+}
+
+.contentwrapper {
+    min-width: 100px;
+    max-width: 100%;
+    margin: 0;
+    min-height:500px;
+}
+#s4-bodyContainer {
+    width: 100%;
+    overflow: overlay;
+}
+.ms-pub-contentLayout {
+    min-width: 100px;
+}
+#sidebar{
+	display:none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+}
+.ms-webpart-chrome-title {
+    margin-bottom: 0;
+}
+#ms-belltown-table{
+	padding-bottom:0;
+}
+div#DeltaPlaceHolderMain {
+    min-height: 400px;
+}
+
+
+
+/*footer*/
+div#footer1 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px 0px;
+    background: #005bca;
+    position:relative;
+}
+#footer1 .redes {
+	width:150px;
+    vertical-align: text-top;
+}
+#footer1 div#logo-CO {
+    width: 70px;
+    vertical-align: text-top;
+    margin-top: 25px;
+}
+div#logo-CO img {
+    width: 100%;
+}
+#footer1 a{
+	font-size: 15px;
+    background: #3f7fce;
+    padding: 10px;
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    display:inline-block;
+}
+div#footer1 > div {
+    display: inline-table;
+    position: relative;
+    padding: 10px;
+}
+div#footer1 .titulofooter {
+    color: #c3c3c3;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-top: 10px;
+}
+.textofooter {
+    text-align: left;
+    padding-bottom:5px;
+    color:#fff;
+}
+ 
+ 
+ 
+.fijo{
+	top:0;
+	position: fixed;
+	width: calc(100% - 17px);
+	transition: all 0.5s;
+ 	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+}
+.ocultar{
+	display:none;
+}
+div#menu-movil {
+    padding: 10px;
+    font-size: 20px;
+    background: #2e405a;
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    z-index: 9;
+    cursor:pointer;
+}
+.menu-fijo{
+	position: fixed;
+    height: 100vh;
+    left: 0;
+    background:#c6c9ce;
+}
+.ms-webpartzone-cell {
+    margin: 0;
+}
+.ms-srch-result #ResultFooter {
+    margin: 15px 0 15px 0;
+}
+/*Estils Galeria Home*/
+#zona8 #sec-galeria{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+#zona8 div#titulo-galeria {
+    text-align: center;
+    font-size: 24px;
+    color: #dd6014;
+    padding: 10px;
+    font-weight: bold;
+}
+#zona8 div#titulo-galeria img {
+    width: 30px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+#zona8 .itemgaleria {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    vertical-align:top;
+    position:relative;
+    overflow: hidden;
+}
+#zona8 .itemgaleria img {
+    width: 100%;
+    display:block
+}
+#zona8 .datosGaleria {
+    position: absolute;
+     height: 100%;
+    bottom: -300px;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    transition: all 1s;
+}
+#zona8 .itemgaleria:hover .datosGaleria {
+     -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    bottom: 0;   
+}
+#zona8 .datosGaleria div {
+    display: block;
+    width: 100%;
+    padding:5px
+}
+.ms-srch-result #Paging a {/*boton paginacion*/
+    box-sizing: content-box;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 40%;
+    padding-top: 30px;
+    margin:auto;
+    margin-bottom:15px;
+    max-width:760px;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ms-srch-sbLarge>input, .ms-srch-item-path {
+    width: 100%;
+}
+
+
+
+@media all and  (min-width:200px) and (max-width:600px){ /*RESOLUCION PARA CELULAR*/
+#menu-movil{
+	display:block;	
+}
+.ms-srch-hover-outerContainer {/*ocultar hover busquedas*/
+    display: none !important;
+}
+div#col2-gov{
+	text-align:center;
+}
+div#footer1 > div{
+	width:100%;
+}
+div#footer1 .titulofooter, div#footer1 .textofooter{
+	text-align:center;
+}
+}
+
+@media all and  (min-width:200px) and (max-width:800px){ /*RESOLUCION PARA TABLET*/
+.ms-srch-hover-outerContainer {/*ocultar hover busquedas*/
+    display: none !important;
+}
+div#col2-gov ul li{
+	display:block;
+}
+#menu-movil{
+	display:block;	
+}
+#titleAreaBox{
+	width:100%;
+}
+#titleAreaRow > div{
+	width:100%;
+	display:inline-block;
+	margin: auto;
+	float: none;
+}
+#DeltaPlaceHolderSearchArea, #searchInputBox{
+	width:100%;
+	text-align:center;
+}
+#titlerow .ms-breadcrumb-box {
+    left: -100%;
+    position: fixed;
+    display:block;
+    position:absolute;
+    width:80%;
+    background:#E9EFF8;
+    height:100% !important;
+    top:0;
+    padding-top:0;
+    z-index: 110;
+    overflow-y: overlay;
+}
+#DeltaHorizontalQuickLaunch ul{
+	display:block;
+}
+#DeltaHorizontalQuickLaunch ul li {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px dotted;
+    border-left: 0px solid #212121 !important;
+    text-align:center;
+}
+#DeltaHorizontalQuickLaunch ul li a,#DeltaHorizontalQuickLaunch ul li span{
+	color:#2C5889;
+}
+#DeltaHorizontalQuickLaunch ul li:hover {
+    border-left: 10px solid #dd6014 !important;
+    transition: all 0.5s;
+    background: rgba(0,0,0,0.05)
+}
+div#footer1 .titulofooter{
+	font-size: 1.2em;
+}
+div#footer1 .textofooter {
+    font-size: 12px;
+}
+#footer1 .redes {
+    /*margin-bottom: 20px;*/
+}
+}
+
+@media all and  (min-width:800px) { /*RESOLUCION PARA COMPUTADOR*/
+#menu-movil{
+	display:none;	
+}
+#titleAreaRow > div{
+	display:table-cell;
+	padding-right:10px;
+}
+#sidebar{
+	display:none !important;
+}
+#s4-bodyContainer{
+	position:relative !important;
+}
+#DeltaHorizontalQuickLaunch ul li:hover ul li span {
+    color: #212121;
+}
+#DeltaHorizontalQuickLaunch ul li ul li:hover span {
+    color: #dd6014;
+}
+}
+

@@ -1,0 +1,132 @@
+﻿{% if user.is_authenticated %}
+<!doctype html>
+<html>
+<head lang="es-es">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta http-equiv="Expires" content="0">
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNJ3W3P');</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16660818-32"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-16660818-32');
+	</script>
+	
+	<link rel="shortcut icon" href="static/formulario/img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="static/formulario/css/styles.css" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
+	<link href="static/formulario/css/fonts.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="static/formulario/js/jquery-3.4.1.min.js" ></script>
+	<script type="text/javascript" defer src="static/formulario/js/construyendopais.js"></script>
+<!-- End Google Tag Manager -->
+</head>
+<style>
+    .fform-group {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+</style>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNJ3W3P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		
+		<div id="menu-movil" >Menu <span class="icon-menu"></span></div>
+		<div id="s4-workspace">		
+			<div id="s4-bodyContainer">
+				<div id="sidebar"></div>
+				<div class="ms-belltown-anonspacer"></div>
+				<div id="ms-belltown-table" class="ms-table">
+					<div id="menu-gov">
+						<div id="menu-gov-box">
+							<div id="col1-gov"><img src="static/formulario/img/logo-menugov.png" alt="" /></div>
+							<div id="col2-gov"><ul>
+									<li><a href="https://www.gov.co/servicios-y-tramites/" target="_blank">Servicios y trámites</a></li>
+									<li><a href="https://www.gov.co/participacion/" target="_blank">Participación</a></li>
+									<li><a href="https://www.gov.co/informacion/" target="_blank">Información</a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="banner-gov"><img src="static/formulario/img/img-banner-gov.png" alt=""/></div>
+					</div>
+<br>
+<br>
+<br>
+<br>
+					<section id="contenido">
+
+
+                            <div class="fform-group">
+                <div class="form-group">
+                    <h1>Vocero Seleccionado</h1>
+                <br>
+                {% csrf_token %}
+                    {% for data in nombres %}
+                       {{ data.0 }}
+                        <br>
+                        {{ data.1 }}
+                        <br>
+                        {{ data.2 }}
+                        <br>
+                        {{ data.3 }}
+                    {% endfor %}
+                <br>
+                <br>
+        <a href="vocero.html" class="btn btn-primary col-lg-12 col-md-12 btn-send" type="submit" >Volver</a>
+
+
+        <br>
+                            </div>
+<br>
+<br>
+<br>
+<br>
+
+
+					</section>
+					<div id="footer1">
+								<div class="redes">							
+									<a href="https://www.facebook.com/PresidenciadeColombia" target="_blank" class="icon-facebook"></a>
+                    				<a href="https://twitter.com/infopresidencia" target="_blank" class="icon-twitter"></a>
+                    				<a href="https://www.youtube.com/user/SIGCOLOMBIA" target="_blank" class="icon-youtube"></a>
+                    				<a href="https://www.instagram.com/infopresidencia/" target="_blank" class="icon-instagram"></a>
+                    			</div>
+                    			<div id="logo-CO" ><img src="static/formulario/img/logoCOColombia.png" alt="" /></div>
+								<div class="datos-footer">
+									<div class="titulofooter">Presidencia de la República de Colombia</div>
+									<div class="textofooter">Casa de Nariño: Carrera 8 No.7-26</div>									
+									<div class="textofooter">Vicepresidencia: Carrera 8 A No.7-57</div>	
+									<div class="textofooter">Edificio Administrativo: Calle 7 No.6-54</div>																	
+									<div class="textofooter">Código Postal: 111711</div>
+								</div>
+								<div class="datos-footer">
+									<div class="titulofooter">Telefono conmutador: </div>
+									<div class="textofooter">(57 1) 562 9300 - 382 2800</div>
+									<div class="titulofooter">Línea Gratuita: </div>
+									<div class="textofooter">01 8000 913666</div>
+								</div>
+								<div class="datos-footer">
+									<div class="titulofooter">Horario de Atención:  </div>
+									<div class="textofooter">Lunes a Viernes, 8:00 a.m. a 5:45 p.m</div>
+								</div>
+								<div class="textofooter">© Copyright 2019 – Todos los derechos reservados Gobierno de Colombia </div>
+								
+							</div>
+				</div>
+			</div>	
+</body>
+
+{% endif %}
