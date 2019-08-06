@@ -299,7 +299,7 @@ def vocero(request):
         if form.is_valid():
             con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
             cur = con.cursor()
-            cur.execute("SELECT s.nombres, s.apellidos, s.correo, s.telefono FROM energias_taller t, energias_inscripcion s WHERE t.id = %s AND s.taller_id = %s AND s.participar_id = 2 AND s.ingreso_al_taller = true AND s.salida_del_taller = false ORDER BY RANDOM() LIMIT 1", (taller, taller))
+            cur.execute("SELECT s.nombres, s.apellidos, s.correo, s.telefono FROM energias_taller t, energias_inscripcion s WHERE t.id = %s AND s.taller_id = %s AND s.servidor_id = 1 AND s.candidato_id=1 AND s.participar_id = 1 AND s.vocero_confirmaciona = true AND s.ingreso_al_taller = true AND s.salida_del_taller = false ORDER BY RANDOM() LIMIT 1", (taller, taller))
             row = cur.fetchall()
             return render(request, 'sVocero.html', {'taller': formulariotaller, 'nombres':row})
 

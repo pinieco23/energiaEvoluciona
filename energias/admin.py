@@ -1,6 +1,9 @@
 from django.contrib import admin
 
-from energias.models import inscripcion, servidor, candidato, participar, ciudad, interes, taller, previa, banner, infografia, gas, reserva, historias,tweet, popup, noticia, casos_de_exito, subasta, mitos_realidad, hidrocarburo, hidraulico, para_comision, como_comision, minero_energetico, energiaEvoluciona, video, transicion,matriz, experto, redes, contenedor_5, comision, fuentes, imagenes_fuente
+from energias.models import inscripcion, servidor, candidato, participar, ciudad, interes, taller, previa, banner, \
+    infografia, gas, reserva, historias, tweet, popup, noticia, casos_de_exito, subasta, mitos_realidad, hidrocarburo, \
+    hidraulico, para_comision, como_comision, minero_energetico, energiaEvoluciona, video, transicion, matriz, experto, \
+    redes, contenedor_5, comision, fuentes, imagenes_fuente, interes_voceroa
 
 from import_export.admin import ImportExportModelAdmin
 
@@ -51,3 +54,4 @@ admin.site.register(ciudad)
 admin.site.register(interes)
 admin.site.register(taller)
 admin.site.register(previa)
+admin.site.register(interes_voceroa)

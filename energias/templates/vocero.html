@@ -37,6 +37,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin-left: 5%;
     margin-right: 5%;
 }
+    label[for='id_correo']{
+        visibility: hidden;
+    }
+    input[id='id_correo']{
+        visibility: hidden;
+    }
+    label[for='id_taller']{
+        margin-left: 18%;
+    }
 </style>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -72,10 +81,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="fform-group">
             <form method="post" class="row col-lg-12 col-md-12 col-xs-12 form-container" enctype="multipart/form-data">
                 <div class="form-group">
-
+            <h1>Seleccione un taller</h1><br>
                 {% csrf_token %}
                 {{ taller }}
                 </div>
+                <br>
             <button class="btn btn-primary col-lg-12 col-md-12 btn-send" type="submit" >Enviar</button>
         </form>
 
