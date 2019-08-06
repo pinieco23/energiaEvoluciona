@@ -3,7 +3,7 @@ from django.contrib import admin
 from energias.models import inscripcion, servidor, candidato, participar, ciudad, interes, taller, previa, banner, \
     infografia, gas, reserva, historias, tweet, popup, noticia, casos_de_exito, subasta, mitos_realidad, hidrocarburo, \
     hidraulico, para_comision, como_comision, minero_energetico, energiaEvoluciona, video, transicion, matriz, experto, \
-    redes, contenedor_5, comision, fuentes, imagenes_fuente, interes_voceroa
+    redes, contenedor_5, comision, fuentes, imagenes_fuente, interes_voceroa, inscritos
 
 from import_export.admin import ImportExportModelAdmin
 
@@ -39,13 +39,13 @@ admin.site.register(banner)
 
 class InsResource(resources.ModelResource):
     class Meta:
-        model =inscripcion
+        model =inscritos
 
 class insallAdmin(ImportExportModelAdmin):
     list_display = ('cedula', 'nombres', 'apellidos', 'telefono', 'ingreso_al_taller', 'salida_del_taller')
     resource_class = InsResource
 
-admin.site.register(inscripcion, insallAdmin)
+admin.site.register(inscritos, insallAdmin)
 
 admin.site.register(servidor)
 admin.site.register(candidato)

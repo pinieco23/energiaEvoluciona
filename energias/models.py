@@ -362,9 +362,9 @@ class inscripcion(models.Model):
     correo = models.CharField(blank=True, max_length=100)
     telefono = models.CharField(max_length=100)
     fecha_de_creacion = models.DateTimeField(default=datetime.now)
-    servidor = models.ForeignKey('servidor', on_delete=models.CASCADE, blank=True)
-    cargo = models.CharField(max_length=100, blank=True)
-    ciudad = models.CharField(max_length=170, blank=True)
+    servidor = models.ForeignKey('servidor', on_delete=models.CASCADE, blank=True, null=True)
+    cargo = models.CharField(max_length=100, blank=True, null=True)
+    ciudad = models.CharField(max_length=170, blank=True, null=True)
     taller = models.ForeignKey('taller', on_delete=models.CASCADE)
     candidato = models.ForeignKey('candidato', on_delete=models.CASCADE, blank=True)
     participar = models.ForeignKey('participar', on_delete=models.CASCADE)
@@ -372,11 +372,32 @@ class inscripcion(models.Model):
     ingreso_al_taller = models.BooleanField(blank=True, null=True)
     salida_del_taller = models.BooleanField(blank=True, null=True)
     taller_previo = models.BooleanField(blank=True, null=True)
-    entidad = models.CharField(max_length=100, blank=True)
+    entidad = models.CharField(max_length=100, blank=True, null=True)
     vocero_confirmaciona = models.BooleanField(blank=True, null=True)
-    int_sectora = models.ForeignKey('interes_voceroa', on_delete=models.CASCADE, blank=True)
+    int_sectora = models.ForeignKey('interes_voceroa', on_delete=models.CASCADE, blank=True, null=True)
+    def __str__(self):
+        return self.nombres
 
-
+class inscritos(models.Model):
+    nombres = models.CharField(max_length=100)
+    apellidos = models.CharField(max_length=100)
+    cedula = models.CharField(max_length=100)
+    correo = models.CharField(blank=True, max_length=100)
+    telefono = models.CharField(max_length=100)
+    fecha_de_creacion = models.DateTimeField(default=datetime.now)
+    servidor = models.ForeignKey('servidor', on_delete=models.CASCADE, blank=True, null=True)
+    cargo = models.CharField(max_length=100, blank=True, null=True)
+    ciudad = models.CharField(max_length=170, blank=True, null=True)
+    taller = models.ForeignKey('taller', on_delete=models.CASCADE)
+    candidato = models.ForeignKey('candidato', on_delete=models.CASCADE, blank=True)
+    participar = models.ForeignKey('participar', on_delete=models.CASCADE)
+    interes = models.ForeignKey('interes', on_delete=models.CASCADE)
+    ingreso_al_taller = models.BooleanField(blank=True, null=True)
+    salida_del_taller = models.BooleanField(blank=True, null=True)
+    taller_previo = models.BooleanField(blank=True, null=True)
+    entidad = models.CharField(max_length=100, blank=True, null=True)
+    vocero_confirmaciona = models.BooleanField(blank=True, null=True)
+    int_sectora = models.ForeignKey('interes_voceroa', on_delete=models.CASCADE, blank=True, null=True)
     def __str__(self):
         return self.nombres
 
