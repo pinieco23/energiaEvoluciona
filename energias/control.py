@@ -292,6 +292,11 @@ def noticia(request):
 
 def vocero(request):
     formulariotaller = tallerForm()
+    con = psycopg2.connect(
+        "host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+    cur = con.cursor()
+    cur.execute("SELECT * FROM energias_inscripcion",)
+    rowe = cur.fetchall()
     if request.method == 'POST':
         form = tallerForm(request.POST)
         taller = form['taller'].value()
@@ -304,7 +309,7 @@ def vocero(request):
             return render(request, 'sVocero.html', {'taller': formulariotaller, 'nombres':row})
 
 
-    return render(request, 'vocero.html', {'taller':formulariotaller})
+    return render(request, 'vocero.html', {'taller':formulariotaller, 'aaa':rowe})
 
 def sVocero(request):
     return render(request, 'vocero.html')
@@ -322,12 +327,17 @@ def formulario(request):
         ciudad = form['ciudad'].value()
         candidato = form['candidato'].value()
         taller = form['taller'].value()
+        print('Asigne las variables')
+        #print(form['int_sectora'].value())
 
         if form.is_valid():
+            print('Entre a la validacion')
             form.save()
+            print('guardado')
             con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
             cur = con.cursor()
             cur.execute("SELECT * FROM energias_taller WHERE id = %s ", (taller))
+
             row = cur.fetchall()
             row = row[0][2]
             translator = Translator(to_lang="es")
@@ -338,9 +348,13 @@ def formulario(request):
             mes = translation
             anho = row.year
 
+            print('asigne la fecha')
+
             if int(candidato) == 2:
+                print('opcion si')
                 return render(request, 'candidato.html', {'nombre':nombre, 'ciudad':ciudad, 'now':now, 'taller':taller, 'taller':row, 'dia':dia, 'mes':mes, 'anho':anho})
             else:
+                print('opcion no')
                 formularioIns = insForm()
                 return render(request, 'gracias.html')
 
