@@ -373,6 +373,8 @@ class inscripcion(models.Model):
     salida_del_taller = models.BooleanField(blank=True, null=True)
     taller_previo = models.BooleanField(blank=True, null=True)
     entidad = models.CharField(max_length=100, blank=True)
+    vocero_confirmaciona = models.BooleanField(blank=True, null=True)
+    int_sectora = models.ForeignKey('interes_voceroa', on_delete=models.CASCADE, blank=True)
 
 
     def __str__(self):
@@ -416,6 +418,12 @@ class ciudad(models.Model):
         return self.opcion
 
 class interes(models.Model):
+    opcion = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.opcion
+
+class interes_voceroa(models.Model):
     opcion = models.CharField(max_length=100)
 
     def __str__(self):
