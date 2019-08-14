@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,19 +54,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="51" />
-    <option name="width" value="1260" />
-    <option name="height" value="904" />
-  </component>
   <component name="ProjectId" id="1OsoHsMGWNIqCim1WHI57vjAlUO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/energias/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../alertas" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -193,7 +187,7 @@
       <workItem from="1558996706751" duration="909000" />
       <workItem from="1563377790616" duration="691000" />
       <workItem from="1563384588317" duration="722000" />
-      <workItem from="1564775597112" duration="44063000" />
+      <workItem from="1564775597112" duration="56964000" />
     </task>
     <servers />
   </component>
