@@ -381,7 +381,7 @@ class inscripcion(models.Model):
 class inscritos(models.Model):
     nombres = models.CharField(max_length=100)
     apellidos = models.CharField(max_length=100)
-    cedula = models.CharField(max_length=100)
+    cedula = models.BigIntegerField(unique=True)
     correo = models.CharField(blank=True, max_length=100)
     telefono = models.CharField(max_length=100)
     fecha_de_creacion = models.DateTimeField(default=datetime.now)

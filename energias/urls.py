@@ -47,6 +47,7 @@ urlpatterns = [
     url('infografia-reserva', control.infografiaReserva),
     url('infografia-gas', control.infografiaGas),
     url('formulario', control.formulario),
+    url('salida', control.salida),
     url('candidato', control.candidato),
     url('validacion', control.validacion),
     url('vocero', control.vocero),
