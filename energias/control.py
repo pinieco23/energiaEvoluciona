@@ -379,7 +379,7 @@ def formulario(request):
                 return render(request, 'gracias.html')
 
         else:
-            return redirect('https://www.construyendopais.gov.co/paginas/usuario-registrado.aspx')
+            return redirect('https://www.construyendopais.gov.co/Paginas/graciascp.aspx')
 
 
     else:
