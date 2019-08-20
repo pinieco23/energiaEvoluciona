@@ -1,13 +1,14 @@
 import datetime
 from translate import Translator
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import psycopg2
 
 
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from energias.form import insForm, tallerForm
+from energias.form import insForm, tallerForm, salidaForm
+from energias.models import inscritos
 
 
 def error_404_view(request, exception):
@@ -322,9 +323,12 @@ def formulario(request):
     now = now.astimezone()
 
     if request.method == 'POST':
+        con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+        cur = con.cursor()
         form = insForm(request.POST)
         nombre = form['nombres'].value()
         ciudad = form['ciudad'].value()
+        cc = form['cedula'].value()
         candidato = form['candidato'].value()
         taller = form['taller'].value()
         print('Asigne las variables')
@@ -334,8 +338,7 @@ def formulario(request):
             print('Entre a la validacion')
             form.save()
             print('guardado')
-            con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
-            cur = con.cursor()
+
             cur.execute("SELECT * FROM energias_taller WHERE id = %s ", (taller))
 
             row = cur.fetchall()
@@ -359,11 +362,40 @@ def formulario(request):
                 return render(request, 'gracias.html')
 
         else:
-            formularioIns = insForm()
+            return redirect('https://www.construyendopais.gov.co/paginas/usuario-registrado.aspx')
+
 
     else:
         formularioIns = insForm()
     return render(request, 'formulario.html', {'formulario':formularioIns})
+
+def salida(request):
+    now = datetime.datetime.now()
+    now = now.astimezone()
+
+
+    if request.method == 'POST':
+        form = salidaForm(request.POST)
+        cc = form['numero'].value()
+
+        con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+        cur = con.cursor()
+
+        cur.execute("SELECT id FROM energias_inscritos WHERE cedula = %s AND cedula = %s", (cc, cc))
+        row = cur.fetchall()
+
+        p = inscritos.objects.get(pk=row[0][0])
+        p.salida_del_taller = True
+        p.save()
+        pop = True
+
+    else:
+        formularioIns = salidaForm()
+        pop = False
+
+    formularioIns = salidaForm()
+    print(pop)
+    return render(request, 'salida.html', {'formulario':formularioIns, 'pop':pop})
 
 def validacion(request):
 
