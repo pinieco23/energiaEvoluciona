@@ -449,3 +449,13 @@ class interes_voceroa(models.Model):
 
     def __str__(self):
         return self.opcion
+
+class formularioEmail2(models.Model):
+    nombre = models.CharField(max_length=100)
+    telefono = models.CharField(max_length=100)
+    correo = models.CharField(max_length=100)
+    ciudad = models.CharField(max_length=170)
+    fecha_de_creacion = models.DateTimeField(default=datetime.now)
+
+    def __str__(self):
+        return self.nombre

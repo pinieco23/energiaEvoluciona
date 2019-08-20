@@ -52,6 +52,7 @@ urlpatterns = [
     url('validacion', control.validacion),
     url('vocero', control.vocero),
     url('sVocero', control.sVocero),
+    url('form-mail', control.formularioMail),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'energias.control.error_404_view'
