@@ -1,7 +1,7 @@
 from django.forms import ModelForm, forms
 from django import forms
 
-from energias.models import inscripcion, taller, inscritos
+from energias.models import inscripcion, taller, inscritos, formularioEmail2
 
 
 class insForm(ModelForm):
@@ -18,5 +18,10 @@ class tallerForm(ModelForm):
 class salidaForm(forms.Form):
     numero = forms.IntegerField(label='Ingrese un numero')
 
+
+class dataForm(ModelForm):
+    class Meta:
+        model = formularioEmail2
+        fields = ('nombre', 'telefono', 'correo', 'ciudad')
 
 

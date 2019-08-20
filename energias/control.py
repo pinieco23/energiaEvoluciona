@@ -7,7 +7,7 @@ import psycopg2
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from energias.form import insForm, tallerForm, salidaForm
+from energias.form import insForm, tallerForm, salidaForm, dataForm
 from energias.models import inscritos
 
 
@@ -317,6 +317,23 @@ def sVocero(request):
 
 def candidato(request):
     return render(request, 'candidato.html')
+
+def formularioMail(request):
+    formulario = dataForm()
+    if request.method == 'POST':
+        form = dataForm(request.POST)
+
+        if form.is_valid():
+
+            form.save()
+
+            return redirect('https://www.construyendopais.gov.co/paginas/usuario-registrado.aspx')
+
+    else:
+        formulario = dataForm()
+
+
+    return render(request, 'formularioMail.html', {'formulario':formulario})
 
 def formulario(request):
     now = datetime.datetime.now()

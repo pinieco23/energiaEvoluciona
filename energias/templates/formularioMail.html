@@ -1,0 +1,350 @@
+﻿{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head lang="es-es">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta http-equiv="Expires" content="0">
+	<title>Formulario de registro</title>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNJ3W3P');</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16660818-32"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-16660818-32');
+	</script>
+	
+	<link rel="shortcut icon" href="static/formulario/img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="static/formulario/css/styles.css" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
+	<link href="static/formulario/css/fonts.css" rel="stylesheet" type="text/css" />
+	<link href="static/formulario/css/styles-formulario.css" rel="stylesheet" type="text/css"  />
+	<script type="text/javascript" src="static/formulario/js/jquery-3.4.1.min.js" ></script>
+	<script type="text/javascript" defer src="static/formulario/js/construyendopais.js"></script>
+	<script src="static/formulario/js/js-formulario.js"></script>
+<!-- End Google Tag Manager -->
+
+<script>
+ var vcc = function(g_recaptcha_response) {
+ var $captcha = $( '#recaptcha' );
+ 
+ $( '.msg-error' ).text('');
+    $captcha.removeClass( "error" );
+ };
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=renderRecaptcha&render=explicit" async defer></script>
+
+
+</head>
+<script>
+    var para = document.createElement("span");                       // Create a <p> node
+    var t = document.createTextNode("This is a paragraph.");      // Create a text node
+    para.appendChild(t);                                          // Append the text to <p>
+    document.getElementById("div_id_servidor").appendChild(para);
+</script>
+<style>
+#div_id_nombres,#div_id_cedula, #div_id_telefono, #div_id_entidad, #div_id_ciudad, #div_id_nombres, #div_id_taller,  #div_id_participar {
+    background: #dbdcde;
+}
+
+label[for="id_nombres"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_nombres"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -72px;
+    content:'1. Nombres (*)';
+}
+
+label[for="id_apellidos"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_apellidos"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -72px;
+    content:'2. Apellidos (*)';
+}
+
+label[for="id_cedula"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_cedula"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -57px;
+    content:'3. Cédula (*)';
+}
+form{
+    padding-left: 2%;
+}
+
+label[for="id_servidor"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_servidor"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -61px;
+    content:'6. ¿Es usted Servidor Público?(*)';
+}
+
+label[for="id_entidad"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_entidad"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -58px;
+    content:'7. Indique la entidad en la que labora';
+}
+
+label[for="id_cargo"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_cargo"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -44px;
+    content:'8. Cargo que desempeña';
+}
+
+label[for="id_taller"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_taller"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -45px;
+    content:'9. Taller en el que desea participar';
+}
+
+
+label[for="id_candidato"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_candidato"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -76px;
+    content:'10. ¿Usted se encuentra inscrito para algún cargo de elección popular?';
+}
+
+label[for="id_participar"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_participar"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -76px;
+    content:'11. ¿Usted desea realizar una intervención ante el Presidente durante el Taller?” (*)';
+}
+
+label[for="id_interes"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_interes"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -56px;
+    content:'12. Tema de interés para su intervención';
+}
+
+
+
+label[for="id_int_sectora"]{
+    visibility: hidden;
+    position: relative;
+}
+label[for="id_int_sectora"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -75px;
+    content:'14. ¿Cual es la tematica de interes para las mesas de trabajo?';
+}
+
+input[for="id_ciudad"]{
+    visibility: hidden;
+    position: relative;
+}
+input[for="id_ciudad"]:after{
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: -54px;
+    content:'13. Describa brevemente el tema que desea tratar';
+}
+
+
+
+.control-group{
+    padding-bottom: 10px;
+}
+    button{
+    margin-left: 44%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    }
+
+
+
+</style>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNJ3W3P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		
+		<div id="menu-movil" >Menu <span class="icon-menu"></span></div>
+		<div id="s4-workspace">		
+			<div id="s4-bodyContainer">
+				<div id="sidebar"></div>
+				<div class="ms-belltown-anonspacer"></div>
+				<div id="ms-belltown-table" class="ms-table">
+					<div id="menu-gov">
+						<div id="menu-gov-box">
+							<div id="col1-gov"><img src="static/formulario/img/logo-menugov.png" alt="" /></div>
+							<div id="col2-gov"><ul>
+									<li><a href="https://www.gov.co/servicios-y-tramites/" target="_blank">Servicios y trámites</a></li>
+									<li><a href="https://www.gov.co/participacion/" target="_blank">Participación</a></li>
+									<li><a href="https://www.gov.co/informacion/" target="_blank">Información</a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="banner-gov"><img src="static/formulario/img/img-banner-gov.png" alt=""/></div>
+					</div>
+
+					<section id="contenido">
+<div id="contenido-formulario">
+	<div id="formulario-registro-taller">
+		<div id="encabezado-formulario">
+			<img src="data/img/cabezote-form.jpg" alt=""/>
+			<hr>
+		</div>
+		<div id="datos-taller">
+			<div id="linea1">Registro</div>
+			<div id="linea2"><span id="ciudad"></span>
+							<span id="departamento"></span>
+							<span id="fecha"></span>
+			</div>
+			<div id="linea3">(<span class="obligatorio">*</span>) Campos obligatorios</div>
+		</div>
+		<div id="datos-usuario">
+            <form method="post" class="row col-lg-12 col-md-12 col-xs-12 form-container" enctype="multipart/form-data">
+                <div class="form-group">
+
+                {% csrf_token %}
+                {{ formulario|crispy }}
+                </div>
+            <button class="btn btn-primary col-lg-12 col-md-12 btn-send" type="submit" >Enviar</button>
+        </form>
+
+		</div>
+{% comment %}		<div id="check-recaptcha">
+			<div id="ReCaptchContainer"></div>  
+			<label id="lblMessage" runat="server" clientidmode="static"></label>  
+		</div>{% endcomment %}
+	</div>
+
+</div>
+					</section>
+					<div id="footer1">
+								<div class="redes">							
+									<a href="https://www.facebook.com/PresidenciadeColombia" target="_blank" class="icon-facebook"></a>
+                    				<a href="https://twitter.com/infopresidencia" target="_blank" class="icon-twitter"></a>
+                    				<a href="https://www.youtube.com/user/SIGCOLOMBIA" target="_blank" class="icon-youtube"></a>
+                    				<a href="https://www.instagram.com/infopresidencia/" target="_blank" class="icon-instagram"></a>
+                    			</div>
+                    			<div id="logo-CO" ><img src="static/formulario/img/logoCOColombia.png" alt="" /></div>
+								<div class="datos-footer">
+									<div class="titulofooter">Presidencia de la República de Colombia</div>
+									<div class="textofooter">Casa de Nariño: Carrera 8 No.7-26</div>									
+									<div class="textofooter">Vicepresidencia: Carrera 8 A No.7-57</div>	
+									<div class="textofooter">Edificio Administrativo: Calle 7 No.6-54</div>																	
+									<div class="textofooter">Código Postal: 111711</div>
+								</div>
+								<div class="datos-footer">
+									<div class="titulofooter">Telefono conmutador: </div>
+									<div class="textofooter">(57 1) 562 9300 - 382 2800</div>
+									<div class="titulofooter">Línea Gratuita: </div>
+									<div class="textofooter">01 8000 913666</div>
+								</div>
+								<div class="datos-footer">
+									<div class="titulofooter">Horario de Atención:  </div>
+									<div class="textofooter">Lunes a Viernes, 8:00 a.m. a 5:45 p.m</div>
+								</div>
+								<div class="textofooter">© Copyright 2019 – Todos los derechos reservados Gobierno de Colombia </div>
+								
+							</div>
+				</div>
+			</div>	
+<script type="text/javascript">  
+	var bot = ""
+    var your_site_key = '<%= ConfigurationManager.AppSettings["SiteKey"]%>';  
+    var renderRecaptcha = function () {  
+        grecaptcha.render('ReCaptchContainer', {  
+            'sitekey': '6Lc_xKcUAAAAABY1KckhhxDSTEqq9bntjwAXSz2X',  
+            'callback': reCaptchaCallback,  
+            theme: 'light', //light or dark    
+            type: 'image',// image or audio    
+            size: 'normal'//normal or compact   
+        });  
+    };  
+  
+    var reCaptchaCallback = function (response) {  
+        if (response !== '') {  
+            $('#lblMessage').css('color', 'green').html('Verificación exitosa'); 
+            bot = "OK" //aqui va la instrucccion cuando el verificion fue existosa
+            //en caso de utilizar la validacion con formularios tradicionales establecer el valor en un campo obligatorio $("#IDdelcampo input").val("valor");
+			//se recomienda cada vez que se cargue la pagina establecer el valor del campo validador en blanco $("#IDdelcampo input").val(" ");
+        }  
+    };  
+  
+    $('#guardar input').click(function(e) {  
+        var message = 'Por favor haga clic en la casilla de verificación';  
+        if (typeof (grecaptcha) != 'undefined') {  
+            var response = grecaptcha.getResponse();  
+            (response.length === 0) ? (message = 'La verificación fallo') : (message = 'Verificación exitosa!');  
+        }  
+        $('#lblMessage').html(message);  
+        $('#lblMessage').css('color', (message.toLowerCase() == 'Verificación exitosa') ? "green" : "red");  
+    });  
+  
+</script>
+
+</body>
