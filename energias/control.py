@@ -389,6 +389,7 @@ def formulario(request):
 def salida(request):
     now = datetime.datetime.now()
     now = now.astimezone()
+    pop = False
 
 
     if request.method == 'POST':
@@ -398,13 +399,47 @@ def salida(request):
         con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
         cur = con.cursor()
 
-        cur.execute("SELECT id FROM energias_inscritos WHERE cedula = %s AND cedula = %s", (cc, cc))
-        row = cur.fetchall()
+        try:
+            cur.execute("SELECT id FROM energias_inscritos WHERE cedula = %s AND cedula = %s", (cc, cc))
+            row = cur.fetchall()
 
-        p = inscritos.objects.get(pk=row[0][0])
-        p.salida_del_taller = True
-        p.save()
-        pop = True
+            p = inscritos.objects.get(pk=row[0][0])
+            p.salida_del_taller = True
+            p.save()
+            pop = True
+        except Exception as e:
+           print('Usuario no encontrado')
+           return render(request, 'noEncontrado.html')
+    else:
+        formularioIns = salidaForm()
+
+    formularioIns = salidaForm()
+    print(pop)
+    return render(request, 'salida.html', {'formulario':formularioIns, 'pop':pop})
+
+def ingreso(request):
+    now = datetime.datetime.now()
+    now = now.astimezone()
+    pop = False
+
+    if request.method == 'POST':
+        form = salidaForm(request.POST)
+        cc = form['numero'].value()
+
+        con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+        cur = con.cursor()
+
+        try:
+            cur.execute("SELECT id FROM energias_inscritos WHERE cedula = %s AND cedula = %s", (cc, cc))
+            row = cur.fetchall()
+
+            p = inscritos.objects.get(pk=row[0][0])
+            p.ingreso_al_taller = True
+            p.save()
+            pop = True
+        except Exception as e:
+           print('Usuario no encontrado')
+           return render(request, 'noEncontrado.html')
 
     else:
         formularioIns = salidaForm()
@@ -412,7 +447,7 @@ def salida(request):
 
     formularioIns = salidaForm()
     print(pop)
-    return render(request, 'salida.html', {'formulario':formularioIns, 'pop':pop})
+    return render(request, 'ingreso.html', {'formulario':formularioIns, 'pop':pop})
 
 def validacion(request):
 
@@ -423,4 +458,6 @@ def validacion(request):
 
     return render(request, 'validacion.html', {'inscritos':row})
 
+def noregistro(request):
+    return render(render, 'noEncontrado.html')
 

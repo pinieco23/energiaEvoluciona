@@ -48,6 +48,8 @@ urlpatterns = [
     url('infografia-gas', control.infografiaGas),
     url('formulario', control.formulario),
     url('salida', control.salida),
+    url('ingreso', control.ingreso),
+    url('no-registro', control.noregistro),
     url('candidato', control.candidato),
     url('validacion', control.validacion),
     url('vocero', control.vocero),

@@ -212,7 +212,7 @@ label[for="id_ciudad"]:after{
     position: relative;
     top: 0;
     left: -54px;
-    content:'13. En una frase corta describa el tema especifico sobre el cual va a tratar su intervención.';
+    content:'13. ¿Cuál es su temática de interés para las mesas de trabajo?';
 }
 
 label[for="id_int_sectora"]{
@@ -288,16 +288,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<hr>
 		</div>
 		<div id="datos-taller">
-			<div id="linea1">Inscripción al Taller Construyendo País</div>
+			<div id="linea1">Ingreso al Taller Construyendo País</div>
 			<div id="linea2"><span id="ciudad"></span>
 							<span id="departamento"></span>
 							<span id="fecha"></span>
 			</div>
-			<div id="linea3">(<span class="obligatorio">*</span>) Campos obligatorios</div>
+
 		</div>
 		<div id="datos-usuario">
             <form method="post" class="row col-lg-12 col-md-12 col-xs-12 form-container" enctype="multipart/form-data">
-                <div class="form-group">
+                <div class="form-group" style="text-align: -webkit-center;">
 
                 {% csrf_token %}
                 {{ formulario|crispy }}
@@ -343,7 +343,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								
 							</div>
 				</div>
-			</div>	
+			</div>
+
+            {% if pop %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Realizado</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="modal" style="display: none">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header" style="justify-content: center">
+          <h4 class="modal-title">Cambios Realizados</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer" style="justify-content: center">
+            <a href="ingreso">
+          <button type="button" class="btn btn-success"  > Aceptar </button>
+            </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+<script>
+    window.onload = function() {
+    var hangoutButton = document.getElementById('modal');
+    hangoutButton.click(); // this will trigger the click event
+};
+</script>
+</html>
+            {% endif %}
+
+
 <script type="text/javascript">  
 	var bot = ""
     var your_site_key = '<%= ConfigurationManager.AppSettings["SiteKey"]%>';  

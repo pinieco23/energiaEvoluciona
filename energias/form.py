@@ -16,7 +16,7 @@ class tallerForm(ModelForm):
         fields = ('taller', 'correo')
 
 class salidaForm(forms.Form):
-    numero = forms.IntegerField(label='Ingrese un numero')
+    numero = forms.IntegerField(label='Ingrese una Cedula')
 
 
 class dataForm(ModelForm):
