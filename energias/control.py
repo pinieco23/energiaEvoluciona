@@ -327,7 +327,7 @@ def formularioMail(request):
 
             form.save()
 
-            return redirect('https://www.construyendopais.gov.co/Paginas/graciascp.aspx')
+            return redirect('https://id.presidencia.gov.co/gracias')
 
     else:
         formulario = dataForm()
