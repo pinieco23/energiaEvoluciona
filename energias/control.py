@@ -288,6 +288,10 @@ def noticia(request):
     return render(request, 'noticia.html', {'noticia':finalNoticia, 'tweet':tweet, 'principal':princial , 'npag':npag})
 
 
+def columnas(request):
+    return render(request, 'columnas.html')
+
+
 
 ################################################################# Formulario
 
