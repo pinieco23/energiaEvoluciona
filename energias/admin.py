@@ -42,9 +42,9 @@ class InsResource(resources.ModelResource):
         model =inscritos
 
 class insallAdmin(ImportExportModelAdmin):
-    list_display = ('cedula', 'nombres', 'apellidos', 'telefono', 'ingreso_al_taller', 'salida_del_taller')
+    list_display = ('cedula', 'nombres', 'apellidos', 'taller_previo', 'ingreso_al_taller', 'salida_del_taller')
     search_fields = ('cedula', 'nombres')
-    list_editable = ('ingreso_al_taller', 'salida_del_taller')
+    list_editable = ('taller_previo', 'ingreso_al_taller', 'salida_del_taller')
     resource_class = InsResource
 
 admin.site.register(inscritos, insallAdmin)

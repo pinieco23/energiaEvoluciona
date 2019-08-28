@@ -55,6 +55,7 @@ urlpatterns = [
     url('vocero', control.vocero),
     url('sVocero', control.sVocero),
     url('form-mail', control.formularioMail),
+    url('columnas', control.columnas),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'energias.control.error_404_view'
