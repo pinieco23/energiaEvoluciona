@@ -245,8 +245,9 @@ p.subtitle{
     max-width: 243%;
 }
 .columna-border{
-    border-style: double;
-    border-color: #2e6da4;
+border-style: double;
+    border-color: #bdd3e6;
+    border-radius: 7%;
 }
 .df{
     margin-top: 10px !important;
