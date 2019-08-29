@@ -244,7 +244,10 @@ p.subtitle{
 .img-responsive{
     max-width: 243%;
 }
-
+.columna-border{
+    border-style: double;
+    border-color: #2e6da4;
+}
 .df{
     margin-top: 10px !important;
     margin-left: 0% !important;
@@ -253,10 +256,15 @@ p.subtitle{
     border-color:#2e6da4;
 }
 .btn-noti-responsive2{
-        padding-left: 1px;
+        margin-left: 42%;
+    padding-left: 15px;
+    padding-right: 17px;
+    border-radius: 14px;
+    width: 62%;
+    height: 34px;
 
     }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 900px) {
 
     .mySlidesBanner {
         margin-top: 8% !important;
@@ -433,12 +441,12 @@ p.subtitle{
         margin-top: 12px !important;
     }
     .btn-noti-responsive2{
-    margin-left: 20% !important;
+    margin-left: 19% !important;
     padding-left: 15px;
     padding-right: 17px;
     border-radius: 14px;
-    width: 60% !important;
-    height: 34px;
+    width: 59% !important;
+    height: 33px;
     margin-top: 12px !important;
     }
     .twitter-responsive-news{
@@ -503,6 +511,7 @@ p.subtitle{
     padding: 15px;
     position: relative;
     min-height: 200px;
+    padding-block-end: 10%;
 }
 
 div.ex1 {
