@@ -364,12 +364,51 @@ def formulario(request):
 
             row = cur.fetchall()
             row = row[0][2]
-            translator = Translator(to_lang="es")
-            translation = translator.translate(row.strftime("%A"))
-            dia = translation+' '+str(row.day)
-            translator = Translator(to_lang="es")
-            translation = translator.translate(row.strftime("%B"))
-            mes = translation
+            dia=''
+            mes = ''
+
+            if(row.strftime("%A")=='Monday'):
+                dia = 'Lunes'
+            elif(row.strftime("%A")=='Tuesday'):
+                dia = 'Martes'
+            elif (row.strftime("%A") == 'Wednesday'):
+                dia = 'Miercoles'
+            elif (row.strftime("%A") == 'Thursday'):
+                dia = 'Jueves'
+            elif (row.strftime("%A") == 'Friday'):
+                dia = 'Viernes'
+            elif (row.strftime("%A") == 'Saturday'):
+                dia = 'Sabado'
+            elif (row.strftime("%A") == 'Sunday'):
+                dia = 'Domingo'
+
+            dia = dia+' '+str(row.day)
+
+            if(row.strftime("%B")=='January'):
+                mes = 'Enero'
+            elif(row.strftime("%B")=='February'):
+                mes = 'Febrero'
+            elif (row.strftime("%B") == 'March'):
+                mes = 'Marzo'
+            elif (row.strftime("%B") == 'April'):
+                mes = 'Abril'
+            elif (row.strftime("%B") == 'May'):
+                mes = 'Mayo'
+            elif (row.strftime("%B") == 'June'):
+                mes = 'Junio'
+            elif (row.strftime("%B") == 'July'):
+                mes = 'Julio'
+            elif (row.strftime("%B") == 'August'):
+                mes = 'Agosto'
+            elif (row.strftime("%B") == 'September'):
+                mes = 'Septiembre'
+            elif (row.strftime("%B") == 'October'):
+                mes = 'Octubre'
+            elif (row.strftime("%B") == 'November'):
+                mes = 'Noviembre'
+            elif (row.strftime("%B") == 'December'):
+                mes = 'Diciembre'
+
             anho = row.year
 
             print('asigne la fecha')
