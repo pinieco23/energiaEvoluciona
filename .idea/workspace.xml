@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/control.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/templates/columnas.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/columnas.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +213,12 @@
       <workItem from="1558996706751" duration="909000" />
       <workItem from="1563377790616" duration="691000" />
       <workItem from="1563384588317" duration="722000" />
-      <workItem from="1564775597112" duration="149456000" />
+      <workItem from="1564775597112" duration="152261000" />
+      <workItem from="1568671281093" duration="752000" />
+      <workItem from="1568731003836" duration="779000" />
+      <workItem from="1568737418633" duration="1500000" />
+      <workItem from="1568739717321" duration="963000" />
+      <workItem from="1568745574620" duration="339000" />
     </task>
     <servers />
   </component>
@@ -225,7 +230,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
