@@ -348,7 +348,7 @@ def formulario(request):
         cur = con.cursor()
         form = insForm(request.POST)
         nombre = form['nombres'].value()
-        ciudad = form['ciudad'].value()
+        ciudad = form['taller'].value()
         cc = form['cedula'].value()
         candidato = form['candidato'].value()
         taller = form['taller'].value()
@@ -363,6 +363,7 @@ def formulario(request):
             cur.execute("SELECT * FROM energias_taller WHERE id = %s and id = %s", (taller, taller))
 
             row = cur.fetchall()
+            ciudad = row[0][1]
             row = row[0][2]
             dia=''
             mes = ''
