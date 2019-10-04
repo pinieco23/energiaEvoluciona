@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/energias/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/templates/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/formulario.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -259,7 +257,7 @@
       <workItem from="1569336773584" duration="600000" />
       <workItem from="1569338689641" duration="628000" />
       <workItem from="1569364386828" duration="607000" />
-      <workItem from="1570203362459" duration="455000" />
+      <workItem from="1570203362459" duration="1541000" />
     </task>
     <servers />
   </component>
