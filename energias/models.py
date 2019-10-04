@@ -397,7 +397,7 @@ class inscritos(models.Model):
     taller_previo = models.BooleanField(blank=True, null=True)
     entidad = models.CharField(max_length=100, blank=True, null=True)
     vocero_confirmaciona = models.BooleanField(blank=True, null=True)
-    int_sectora = models.ForeignKey('interes_voceroa', on_delete=models.CASCADE, blank=True, null=True)
+    int_sectora = models.ForeignKey('interes_voceroa', on_delete=models.CASCADE, blank=True)
     def __str__(self):
         return self.nombres
 

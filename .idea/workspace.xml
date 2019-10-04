@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/templates/columnas.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/columnas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/templates/formulario.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/formulario.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +222,44 @@
       <workItem from="1568745574620" duration="1591000" />
       <workItem from="1568834347620" duration="601000" />
       <workItem from="1568836761628" duration="1790000" />
-      <workItem from="1568841361526" duration="477000" />
+      <workItem from="1568841361526" duration="1138000" />
+      <workItem from="1568906913135" duration="607000" />
+      <workItem from="1568909569441" duration="624000" />
+      <workItem from="1568911417886" duration="691000" />
+      <workItem from="1568930880118" duration="604000" />
+      <workItem from="1568932782835" duration="656000" />
+      <workItem from="1568936201257" duration="605000" />
+      <workItem from="1568991981537" duration="613000" />
+      <workItem from="1568994344868" duration="613000" />
+      <workItem from="1568997094525" duration="808000" />
+      <workItem from="1568998914777" duration="600000" />
+      <workItem from="1569006273982" duration="977000" />
+      <workItem from="1569010441965" duration="601000" />
+      <workItem from="1569179334110" duration="604000" />
+      <workItem from="1569181157848" duration="609000" />
+      <workItem from="1569182987367" duration="604000" />
+      <workItem from="1569184902489" duration="625000" />
+      <workItem from="1569186763386" duration="610000" />
+      <workItem from="1569202589167" duration="657000" />
+      <workItem from="1569204623411" duration="625000" />
+      <workItem from="1569206514807" duration="623000" />
+      <workItem from="1569208831142" duration="628000" />
+      <workItem from="1569210695352" duration="609000" />
+      <workItem from="1569212513960" duration="619000" />
+      <workItem from="1569246597388" duration="932000" />
+      <workItem from="1569248764667" duration="892000" />
+      <workItem from="1569265272155" duration="649000" />
+      <workItem from="1569267102590" duration="598000" />
+      <workItem from="1569268937239" duration="1227000" />
+      <workItem from="1569270835110" duration="626000" />
+      <workItem from="1569272665155" duration="599000" />
+      <workItem from="1569330900803" duration="601000" />
+      <workItem from="1569332764022" duration="600000" />
+      <workItem from="1569334603132" duration="598000" />
+      <workItem from="1569336773584" duration="600000" />
+      <workItem from="1569338689641" duration="628000" />
+      <workItem from="1569364386828" duration="607000" />
+      <workItem from="1570203362459" duration="455000" />
     </task>
     <servers />
   </component>
