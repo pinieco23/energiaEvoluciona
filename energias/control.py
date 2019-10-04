@@ -358,9 +358,9 @@ def formulario(request):
         if form.is_valid():
             print('Entre a la validacion')
             form.save()
-            print('guardado')
+            print(taller)
 
-            cur.execute("SELECT * FROM energias_taller WHERE id = %s ", (taller))
+            cur.execute("SELECT * FROM energias_taller WHERE id = %s and id = %s", (taller, taller))
 
             row = cur.fetchall()
             row = row[0][2]
