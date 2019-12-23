@@ -344,13 +344,14 @@ def formulario(request):
     now = now.astimezone()
 
     if request.method == 'POST':
+        print ("post entra")
         con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
         cur = con.cursor()
         form = insForm(request.POST)
         nombre = form['nombres'].value()
         ciudad = form['taller'].value()
         cc = form['cedula'].value()
-        candidato = form['candidato'].value()
+        #candidato = form['candidato'].value()
         taller = form['taller'].value()
         print('Asigne las variables')
         #print(form['int_sectora'].value())
@@ -414,13 +415,13 @@ def formulario(request):
 
             print('asigne la fecha')
 
-            if int(candidato) == 2:
-                print('opcion si')
-                return render(request, 'candidato.html', {'nombre':nombre, 'ciudad':ciudad, 'now':now, 'taller':taller, 'taller':row, 'dia':dia, 'mes':mes, 'anho':anho})
-            else:
-                print('opcion no')
-                formularioIns = insForm()
-                return render(request, 'gracias.html')
+            #if int(candidato) == 2:
+            #    print('opcion si')
+            #    return render(request, 'candidato.html', {'nombre':nombre, 'ciudad':ciudad, 'now':now, 'taller':taller, 'taller':row, 'dia':dia, 'mes':mes, 'anho':anho})
+            #else:
+            print('opcion no')
+            #formularioIns = insForm()
+            return render(request, 'gracias.html')
 
         else:
             return redirect('https://www.construyendopais.gov.co/paginas/usuario-registrado.aspx')
