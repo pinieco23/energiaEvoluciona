@@ -389,7 +389,7 @@ class inscritos(models.Model):
     cargo = models.CharField(max_length=100, blank=True, null=True)
     ciudad = models.CharField(max_length=170, blank=True, null=True)
     taller = models.ForeignKey('taller', on_delete=models.CASCADE)
-    candidato = models.ForeignKey('candidato', on_delete=models.CASCADE)
+    candidato = models.ForeignKey('candidato', on_delete=models.CASCADE, blank=True, null=True)
     participar = models.ForeignKey('participar', on_delete=models.CASCADE)
     interes = models.ForeignKey('interes', on_delete=models.CASCADE)
     ingreso_al_taller = models.BooleanField(blank=True, null=True)

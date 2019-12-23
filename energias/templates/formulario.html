@@ -54,9 +54,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     document.getElementById("div_id_servidor").appendChild(para);
 </script>
 <style>
-#div_id_nombres,#div_id_cedula, #div_id_telefono, #div_id_entidad, #div_id_ciudad, #div_id_nombres, #div_id_taller,  #div_id_participar {
-    background: #dbdcde;
-}
 
 label[for="id_nombres"]{
     visibility: hidden;
@@ -172,7 +169,7 @@ label[for="id_candidato"]{
     position: relative;
 }
 label[for="id_candidato"]:after{
-    visibility: visible;
+    visibility: hidden;
     position: relative;
     top: 0;
     left: -76px;
@@ -188,7 +185,7 @@ label[for="id_participar"]:after{
     position: relative;
     top: 0;
     left: -76px;
-    content:'11. ¿Usted desea realizar una intervención ante el Presidente durante el Taller? (*)';
+    content:'10. ¿Usted desea realizar una intervención ante el Presidente durante el Taller? (*)';
 }
 
 label[for="id_interes"]{
@@ -200,7 +197,7 @@ label[for="id_interes"]:after{
     position: relative;
     top: 0;
     left: -56px;
-    content:'12. Tema de interés para su intervención (*)';
+    content:'11. Tema de interés para su intervención (*)';
 }
 
 label[for="id_ciudad"]{
@@ -212,7 +209,7 @@ label[for="id_ciudad"]:after{
     position: relative;
     top: 0;
     left: -54px;
-    content:'13. En una frase corta describa el tema específico sobre el cual va a tratar su intervención.';
+    content:'12. En una frase corta describa el tema específico sobre el cual va a tratar su intervención.';
 }
 
 label[for="id_int_sectora"]{
@@ -224,7 +221,7 @@ label[for="id_int_sectora"]:after{
     position: relative;
     top: 0;
     left: -75px;
-    content:'14. ¿Cuál es su temática de interés para las mesas de trabajo? (*)';
+    content:'13. ¿Cuál es su temática de interés para las mesas de trabajo? (*)';
 }
 
 input[for="id_ciudad"]{
@@ -243,6 +240,10 @@ input[for="id_ciudad"]:after{
 
 .control-group{
     padding-bottom: 10px;
+}
+
+form .control-group:nth-child(even){
+    background: #dbdcde;
 }
     button{
     margin-left: 44%;
