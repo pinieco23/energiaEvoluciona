@@ -7,7 +7,6 @@ from energias.models import inscripcion, taller, inscritos, formularioEmail2
 class insForm(ModelForm):
     class Meta:
         model = inscritos
-        #fields = ('nombres', 'apellidos', 'cedula', 'correo', 'telefono', 'servidor','entidad', 'cargo', 'taller', 'candidato', 'participar', 'interes','ciudad', 'int_sectora')
         fields = ('nombres', 'apellidos', 'cedula', 'correo', 'telefono', 'servidor','entidad', 'cargo', 'taller', 'participar', 'interes','ciudad', 'int_sectora')
 
 

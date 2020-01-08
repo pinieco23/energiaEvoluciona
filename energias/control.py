@@ -344,6 +344,7 @@ def formulario(request):
     now = now.astimezone()
 
     if request.method == 'POST':
+        print ("post entra")
         con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
         cur = con.cursor()
         form = insForm(request.POST)
