@@ -65,9 +65,16 @@ def inicio(request):
 
 
 def expertos(request):
-
     # Desarrollo
     con = psycopg2.connect("host='energia.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energias' user='presidencia' password='Warroom2019'")
+
+    # Produccion
+    # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
+
+    cur = con.cursor()
+    cur.execute("SELECT titulo, descripcion, link, upload FROM energias_subasta WHERE disponible = True;")
+    ppii = cur.fetchall()
+    # Desarrollo
 
     # Produccion
     # con = psycopg2.connect("host='energia-prod.cr2plyypy4at.us-east-1.rds.amazonaws.com' dbname='energia-produccion' user='presidencia' password='Warroom2019'")
@@ -80,7 +87,7 @@ def expertos(request):
     cur.execute("SELECT titulo, descripcion, imagen, nombre_boton1, nombre_boton2, upload1, upload2 FROM energias_comision WHERE disponible = True;")
     comision = cur.fetchall()
 
-    return render(request, 'expertos.html',{'comision':comision, 'expertos':expertos})
+    return render(request, 'expertos.html',{'comision':comision, 'expertos':expertos, 'ppii':ppii})
 
 def error(request):
 
