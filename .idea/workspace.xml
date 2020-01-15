@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a8589d-17ed-4308-80e0-01e83526bf7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/energias/templates/index3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/control.py" beforeDir="false" afterPath="$PROJECT_DIR$/energias/control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/energias/templates/expertos.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/expertos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/energias/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/energias/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/energias/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/energias/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,19 +38,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>3x</find>
-      <find>carousel-caption</find>
-      <find>.carousel-inner</find>
-      <find>.carousel-caption</find>
-      <find>column</find>
-      <find>carousel-inner</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>2x</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -65,16 +52,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/energias/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/energias" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/energias/templates" />
+      <recent name="$PROJECT_DIR$/energias" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/energias" />
     </key>
   </component>
@@ -300,7 +287,7 @@
       <workItem from="1572992428551" duration="2367000" />
       <workItem from="1573045512822" duration="175000" />
       <workItem from="1577119259730" duration="973000" />
-      <workItem from="1578514980841" duration="5699000" />
+      <workItem from="1578514980841" duration="19928000" />
     </task>
     <servers />
   </component>

@@ -238,7 +238,7 @@ function showDivs(n) {
   <section class="col-md-12 padTop">
     <div class="col-md-6 col-xs-12 column titlenopad">
       <h1 class="title"><b>{{ c1.0.0 }}</b></h1>
-      <hr>
+
       <p>{{ c1.0.1 }}
       </p>
 
@@ -260,13 +260,13 @@ function showDivs(n) {
 
     </div>
     <br>
-      <a href="minero-energetico">
+{% comment %}      <a href="minero-energetico">
         <br><br>
         <button class="btn btn-primary btn-transicion">{{ c3.0.2 }}</button>
       </a>
       <a href="estimulacion-hidraulica">
         <button class="btn btn-primary">{{ c3.0.3 }}</button>
-      </a>
+      </a>{% endcomment %}
 
   </section>
 
@@ -289,26 +289,32 @@ function showDivs(n) {
   </section>
 
   <section>
-  <hr class="hrline">
 
-
-        <div  class="col-md-12 col-xs-12 twocolumns visible-xs">
+    <div  class="col-md-12 col-xs-12 twocolumns visible-xs">
 
 
       <div class="col-md-6 col-xs-12 txtmatriz">
           <div class="container">
 
             <h2 class="title">{{ c3.0.5 }}</h2>
-            <p>{{ c3.0.4|safe}}</p>
-
-                    <a href="fuentes">
-        <button class="btn btn-primary">{{ c3.0.6 }}</button>
-      </a>
+            <p>{{ c3.0.4 | safe }}</p>
+            <a href="fuentes"><button class="btn btn-primary">{{ c3.0.6 }}</button></a>
           </div>
 
       </div>
+                        <div class="col-md-6 col-xs-12 txtmatriz">
+          <div class="container">
+            <h2 class="title">Seguridad energética</h2>
 
+          <p>Mientras el país transita hacia un sistema energético con fuentes más limpias y renovables, se debe garantizar que todos los colombianos tengan disponible ininterrumpidamente el servicio de energía a un precio asequible. Es decir, que los colombianos dispongan del servicio para que puedan realizar actividades diarias como transportarse o cocinar. </p>
+      <a href="https://www.minenergia.gov.co/en/web/10180/1332?idNoticia=24165937">
+        <button class="btn btn-primary">Conoce el Plan Energético Nacional</button>
+      </a>
+
+          </div>
       </div>
+
+    </div>
 
       <div  class="col-md-12 col-xs-12 twocolumns visible-xs">
 
@@ -353,9 +359,21 @@ function showDivs(n) {
           <div class="container">
             <h2 class="title">{{ c3.0.5 }}</h2>
 
-          <p>{{ c3.0.4 }}</p>
+          <p>{{ c3.0.4 | safe }}</p>
       <a href="fuentes">
         <button class="btn btn-primary">{{ c3.0.6 }}</button>
+      </a>
+
+          </div>
+      </div>
+
+                <div class="col-md-6 col-xs-12 txtmatriz">
+          <div class="container">
+            <h2 class="title">Seguridad energética</h2>
+
+          <p>Mientras el país transita hacia un sistema energético con fuentes más limpias y renovables, se debe garantizar que todos los colombianos tengan disponible ininterrumpidamente el servicio de energía a un precio asequible. Es decir, que los colombianos dispongan del servicio para que puedan realizar actividades diarias como transportarse o cocinar. </p>
+      <a href="https://www.minenergia.gov.co/en/web/10180/1332?idNoticia=24165937">
+        <button class="btn btn-primary">Conoce el Plan Energético Nacional</button>
       </a>
 
           </div>
@@ -378,9 +396,30 @@ function showDivs(n) {
 
 <section>
 
-    <div class="rowx">
-<h2 class="title text-comision-home">Comisión de expertos</h2>
+    <div  class="col-md-12 col-xs-12 padTop">
 
+
+          <div class="col-md-6 col-xs-12 column3">
+
+        <br>
+<h2 class="title text-comision-home">Comisión de expertos</h2>
+<br>
+        <p>
+
+            La oportunidad que tenemos para garantizar la seguridad energética la encontramos en nuestro propio país, ya que tenemos un gran potencial hidrocarburífero, que, de comprobarse, podría implicar un incremento de hasta cinco veces nuestras reservas de gas natural y petróleo.
+            <br><br>
+            Países como Estados Unidos o Argentina apostaron por decidieron aprovechar el potencial de los yacimientos no convencionales (YNC) y los avances tecnológicos que permiten extraer hidrocarburos de estos yacimientos de manera responsable con el medio ambiente y las comunidades. Es así como Estados Unidos pasó de ser importador a un exportador neto de hidrocarburos y, sobre todo, a garantizar cien años de reservas.
+            <br><br>
+            Además, el desarrollo de estos recursos le ha permitido contribuir notablemente a la lucha contra el cambio climático, al reducir drásticamente las emisiones de dióxido de carbono, incluso por encima de lo sugerido por el Protocolo de Kyoto, al reemplazar gran parte de su generación de electricidad térmica de carbón por gas natural.
+            <br><br>
+            Con el fin de evaluar la viabilidad social y ambiental de combinar la perforación horizontal con el fracturamiento hidráulico para desarrollar cierto tipo de yacimientos no convencionales en Colombia, el Gobierno conformó una comisión de expertos en octubre de 2018.
+
+        </p>
+<br><br><br>
+          </div></div></section>
+<section>
+
+    <div class="rowx">
   <div class="columnx col-md-12 col-xs-12 padTop" style="background-color:#c0e2ff;height: 378px;">
 
     <h2 class="titulo1-comision" >¿Para qué?</h2>
@@ -414,8 +453,13 @@ function showDivs(n) {
 </table>
 
   </div>
-</div>
 
+</div>
+    <br>
+    <div class="rowx">
+<a class="btn btn-primary center-block btn-subasta" href="https://www.minenergia.gov.co/documents/10192/24162653/Comunicado+proyecto+PPII.pdf" target="_blank">Proyectos Piloto de Investigación</a>
+<a class="btn btn-primary center-block btn-subasta" href="https://forms.gle/vAZbQBatpysuQjXz8" target="_blank">Déjanos tus ideas sobre la transición energética</a>
+    </div>
 </section>
 
 
