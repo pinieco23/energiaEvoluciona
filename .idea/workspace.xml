@@ -47,6 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/energias/templates" />
@@ -285,7 +286,7 @@
       <workItem from="1573045512822" duration="175000" />
       <workItem from="1577119259730" duration="973000" />
       <workItem from="1578514980841" duration="22739000" />
-      <workItem from="1579190740505" duration="18395000" />
+      <workItem from="1579190740505" duration="19027000" />
     </task>
     <servers />
   </component>
