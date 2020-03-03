@@ -51,7 +51,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+X_FRAME_OPTIONS = 'ALLOWALL https://www.facebook.com'
 
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
 ROOT_URLCONF = 'energias.urls'
 
 TEMPLATES = [

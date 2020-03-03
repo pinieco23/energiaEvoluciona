@@ -1,62 +1,41 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KWLG64Q');</script>
-<!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager -->
 
     {% load static %}
+    <meta charset="UTF-8">
     <meta http-equiv="Expires" content="0">
     <meta http-equiv="Last-Modified" content="0">
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
-  <meta name="description" content="Es una iniciativa de los ministerios de Ambiente y Desarrollo Sostenible y Minas y Energ�a, que busca la transici�n de las fuentes de energ�a del pa�s, garantizando un matriz energ�tica m�s diversificada y limpia">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="./static/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="./static/css/styles.css"/>
-  <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <meta name="description" content="Es una iniciativa de los ministerios de Ambiente y Desarrollo Sostenible y Minas y Energ�a, que busca la transici�n de las fuentes de energ�a del pa�s, garantizando un matriz energ�tica m�s diversificada y limpia">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./static/css/styles.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <script src="https://connect.facebook.net/signals/config/298624757637168?v=2.9.15&amp;r=stable" async=""></script>
+    <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
 
 
 
-       <script>
-      $(document).ready(function()
-      {
-         $("#mostrarmodal").modal("show");
-      });
-    </script>
+{#    <script>#}
+{#      $(document).ready(function()#}
+{#      {#}
+{#         $("#mostrarmodal").modal("show");#}
+{#      });#}
+{#    </script>#}
 
 
-  <!--Scripts utilizados por la pagina-->
-<script type="text/javascript">
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['Year', 'Sales', 'Expenses'],
-      ['2013',  1000,      400],
-      ['2014',  1170,      460],
-      ['2015',  660,       1120],
-      ['2016',  1030,      540]
-      ]);
-    var options = {
-      title: 'Company Performance',
-      hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
-      vAxis: {minValue: 0}
-    };
-    var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-  }
-  $(window).resize(function()){
-    drawBasic();
-  }
-</script>
-<script type="text/javascript">
+    <script type="text/javascript">
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -73,13 +52,13 @@ function filterSelection(c) {
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWLG64Q"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
 
-  <!--Header de la pagina-->
-  <header>
+<!--Header de la pagina-->
+<header>
 
 
 
@@ -89,84 +68,84 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-        <a href="/" title="Logo de Energía Evoluciona">
-        <img src="./static/images/energia-evo.png" class="img-responsive logo-energia-responsive visible-xs" alt="Logo de Energía Evoluciona">
-        </a>
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" title="Logo de Energía Evoluciona">
+                        <img src="./static/images/energia-evo.png" class="img-responsive logo-energia-responsive visible-xs" alt="Logo de Energía Evoluciona">
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-    </div>
-    <div class="navbar-collapse collapse">
+                </div>
+                <div class="navbar-collapse collapse">
 
-              <div class="col-md-4 logo-energia hidden-sm hidden-xs" >
+                    <div class="col-md-4 logo-energia hidden-sm hidden-xs" >
 
-        <div class="col-md-6 col-xs-6">
-          <a href="/" title="Logo de Energía Evoluciona">
-            <img src="./static/images/energia-evo.png" class="img-responsive" alt="Logo de Energía Evoluciona">
-          </a>
+                        <div class="col-md-6 col-xs-6">
+                            <a href="/" title="Logo de Energía Evoluciona">
+                                <img src="./static/images/energia-evo.png" class="img-responsive" alt="Logo de Energía Evoluciona">
+                            </a>
+                        </div>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="active"><a href="minero-energetico">Pacto Energético</a></li>
+                        <li class="active"><a href="hidrocarburo">Petróleo</a></li>
+                        <li class="active"><a href="estimulacion-hidraulica">Estimulación hidraúlica</a></li>
+                        <li class="active"><a href="fuentes">Fuentes de Energía</a></li>
+                        <li class="active"><a href="expertos">Expertos</a></li>
+                        <li class="active"><a href="mitos-realidades">Mitos</a></li>
+                        <li class="active"><a href="noticias">Noticias</a></li>
+                        <li class="active"><a href="subasta">Subasta</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <ul class="nav navbar-nav navbar-right">
-
-        <li class="active"><a href="minero-energetico">Pacto Energético</a></li>
-          <li class="active"><a href="hidrocarburo">Petróleo</a></li>
-          <li class="active"><a href="estimulacion-hidraulica">Estimulación hidraúlica</a></li>
-          <li class="active"><a href="fuentes">Fuentes de Energía</a></li>
-        <li class="active"><a href="expertos">Expertos</a></li>
-          <li class="active"><a href="mitos-realidades">Mitos</a></li>
-          <li class="active"><a href="noticias">Noticias</a></li>
-          <li class="active"><a href="subasta">Subasta</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
 
     </section>
-<br><br>
-{% if bansizse != 0 %}
-      <div class="w3-content w3-display-container" style="max-width:100%">
-          {% for data in banner %}
-              <a target="_blank" href={{ data.1 }} >
-            <img class="mySlides mySlidesBanner" src={% static data.0 %}  style="width:100%">
-              </a>
-          {% endfor %}
-{#  <img class="mySlides mySlidesBanner" src="./static/images/b1.png" style="width:100%">#}
-{#  <img class="mySlides mySlidesBanner" src="./static/images/b2.png" style="width:100%">#}
-{#  <img class="mySlides mySlidesBanner" src="./static/images/b3.jpg" style="width:100%">#}
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <br><br>
+    {% if bansizse != 0 %}
+        <div class="w3-content w3-display-container" style="max-width:100%">
+        {% for data in banner %}
+            <a target="_blank" href={{ data.1 }} >
+                <img class="mySlides mySlidesBanner" src={% static data.0 %}  style="width:100%">
+            </a>
+        {% endfor %}
+        {#  <img class="mySlides mySlidesBanner" src="./static/images/b1.png" style="width:100%">#}
+        {#  <img class="mySlides mySlidesBanner" src="./static/images/b2.png" style="width:100%">#}
+        {#  <img class="mySlides mySlidesBanner" src="./static/images/b3.jpg" style="width:100%">#}
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
 
-  {% if bansize == 1 %}
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-      {% elif bansize == 2 %}
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        {% if bansize == 1 %}
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        {% elif bansize == 2 %}
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
         {% elif bansize == 3 %}
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-      {% else %}
-              {% with myvar=bansize %}
-     {% for i in i|rjust:bansize %}
-         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv({{ forloop.counter }})"></span>
-    {% endfor %}
-  {% endwith %}
-  {% endif %}
-{% endif %}
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        {% else %}
+            {% with myvar=bansize %}
+                {% for i in i|rjust:bansize %}
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv({{ forloop.counter }})"></span>
+                {% endfor %}
+            {% endwith %}
+        {% endif %}
+    {% endif %}
 
 
-  </div>
-</div>
+    </div>
+    </div>
 
-<script>
+    <script>
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -201,13 +180,13 @@ function showDivs(n) {
 
 
 
-          <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-<script>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
   var googletag = googletag || {};
   googletag.cmd = googletag.cmd || [];
 </script>
 
-<script>
+    <script>
   googletag.cmd.push(function() {
     googletag.defineSlot('/71023058/Presidencia_1', [300, 250], 'div-gpt-ad-1553094838204-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
@@ -217,7 +196,7 @@ function showDivs(n) {
 </script>
 
     <!-- Start of Woopra Code -->
-<script>
+    <script>
   (function(){
     var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
   })("woopra");
@@ -227,40 +206,40 @@ function showDivs(n) {
   });
   woopra.track();
 </script>
-<!-- End of Woopra Code -->
+    <!-- End of Woopra Code -->
 
 
 
-  </header>
+</header>
 
 
 
-  <section class="col-md-12 padTop">
+<section class="col-md-12 padTop">
     <div class="col-md-6 col-xs-12 column titlenopad">
-      <h1 class="title"><b>{{ c1.0.0 }}</b></h1>
+        <h1 class="title"><b>{{ c1.0.0 }}</b></h1>
 
-      <p>{{ c1.0.1 }}
-      </p>
-
-    </div>
-           <div class="col-md-6 col-xs-12 column4">
-      <div class="column2">
-{#          <img class=" img-responsive " src={% static c1.0.3 %} >#}
-      </div>
-           </div></section>
+        <p>{{ c1.0.1 }}
+        </p>
 
     </div>
-  </section>
+    <div class="col-md-6 col-xs-12 column4">
+        <div class="column2">
+            {#          <img class=" img-responsive " src={% static c1.0.3 %} >#}
+        </div>
+    </div></section>
+
+</div>
+</section>
 
 
-  <section>
+<section>
     <div class="col-md-12 col-xs-12 col-md-6 col-xs-12 column">
-<iframe class='col-md-12 col-xs-12 video' width="560" height="315" src="https://www.youtube.com/embed/J4zyIKGuRcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{#        <iframe src="https://www.facebook.com/MinEnergiaCo/videos/1115572745455031/" width="1000 %" height="650 px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>#}
-{#<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMinEnergiaCo%2Fvideos%2F1115572745455031%2F&show_text=1&width=560" width="560" height="407" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>#}
+        {#<iframe class='col-md-12 col-xs-12 video' width="560" height="315" src="https://www.youtube.com/embed/J4zyIKGuRcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>#}
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMinEnergiaCo%2Fvideos%2F1115572745455031%2F" width="1000 %" height="580 px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+{#        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMinEnergiaCo%2Fvideos%2F1115572745455031%2F" width="560" height="407" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>#}
     </div>
-    <br>
-{% comment %}      <a href="minero-energetico">
+
+    {% comment %}      <a href="minero-energetico">
         <br><br>
         <button class="btn btn-primary btn-transicion">{{ c3.0.2 }}</button>
       </a>
@@ -268,76 +247,76 @@ function showDivs(n) {
         <button class="btn btn-primary">{{ c3.0.3 }}</button>
       </a>{% endcomment %}
 
-  </section>
+</section>
 
 
-  <section>
+<section>
     <div  class="col-md-12 col-xs-12 padTop">
 
 
-          <div class="col-md-6 col-xs-12 column3">
+        <div class="col-md-6 col-xs-12 column3">
 
-        <h2 class="title">{{ c3.0.0 }}</h2>
-          </br>
-        <p>{{ c3.0.1 }}</p>
-              <br>
-<a class="btn btn-primary center-block btn-subasta" href="https://forms.gle/vAZbQBatpysuQjXz8" target="_blank">Déjanos tus ideas </a>
-              <hr class="">
+            <h2 class="title">{{ c3.0.0 }}</h2>
+            </br>
+            <p>{{ c3.0.1 }}</p>
+            <br>
+            <a class="btn btn-primary center-block btn-subasta" href="https://forms.gle/vAZbQBatpysuQjXz8" target="_blank">Déjanos tus ideas </a>
+            <hr class="">
 
-      </div>
+        </div>
 
     </div>
 
 
 
-  </section>
+</section>
 
-  <section>
+<section>
 
     <div  class="col-md-12 col-xs-12 twocolumns visible-xs">
 
 
-      <div class="col-md-6 col-xs-12 txtmatriz">
-          <div class="container">
+        <div class="col-md-6 col-xs-12 txtmatriz">
+            <div class="container">
 
-            <h2 class="title">{{ c3.0.5 }}</h2>
-            <p>{{ c3.0.4 | safe }}</p>
-      <a href="fuentes">
-        <button class="btn btn-primary">{{ c3.0.6 }}</button>
-      </a>
-          </div>
+                <h2 class="title">{{ c3.0.5 }}</h2>
+                <p>{{ c3.0.4 | safe }}</p>
+                <a href="fuentes">
+                    <button class="btn btn-primary">{{ c3.0.6 }}</button>
+                </a>
+            </div>
 
-      </div>
-                        <div class="col-md-6 col-xs-12 txtmatriz">
-          <div class="container">
-            <h2 class="title">Seguridad energética</h2>
+        </div>
+        <div class="col-md-6 col-xs-12 txtmatriz">
+            <div class="container">
+                <h2 class="title">Seguridad energética</h2>
 
-          <p>Mientras el país transita hacia un sistema energético con fuentes más limpias y renovables, se debe garantizar que todos los colombianos tengan disponible ininterrumpidamente el servicio de energía a un precio asequible. Es decir, que los colombianos dispongan del servicio para que puedan realizar actividades diarias como transportarse o cocinar. </p>
+                <p>Mientras el país transita hacia un sistema energético con fuentes más limpias y renovables, se debe garantizar que todos los colombianos tengan disponible ininterrumpidamente el servicio de energía a un precio asequible. Es decir, que los colombianos dispongan del servicio para que puedan realizar actividades diarias como transportarse o cocinar. </p>
 
-      <a href="https://www.minenergia.gov.co/en/web/10180/1332?idNoticia=24165937">
-        <button class="btn btn-primary">Conoce el Plan Energético Nacional</button>
-      </a>
-          </div>
-      </div>
+                <a href="https://www.minenergia.gov.co/en/web/10180/1332?idNoticia=24165937">
+                    <button class="btn btn-primary">Conoce el Plan Energético Nacional</button>
+                </a>
+            </div>
+        </div>
 
     </div>
 
-      <div  class="col-md-12 col-xs-12 twocolumns visible-xs">
+    <div  class="col-md-12 col-xs-12 twocolumns visible-xs">
 
-      <div class="col-md-6 col-xs-12 ahcno">
-          <div class="container img-responsive">
+        <div class="col-md-6 col-xs-12 ahcno">
+            <div class="container img-responsive">
 
-          {% for data in imagesc3 %}
-          <img class="filterDiv  img-grafica {{ data.1 }}" src={% static data.0 %} >
+                {% for data in imagesc3 %}
+                    <img class="filterDiv  img-grafica {{ data.1 }}" src={% static data.0 %} >
 
-          {% endfor %}
+                {% endfor %}
 
-          </div>
-      </div>
+            </div>
+        </div>
 
-      </div>
+    </div>
 
-  </section>
+</section>
 
 
 <section>
@@ -345,58 +324,58 @@ function showDivs(n) {
     <div  class="col-md-12 col-xs-12 twocolumns hidden-sm hidden-xs">
 
 
-      <div class="col-md-6 col-xs-12 ahcno">
-          <div class="container img-responsive">
+        <div class="col-md-6 col-xs-12 ahcno">
+            <div class="container img-responsive">
 
-          {% for data in imagesc3 %}
-          <img class="filterDiv  img-grafica {{ data.1 }}" src={% static data.0 %} >
+                {% for data in imagesc3 %}
+                    <img class="filterDiv  img-grafica {{ data.1 }}" src={% static data.0 %} >
 
-          {% endfor %}
+                {% endfor %}
 
-          </div>
-      </div>
-
-      </div>
-{#web#}
-      <div  class="col-md-12 col-xs-12 twocolumns hidden-sm hidden-xs">
-
-
-      <div class="col-md-6 col-xs-12 txtmatriz">
-          <div class="container">
-            <h2 class="title">{{ c3.0.5 }}</h2>
-
-          <p>{{ c3.0.4 | safe }}</p>
-      <a href="fuentes">
-        <button class="btn btn-primary">{{ c3.0.6 }}</button>
-      </a>
-
-          </div>
-      </div>
-
-                <div class="col-md-6 col-xs-12 txtmatriz">
-          <div class="container">
-            <h2 class="title">Seguridad energética</h2>
-
-          <p>Mientras el país transita hacia un sistema energético con fuentes más limpias y renovables, se debe garantizar que todos los colombianos tengan disponible ininterrumpidamente el servicio de energía a un precio asequible y el abastecimiento de combustibles líquidos, los cuales se seguirán necesitando durante un buen tiempo. Es decir, que los colombianos dispongan de los energéticos necesarios para poder realizar actividades diarias como transportarse o cocinar. Colombia hoy cuenta con solo 9,8 años de reservas de gas y 6,2 años de petróleo </p>
-      <a href="https://www.minenergia.gov.co/en/web/10180/1332?idNoticia=24165937">
-        <button class="btn btn-primary">Conoce el Plan Energético Nacional</button>
-      </a>
-              <br>
-
-          </div>
-      </div>
-
-      </div>
-
-    <div  class="col-md-12 col-xs-12 botonesAlineados">
-    <div id="myBtnContainerx">
-          <button class="btn activeb hidden"></button>
-        {% for data in imagesc3 %}
-      <button class="btn botonesAnos" onclick="filterSelection({{ data.1 }})">{{ data.1 }}</button>
-        {% endfor %}
+            </div>
+        </div>
 
     </div>
-<br>
+    {#web#}
+    <div  class="col-md-12 col-xs-12 twocolumns hidden-sm hidden-xs">
+
+
+        <div class="col-md-6 col-xs-12 txtmatriz">
+            <div class="container">
+                <h2 class="title">{{ c3.0.5 }}</h2>
+
+                <p>{{ c3.0.4 | safe }}</p>
+                <a href="fuentes">
+                    <button class="btn btn-primary">{{ c3.0.6 }}</button>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12 txtmatriz">
+            <div class="container">
+                <h2 class="title">Seguridad energética</h2>
+
+                <p>Mientras el país transita hacia un sistema energético con fuentes más limpias y renovables, se debe garantizar que todos los colombianos tengan disponible ininterrumpidamente el servicio de energía a un precio asequible y el abastecimiento de combustibles líquidos, los cuales se seguirán necesitando durante un buen tiempo. Es decir, que los colombianos dispongan de los energéticos necesarios para poder realizar actividades diarias como transportarse o cocinar. Colombia hoy cuenta con solo 9,8 años de reservas de gas y 6,2 años de petróleo </p>
+                <a href="https://www.minenergia.gov.co/en/web/10180/1332?idNoticia=24165937">
+                    <button class="btn btn-primary">Conoce el Plan Energético Nacional</button>
+                </a>
+                <br>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div  class="col-md-12 col-xs-12 botonesAlineados">
+        <div id="myBtnContainerx">
+            <button class="btn activeb hidden"></button>
+            {% for data in imagesc3 %}
+                <button class="btn botonesAnos" onclick="filterSelection({{ data.1 }})">{{ data.1 }}</button>
+            {% endfor %}
+
+        </div>
+        <br>
     </div>
 </section>
 
@@ -406,137 +385,137 @@ function showDivs(n) {
     <div  class="col-md-12 col-xs-12 padTop">
 
 
-          <div class="col-md-6 col-xs-12 column3">
+        <div class="col-md-6 col-xs-12 column3">
 
-        <br>
-<h2 class="title text-comision-home">Comisión de expertos</h2>
-<br>
-        <p>
+            <br>
+            <h2 class="title text-comision-home">Comisión de expertos</h2>
+            <br>
+            <p>
 
-            La oportunidad que tenemos para garantizar la seguridad energética la encontramos en nuestro propio país, ya que tenemos un gran potencial hidrocarburífero, que, de comprobarse, podría implicar un incremento de hasta cinco veces nuestras reservas de gas natural y petróleo.
-            <br><br>
-            Países como Estados Unidos o Argentina decidieron aprovechar el potencial de los yacimientos no convencionales (YNC) y los avances tecnológicos que permiten extraer hidrocarburos de estos yacimientos de manera responsable con el medio ambiente y las comunidades. Es así como Estados Unidos pasó de ser importador a un exportador neto de hidrocarburos y, sobre todo, a garantizar cien años de reservas.
-            <br><br>
-            Además, el desarrollo de estos recursos le ha permitido contribuir notablemente a la lucha contra el cambio climático, al reducir drásticamente las emisiones de dióxido de carbono, incluso por encima de lo sugerido por el Protocolo de Kyoto, al reemplazar gran parte de su generación de electricidad térmica de carbón por gas natural.
-            <br><br>
-            Con el fin de evaluar la viabilidad social y ambiental de combinar la perforación horizontal con el fracturamiento hidráulico para desarrollar cierto tipo de yacimientos no convencionales en Colombia, el Gobierno conformó una comisión de expertos en octubre de 2018.
+                La oportunidad que tenemos para garantizar la seguridad energética la encontramos en nuestro propio país, ya que tenemos un gran potencial hidrocarburífero, que, de comprobarse, podría implicar un incremento de hasta cinco veces nuestras reservas de gas natural y petróleo.
+                <br><br>
+                Países como Estados Unidos o Argentina decidieron aprovechar el potencial de los yacimientos no convencionales (YNC) y los avances tecnológicos que permiten extraer hidrocarburos de estos yacimientos de manera responsable con el medio ambiente y las comunidades. Es así como Estados Unidos pasó de ser importador a un exportador neto de hidrocarburos y, sobre todo, a garantizar cien años de reservas.
+                <br><br>
+                Además, el desarrollo de estos recursos le ha permitido contribuir notablemente a la lucha contra el cambio climático, al reducir drásticamente las emisiones de dióxido de carbono, incluso por encima de lo sugerido por el Protocolo de Kyoto, al reemplazar gran parte de su generación de electricidad térmica de carbón por gas natural.
+                <br><br>
+                Con el fin de evaluar la viabilidad social y ambiental de combinar la perforación horizontal con el fracturamiento hidráulico para desarrollar cierto tipo de yacimientos no convencionales en Colombia, el Gobierno conformó una comisión de expertos en octubre de 2018.
 
-        </p>
-<br><br><br>
-          </div></div></section>
+            </p>
+            <br><br><br>
+        </div></div></section>
 <section>
 
     <div class="rowx">
-  <div class="columnx col-md-12 col-xs-12 padTop" style="background-color:#c0e2ff;height: 378px;">
+        <div class="columnx col-md-12 col-xs-12 padTop" style="background-color:#c0e2ff;height: 378px;">
 
-    <h2 class="titulo1-comision" >¿Para qué?</h2>
-      <h2 class="titulo2-comision">y ¿Por qué?</h2>
-    <p class="texto-comision">{{ para.0.0 }}</p>
-  </div>
-  <div class="columnx col-md-12 col-xs-12 padTop" style="background-color:#e9f4ff;">
-    <h2 class="titulo1-comision">¿Cómo</h2>
-      <h2 class="titulo2-comision">se hizo?</h2>
-      </br>
+            <h2 class="titulo1-comision" >¿Para qué?</h2>
+            <h2 class="titulo2-comision">y ¿Por qué?</h2>
+            <p class="texto-comision">{{ para.0.0 }}</p>
+        </div>
+        <div class="columnx col-md-12 col-xs-12 padTop" style="background-color:#e9f4ff;">
+            <h2 class="titulo1-comision">¿Cómo</h2>
+            <h2 class="titulo2-comision">se hizo?</h2>
+            </br>
 
-      <table style="width:100%">
+            <table style="width:100%">
 
-          <p class="texto-comision-como">{{ como.0.2 }}</p>
-          <br>
+                <p class="texto-comision-como">{{ como.0.2 }}</p>
+                <br>
 
-  <tr>
-    <td><h2 class="indice" >{{ como.0.0 }}.</h2></td>
-      <td><h5 class="como-texto">{{ como.0.1 }}</h5></td>
+                <tr>
+                    <td><h2 class="indice" >{{ como.0.0 }}.</h2></td>
+                    <td><h5 class="como-texto">{{ como.0.1 }}</h5></td>
 
-  </tr>
+                </tr>
 
-  <tr>
-    <td><h2 class="indice">{{ como.1.0 }}.</h2></td>
-      <td><h5 class="como-texto">{{ como.1.1 }}</h5></td>
-  </tr>
-  <tr>
-    <td><h2 class="indice">{{ como.2.0 }}.</h2></td>
-      <td><h5 class="como-texto">{{ como.2.1 }}</h5></td>
-  </tr>
-</table>
+                <tr>
+                    <td><h2 class="indice">{{ como.1.0 }}.</h2></td>
+                    <td><h5 class="como-texto">{{ como.1.1 }}</h5></td>
+                </tr>
+                <tr>
+                    <td><h2 class="indice">{{ como.2.0 }}.</h2></td>
+                    <td><h5 class="como-texto">{{ como.2.1 }}</h5></td>
+                </tr>
+            </table>
 
-  </div>
+        </div>
 
-</div>
+    </div>
     <br>
     <div class="rowx">
-<a class="btn btn-primary center-block btn-subasta" href="https://www.minenergia.gov.co/documents/10192/24162653/Comunicado+proyecto+PPII.pdf" target="_blank">Proyectos Piloto de Investigación</a>
+        <a class="btn btn-primary center-block btn-subasta" href="https://www.minenergia.gov.co/documents/10192/24162653/Comunicado+proyecto+PPII.pdf" target="_blank">Proyectos Piloto de Investigación</a>
 
     </div>
 </section>
 
 
-  <section class="col-md-8 col-xs-12">
+<section class="col-md-8 col-xs-12">
 
 
     <div id="carousel-example-generic" class="carousel slide col-md-offset-5" data-ride="carousel">
-    <!-- Im�genes de los sliders -->
-    <div class="carousel-inner" role="listbox" style="padding-top: 10% !important;">
-        {% for data in expertos %}
-		{% if data.3 == 1 %}
-		      <div class="item active" >
+        <!-- Im�genes de los sliders -->
+        <div class="carousel-inner" role="listbox" style="padding-top: 10% !important;">
+            {% for data in expertos %}
+                {% if data.3 == 1 %}
+                    <div class="item active" >
 
-        <img src={% static data.2 %}  alt="..." class="img-responsive" >
+                        <img src={% static data.2 %}  alt="..." class="img-responsive" >
 
-          <div class="carousel-caption">
-            <a href="expertos#{{ data.3 }}">
-          <h3 class="title"><b>{{ data.0 }}</b></h3>
-                </a>
-          <p class="subtitle">{{ data.1 }}</p>
+                        <div class="carousel-caption">
+                            <a href="expertos#{{ data.3 }}">
+                                <h3 class="title"><b>{{ data.0 }}</b></h3>
+                            </a>
+                            <p class="subtitle">{{ data.1 }}</p>
+                        </div>
+
+                        <div class="carousel-caption hidden-sm hidden-xs">
+                            <a href="expertos#{{ data.3 }}">
+                                <h3 class="title"><b>{{ data.0 }}</b></h3>
+                            </a>
+                            <p class="subtitle">{{ data.1 }}</p>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="item">
+
+                        <img src={% static data.2 %}  alt="..." class="img-responsive margen">
+
+                        <div class="carousel-caption ">
+                            <a href="expertos#{{ data.3 }}">
+                                <h3 class="title"><b>{{ data.0 }}</b></h3>
+                            </a>
+                            <p class="subtitle ">{{ data.1 }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
-
-        <div class="carousel-caption hidden-sm hidden-xs">
-            <a href="expertos#{{ data.3 }}">
-          <h3 class="title"><b>{{ data.0 }}</b></h3>
-                </a>
-          <p class="subtitle">{{ data.1 }}</p>
-        </div>
-      </div>
-	  {% else %}
-      <div class="item">
-
-        <img src={% static data.2 %}  alt="..." class="img-responsive margen">
-
-        <div class="carousel-caption ">
-            <a href="expertos#{{ data.3 }}">
-          <h3 class="title"><b>{{ data.0 }}</b></h3>
-                </a>
-          <p class="subtitle ">{{ data.1 }}</p>
-        </div>
-      </div>
-	  {% endif %}
-        {% endfor %}
+        <!-- Controles del slider -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="false"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
     </div>
-    <!-- Controles del slider -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="false"></span>
-      <span class="sr-only">Siguiente</span>
-    </a>
-  </div>
-  </section>
-  <div class="col-md-12 col-xs-12">
-  </div>
+</section>
+<div class="col-md-12 col-xs-12">
+</div>
 
 
 
-  <footer>
+<footer>
     <img src="./static/images/repre.png" width="100%" height="100%" class="img-responsive">
 
-              <div class="col-md-6 col-xs-6">
-          <a href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" title="Logo Presidencia" target="_blank">
+    <div class="col-md-6 col-xs-6">
+        <a href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" title="Logo Presidencia" target="_blank">
             <img src="./static/images/Gobierno.png" class="img-responsive logo-presi" alt="Logo Presidencia">
-          </a>
-        </div>
+        </a>
+    </div>
 
-  </footer>
+</footer>
 <script src="./static/js/jquery-1.11.1.min.js"></script>
 <script src="./static/js/bootstrap.min.js"></script>
 <script src="https://www.gstatic.com/charts/loader.js"></script>
@@ -608,10 +587,10 @@ for (var i = 0; i < btns.length; i++) {
 
 <html>
 <head>
-   <meta charset="utf-8">
-   <title>Energía Evoluciona</title>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-   <script>
+    <meta charset="utf-8">
+    <title>Energía Evoluciona</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
       $(document).ready(function()
       {
          $("#mostrarmodal").modal("show");
@@ -619,12 +598,12 @@ for (var i = 0; i < btns.length; i++) {
     </script>
 
     <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-<script>
+    <script>
   var googletag = googletag || {};
   googletag.cmd = googletag.cmd || [];
 </script>
 
-<script>
+    <script>
   googletag.cmd.push(function() {
     googletag.defineSlot('/71023058/Presidencia_1', [300, 250], 'div-gpt-ad-1553094838204-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
@@ -634,7 +613,7 @@ for (var i = 0; i < btns.length; i++) {
 </script>
 
     <!-- Start of Woopra Code -->
-<script>
+    <script>
   (function(){
     var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
   })("woopra");
@@ -644,7 +623,7 @@ for (var i = 0; i < btns.length; i++) {
   });
   woopra.track();
 </script>
-<!-- End of Woopra Code -->
+    <!-- End of Woopra Code -->
 
 
 </head>
