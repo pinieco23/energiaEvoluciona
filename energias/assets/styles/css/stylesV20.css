@@ -784,19 +784,6 @@ footer {
     background-size: cover;
     background-position: center;
     margin: auto; }
-.botFocoDoc{
-  width: auto;
-  background-color: #74a8cc;
-  color: white;
-  border: none;
-  padding: 1%;
-  margin: 1% auto;
-}
-.botFocoDoc:hover{
-  background-color: white;
-  color: #74a8cc;
-  border: 2px solid #74a8cc;
-}
 
 .colorFoco2{
   background-color: #ff5647 }
